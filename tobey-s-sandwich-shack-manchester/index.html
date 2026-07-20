@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Tobey's Sandwich Shack — Manchester</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#221D19;--paper:#FAF6EF;--amber:#C98A2D;--amber-dk:#A96F1C;--clay:#A63D2F;--sage:#7A8B6F;--line:#E7DFD2}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+/* Hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDXTOKOp0naG-iQ2IuHGpY9G6V3EIPT6eh0-U9X9crG-zzamPIDOBOgITC9mWrSaZ7yRZYynO20tcz_BQDPCWmJ3D9-4T0_GW60m3k2uH69iWgBk-O2rucBHu4wH0da9Pv0nal4DBjrFKCYHK-5LcCYWQ=s4800-w1400')}
+.hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
+.hero .eyebrow{color:#E9C98A}
+h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:15px 30px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem}
+.btn-primary{background:var(--amber);color:#241A0D}
+.btn-primary:hover{background:var(--amber-dk);color:#fff}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+/* Rating seal */
+.seal{position:absolute;right:6%;bottom:-54px;width:132px;height:132px;border-radius:50%;background:var(--paper);border:2.5px dashed var(--amber-dk);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-7deg);box-shadow:0 10px 28px rgba(30,20,10,.28);text-align:center}
+.seal b{font-family:'Fraunces',serif;font-size:1.9rem;line-height:1;color:var(--clay)}
+.seal span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);opacity:.75;margin-top:4px;line-height:1.3}
+/* Sections */
+section{max-width:980px;margin:0 auto;padding:72px 24px}
+h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.6rem,4vw,2.2rem);margin:8px 0 26px}
+.section-eyebrow{color:var(--clay)}
+.about p{font-size:1.12rem;max-width:640px}
+/* Reviews */
+.reviews{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.review-grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+blockquote{border-left:3px solid var(--amber);padding:4px 0 4px 18px;font-size:1.05rem}
+blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight:600}
+/* Menu */
+.menu-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.dish{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.dish img{width:100%;height:180px;object-fit:cover;display:block}
+.dish .pad{padding:16px 18px}
+.dish h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem}
+.dish p{font-size:.9rem;opacity:.7}
+.menu-note{margin-top:22px;font-size:.95rem;color:var(--sage)}
+/* Visit */
+.visit{display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.visit ul{list-style:none;font-size:.98rem}
+.visit li{padding:6px 0;border-bottom:1px dashed var(--line)}
+.visit a{color:var(--clay);font-weight:600}
+/* Footer */
+.preview-bar{background:var(--ink);color:#EFE7DA;text-align:center;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
+@media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
+</style>
+</head>
+<body>
+<header class="hero has-photo">
+  <div class="hero-inner">
+    <div class="eyebrow">Manchester · Family Restaurant</div>
+    <h1>Tobey's Sandwich Shack</h1>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Family Restaurant in Manchester — now taking orders straight from your own website.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="#order">Order online</a>
+      <a class="btn btn-ghost" href="#menu">See the menu</a>
+    </div>
+  </div>
+  <div class="seal"><b>4.9★</b><span>47 Google<br>reviews</span></div>
+</header>
+
+<section class="about">
+  <div class="eyebrow section-eyebrow">About</div>
+  <h2>Made in Manchester. Ordered in two taps.</h2>
+  <p>Tobey's Sandwich Shack already has the food and the following — 47 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+</section>
+
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Manchester</h2><div class="review-grid"><blockquote>"Finally stopped by Tobey’s and it lived on up to the hype. I went with the Roast Beef, and you can tell they aren't using the cheap stuff. The meat was tender,…"<footer>— Daphanie, Google review</footer></blockquote><blockquote>"Came here to try any of their popular sandwiches and I got the victory sandwich and omg it was so delicious. Best sandwich I've had in a very long time 😋"<footer>— lewisradtke, Google review</footer></blockquote></div></div></section>
+
+<section id="menu">
+  <div class="eyebrow section-eyebrow">The menu</div>
+  <h2>Your food, front and center</h2>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBFFG66cQ9Z28x966NPPDTUv58FgIqakxkPLQvAer8ZDPAow6Uov0Rcp7auj4o1XPzoDrwmKEudfE5MsqgUdSjRoRZBnhNjf4QdBY28yz8mjodTJzWYi9uH3h3zxloFN5KOq1kO76i0JxQEjlqEVTAnhg=s4800-w1400" alt="Tobey's Sandwich Shack dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD1JhAz8zlQ1yzAQEtNSqcAgnTRUpq-IB8_5HAz4L958Vgy_zairBphPLMyNasEXRo8kaPgRNVAp4XfkJahlCGGDVLMenjtMdt7NNHL7LiXHcI3uaJkt5Z-V5q6PGI0Y5c2sXEtXiK2vcEMeGLfHS0LzA=s4800-w1400" alt="Tobey's Sandwich Shack dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAHI_QCDnqDJMzeraZTFrIPgqdyI0yahwyvXoSOkNuhn_bHIjFKZqz0_4S3udDTplmJLikZ_BcZwAqvOWWra15dSHzgOjSEWMvmceRlFxpFv_XRd6naR0T7CwhPBXmZ1xzfFDoPJowA300QKMtZmHL6=s4800-w1400" alt="Tobey's Sandwich Shack dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
+</section>
+
+<section id="order" class="visit">
+  <div>
+    <div class="eyebrow section-eyebrow">Hours</div>
+    <h2>Come by</h2>
+    <ul><li>Monday: Closed</li><li>Tuesday: Closed</li><li>Wednesday: Closed</li><li>Thursday: 10:00 AM – 8:00 PM</li><li>Friday: 10:00 AM – 8:00 PM</li><li>Saturday: 10:00 AM – 8:00 PM</li><li>Sunday: Closed</li></ul>
+  </div>
+  <div>
+    <div class="eyebrow section-eyebrow">Find us</div>
+    <h2>Manchester</h2>
+    <p>7039 McMinnville Hwy</p>
+    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Tobey%27s%20Sandwich%20Shack%207039%20McMinnville%20Hwy%20Manchester">Open in Google Maps →</a></p>
+    <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+  </div>
+</section>
+
+<div class="preview-bar">
+  Website preview prepared for Tobey's Sandwich Shack by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.
+</div>
+</body>
+</html>
