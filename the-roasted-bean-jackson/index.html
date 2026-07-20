@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>The Roasted Bean — Jackson</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#221D19;--paper:#FAF6EF;--amber:#C98A2D;--amber-dk:#A96F1C;--clay:#A63D2F;--sage:#7A8B6F;--line:#E7DFD2}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+/* Hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCYnsGM2xj8i-Pbdrc9ZuOYSK5wZw6rHo7Ows-pcW_XZQaZFxYd8Kh-BxlAg_reMZ1HKpE_9vRKl0Uwnp8J5nvTcEE9yBLP2NE4zz6GX3RPzKSi-SadZxiJmSMp4z616-Ou_02XCjsWdnSLcI4=s4800-w1400')}
+.hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
+.hero .eyebrow{color:#E9C98A}
+h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:15px 30px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem}
+.btn-primary{background:var(--amber);color:#241A0D}
+.btn-primary:hover{background:var(--amber-dk);color:#fff}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+/* Rating seal */
+.seal{position:absolute;right:6%;bottom:-54px;width:132px;height:132px;border-radius:50%;background:var(--paper);border:2.5px dashed var(--amber-dk);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-7deg);box-shadow:0 10px 28px rgba(30,20,10,.28);text-align:center}
+.seal b{font-family:'Fraunces',serif;font-size:1.9rem;line-height:1;color:var(--clay)}
+.seal span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);opacity:.75;margin-top:4px;line-height:1.3}
+/* Sections */
+section{max-width:980px;margin:0 auto;padding:72px 24px}
+h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.6rem,4vw,2.2rem);margin:8px 0 26px}
+.section-eyebrow{color:var(--clay)}
+.about p{font-size:1.12rem;max-width:640px}
+/* Reviews */
+.reviews{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.review-grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+blockquote{border-left:3px solid var(--amber);padding:4px 0 4px 18px;font-size:1.05rem}
+blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight:600}
+/* Menu */
+.menu-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.dish{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.dish img{width:100%;height:180px;object-fit:cover;display:block}
+.dish .pad{padding:16px 18px}
+.dish h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem}
+.dish p{font-size:.9rem;opacity:.7}
+.menu-note{margin-top:22px;font-size:.95rem;color:var(--sage)}
+/* Visit */
+.visit{display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.visit ul{list-style:none;font-size:.98rem}
+.visit li{padding:6px 0;border-bottom:1px dashed var(--line)}
+.visit a{color:var(--clay);font-weight:600}
+/* Footer */
+.preview-bar{background:var(--ink);color:#EFE7DA;text-align:center;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
+@media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
+</style>
+</head>
+<body>
+<header class="hero has-photo">
+  <div class="hero-inner">
+    <div class="eyebrow">Jackson · Coffee Shop</div>
+    <h1>The Roasted Bean</h1>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Shop in Jackson — now taking orders straight from your own website.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="#order">Order online</a>
+      <a class="btn btn-ghost" href="#menu">See the menu</a>
+    </div>
+  </div>
+  <div class="seal"><b>4.7★</b><span>68 Google<br>reviews</span></div>
+</header>
+
+<section class="about">
+  <div class="eyebrow section-eyebrow">About</div>
+  <h2>Made in Jackson. Ordered in two taps.</h2>
+  <p>The Roasted Bean already has the food and the following — 68 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+</section>
+
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Jackson</h2><div class="review-grid"><blockquote>"Stopped in and got two frappes, a piece of cake, a cookie, and a fruit cup. It was all delicious and the owners are wonderful and super kind. Will definitely be back…"<footer>— Brandon, Google review</footer></blockquote><blockquote>"This is a hidden treasure. Off the main roads but close enough to be seen. Good food,good people and good prices. If you have any food allergies, no problem, they…"<footer>— Richard, Google review</footer></blockquote></div></div></section>
+
+<section id="menu">
+  <div class="eyebrow section-eyebrow">The menu</div>
+  <h2>Your food, front and center</h2>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBHG5k-3nN-eNMKAadgqx1-FZor12Th2c49-wzKkkluIiEDvdyhosAr9Gs8L5R3fBhm_i3n2-jS489wAQq-fpPjArpv3LCHPXPS1IYNpnbml4NR79R13qYlDZJ9bEbOa9yrCk3GLbnpRc1o-g=s4800-w960" alt="The Roasted Bean dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDm1HraUCY6-AZQcZw7LEvDLh8M1J10VdHGWabU00pQ2lc8hOA7kN84VW58PS6h5ihNi9mjgjPtimq3Ucr1QwlQmf8qyPSYUokT5sWkpYgN-elxC26n8H1X7HHPdBNs_ZkYEuPfnfHyrGY3ckc=s4800-w1400" alt="The Roasted Bean dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD2Lb_B7M39BTrOc4ZhDy8ACx2VfuiW-ZrxMr_Wxp8AcoWNLzI-MtInOH0YCJo6ley6_kKbAGh-fcj0UlDCoMY53qiPoY59SQFAZ3dWYfe3vyO5cNMsReCLG1_rJBRGBIHNl12XFmsd6aLLdQ=s4800-w1400" alt="The Roasted Bean dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
+</section>
+
+<section id="order" class="visit">
+  <div>
+    <div class="eyebrow section-eyebrow">Hours</div>
+    <h2>Come by</h2>
+    <ul><li>Monday: Closed</li><li>Tuesday: 7:00 AM – 4:00 PM</li><li>Wednesday: 7:00 AM – 4:00 PM</li><li>Thursday: 7:00 AM – 4:00 PM</li><li>Friday: 7:00 AM – 4:00 PM</li><li>Saturday: 8:00 AM – 2:00 PM</li><li>Sunday: Closed</li></ul>
+  </div>
+  <div>
+    <div class="eyebrow section-eyebrow">Find us</div>
+    <h2>Jackson</h2>
+    <p>21 Meridian Springs Dr</p>
+    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/The%20Roasted%20Bean%2021%20Meridian%20Springs%20Dr%20Jackson">Open in Google Maps →</a></p>
+    <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+  </div>
+</section>
+
+<div class="preview-bar">
+  Website preview prepared for The Roasted Bean by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.
+</div>
+</body>
+</html>
