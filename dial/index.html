@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Dialing…</title>
+<style>
+body{font-family:system-ui,sans-serif;display:flex;min-height:90vh;align-items:center;justify-content:center;background:#FAF6EF;color:#221D19}
+.card{text-align:center;padding:32px}
+a{color:#A63D2F;font-weight:600;font-size:1.4rem}
+</style>
+</head>
+<body>
+<div class="card">
+  <p id="msg">Opening your phone app…</p>
+  <p><a id="link" href="#">Tap to dial</a></p>
+</div>
+<script>
+var n = new URLSearchParams(location.search).get("n") || "";
+n = n.replace(/\D/g, "");
+if (n.length === 11 && n[0] === "1") n = n.slice(1);
+if (n.length === 10) {
+  var tel = "tel:+1" + n;
+  document.getElementById("link").href = tel;
+  document.getElementById("link").textContent = "Call (" + n.slice(0,3) + ") " + n.slice(3,6) + "-" + n.slice(6);
+  location.href = tel;
+} else {
+  document.getElementById("msg").textContent = "No valid number provided.";
+}
+</script>
+</body>
+</html>
