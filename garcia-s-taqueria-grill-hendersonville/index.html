@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Garcia’s Taqueria Grill — Hendersonville</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#221D19;--paper:#FAF6EF;--amber:#C98A2D;--amber-dk:#A96F1C;--clay:#A63D2F;--sage:#7A8B6F;--line:#E7DFD2}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+/* Hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDJBOf9J3BXyP5H9wT2Dl-P35lxuw85HX3bk_pG833fVnBUPSb_KiRAiqZmtcrAwFrC0Y3LglfFJ3m1sSDhZBnSK1XKNHFvncP3CRrWX-MtSxuF3NugvHmeYeH2U_bhCBD04vPcykjzyt8Hw6w=s4800-w1400')}
+.hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
+.hero .eyebrow{color:#E9C98A}
+h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:15px 30px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem}
+.btn-primary{background:var(--amber);color:#241A0D}
+.btn-primary:hover{background:var(--amber-dk);color:#fff}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+/* Rating seal */
+.seal{position:absolute;right:6%;bottom:-54px;width:132px;height:132px;border-radius:50%;background:var(--paper);border:2.5px dashed var(--amber-dk);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-7deg);box-shadow:0 10px 28px rgba(30,20,10,.28);text-align:center}
+.seal b{font-family:'Fraunces',serif;font-size:1.9rem;line-height:1;color:var(--clay)}
+.seal span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);opacity:.75;margin-top:4px;line-height:1.3}
+/* Sections */
+section{max-width:980px;margin:0 auto;padding:72px 24px}
+h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.6rem,4vw,2.2rem);margin:8px 0 26px}
+.section-eyebrow{color:var(--clay)}
+.about p{font-size:1.12rem;max-width:640px}
+/* Reviews */
+.reviews{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.review-grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+blockquote{border-left:3px solid var(--amber);padding:4px 0 4px 18px;font-size:1.05rem}
+blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight:600}
+/* Menu */
+.menu-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.dish{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.dish img{width:100%;height:180px;object-fit:cover;display:block}
+.dish .pad{padding:16px 18px}
+.dish h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem}
+.dish p{font-size:.9rem;opacity:.7}
+.menu-note{margin-top:22px;font-size:.95rem;color:var(--sage)}
+/* Visit */
+.visit{display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.visit ul{list-style:none;font-size:.98rem}
+.visit li{padding:6px 0;border-bottom:1px dashed var(--line)}
+.visit a{color:var(--clay);font-weight:600}
+/* Footer */
+.preview-bar{background:var(--ink);color:#EFE7DA;text-align:center;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
+@media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
+</style>
+</head>
+<body>
+<header class="hero has-photo">
+  <div class="hero-inner">
+    <div class="eyebrow">Hendersonville · Mexican Restaurant</div>
+    <h1>Garcia’s Taqueria Grill</h1>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Mexican Restaurant in Hendersonville — now taking orders straight from your own website.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="#order">Order online</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
+    </div>
+  </div>
+  <div class="seal"><b>4.3★</b><span>203 Google<br>reviews</span></div>
+</header>
+
+<section class="about">
+  <div class="eyebrow section-eyebrow">About</div>
+  <h2>Made in Hendersonville. Ordered in two taps.</h2>
+  <p>Garcia’s Taqueria Grill already has the food and the following — 203 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+</section>
+
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Hendersonville</h2><div class="review-grid"><blockquote>"In the midst of crazy weather and power outages we ran out for dinner to Garcia’s it was packed! But, we got seated in a short amount of time we ordered drinks and…"<footer>— Mary, Google review</footer></blockquote><blockquote>"Love this place downnnnnn! Love their tacos with a good side of rice and beans and a horchata ooooo ya! And for dessert churros with ice cream with no cherry at the…"<footer>— TripleOGNani, Google review</footer></blockquote></div></div></section>
+
+<section id="menu">
+  <div class="eyebrow section-eyebrow">The menu</div>
+  <h2>Your food, front and center</h2>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBtxOu-nfaH2oQhjX-lhFw8Zt_oD9zQd1jWL9GWGtcjFUD2SkGmkZ8rud0nwDuLknHGNc-3ewm5c9hvwn-pT9muz6_jH3MLeWzZuoFVprq6ganImC47Lv1uNrLawOf1hvDrwUbsoJWD_MMeNeA=s4800-w1400" alt="Garcia’s Taqueria Grill dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDYKl-Z5v2BhFqIxVvG8wzGlKVsWd6NrNiCP-qBM6h0vKUVjXiK3YE6hSjBNhboji_5gJlOGxeXSC01Tk538hr0gUbo47iE7tTeoLRneOdkrlIfuSCVMcNsPe-vr2EKbpXuUqt8oc96742trF4=s4800-w1080" alt="Garcia’s Taqueria Grill dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBvEbzHDKCFndQ9ZNYbD3I0SD0xnp7BfxKLo19h3xLfUGb2IhG3NG9F6-uBY7Zi6shEHt6vAcrXIphF9Qcw1fBakPZe1poCWDsjwLv4z_hDIj2AcNqEqAFf1fdvj_8T4NYSBwR_cGyXeiEwz62YhuEQ3A=s4800-w1400" alt="Garcia’s Taqueria Grill dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
+</section>
+
+<section id="order" class="visit">
+  <div>
+    <div class="eyebrow section-eyebrow">Hours</div>
+    <h2>Come by</h2>
+    <ul><li>Monday: 11:00 AM – 9:00 PM</li><li>Tuesday: 11:00 AM – 9:00 PM</li><li>Wednesday: 11:00 AM – 9:00 PM</li><li>Thursday: 11:00 AM – 9:00 PM</li><li>Friday: 11:00 AM – 10:00 PM</li><li>Saturday: 11:00 AM – 10:00 PM</li><li>Sunday: 11:00 AM – 9:00 PM</li></ul>
+  </div>
+  <div>
+    <div class="eyebrow section-eyebrow">Find us</div>
+    <h2>Hendersonville</h2>
+    <p>235 E Main St #370</p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Garcia%E2%80%99s%20Taqueria%20Grill%20235%20E%20Main%20St%20%23370%20Hendersonville">Open in Google Maps →</a></p>
+    <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
+  </div>
+</section>
+
+<div class="preview-bar">
+  Website preview prepared for Garcia’s Taqueria Grill by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.
+</div>
+</body>
+</html>
