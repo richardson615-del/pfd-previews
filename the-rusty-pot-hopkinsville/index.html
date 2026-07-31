@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBJUiLqL94D73myoUxMz-ucKStKWJ2b1JYSwHo8G-Ue4U9GwIxplvAI4DE6morxKpHiIQmdPhn030w7olUGBHfnotGu0HciIHUJZBwOHR_MUS0WqxKqWjo3pEdpuyL5J1f7qCAL1UvI-385N7EF1Sl_=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -59,31 +59,31 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 </style>
 </head>
 <body>
-<header class="hero ">
+<header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Hopkinsville · Restaurant</div>
     <h1>The Rusty Pot</h1>
     <p style="max-width:520px;font-size:1.1rem;opacity:.94">Restaurant in Hopkinsville — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>5★</b><span>2 Google<br>reviews</span></div>
+  <div class="seal"><b>5★</b><span>3 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Hopkinsville. Ordered in two taps.</h2>
-  <p>The Rusty Pot already has the food and the following — 2 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>The Rusty Pot already has the food and the following — 3 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Hopkinsville</h2><div class="review-grid"><blockquote>"I stopped in here today to pick up a quick meal and I will most definitely be back. The staff is helpful and friendly. I will be back simply because of their service. 🥰"<footer>— Sarah, Google review</footer></blockquote><blockquote>"Carrot cake was delicious. Staff is very friendly."<footer>— Laurie, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Hopkinsville</h2><div class="review-grid"><blockquote>"The Rusty Pot is such a fantastic alternative to fast food! We picked up a homemade lunch featuring BBQ chicken, a twice-baked potato, cowboy beans, and two rolls,…"<footer>— Melissa, Google review</footer></blockquote><blockquote>"I stopped in here today to pick up a quick meal and I will most definitely be back. The staff is helpful and friendly. I will be back simply because of their service. 🥰"<footer>— Sarah, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><div class="pad"><h3>Your menu here</h3><p>Real dishes, photos, and prices — organized and mobile-friendly.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBJUiLqL94D73myoUxMz-ucKStKWJ2b1JYSwHo8G-Ue4U9GwIxplvAI4DE6morxKpHiIQmdPhn030w7olUGBHfnotGu0HciIHUJZBwOHR_MUS0WqxKqWjo3pEdpuyL5J1f7qCAL1UvI-385N7EF1Sl_=s4800-w1400" alt="The Rusty Pot dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -96,14 +96,16 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <div>
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Hopkinsville</h2>
-    <p>2413 Ft. Campbell Blvd</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/The%20Rusty%20Pot%202413%20Ft.%20Campbell%20Blvd%20Hopkinsville">Open in Google Maps →</a></p>
+    <p>2413 Fort Campbell Blvd</p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/The%20Rusty%20Pot%202413%20Fort%20Campbell%20Blvd%20Hopkinsville">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
   </div>
 </section>
 
 <div class="preview-bar">
-  Website preview prepared for The Rusty Pot by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.
+  Website preview prepared for The Rusty Pot by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.
 </div>
 </body>
 </html>
