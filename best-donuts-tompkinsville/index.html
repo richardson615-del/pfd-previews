@@ -51,7 +51,10 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .visit li{padding:6px 0;border-bottom:1px dashed var(--line)}
 .visit a{color:var(--clay);font-weight:600}
 /* Footer */
-.preview-bar{background:var(--ink);color:#EFE7DA;text-align:center;padding:22px 18px;font-size:.9rem}
+.preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
+.claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
+.claim-btn:hover{background:var(--amber-dk);color:#fff}
 .preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
@@ -103,7 +106,10 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 </section>
 
 <div class="preview-bar">
-  Website preview prepared for Best Donuts by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.
+  <div class="preview-bar-inner">
+    <span>Website preview prepared for Best Donuts by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=best-donuts-tompkinsville">Claim this website — get it live free</a>
+  </div>
 </div>
 </body>
 </html>
