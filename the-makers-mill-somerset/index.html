@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjB6RyZWpbAJX7vipZfUPEz1-JEEPoTocGBm55SynTiYmgix2x7aQMw1FnbzgmnvPzwOWTvd1ZNW238rqLrN_dq_Sd7kmLUOmP43m3ZPLPxq4eP0uE4GiHSnA7PruvY5GLdpwOok4s9X9tM2sw=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjA33UEryMCIC1EW9Tyu51lsNzIIRFPllio3SuYj1SGIf5gj26y6T-aiEOn7zXDN72xaVgeo4KCk6jRgdnPKP1EI9e-Oom2ubt3zWBTDtALUuk5W6Fyq6S9xzQTf9XFTZJKtMPZCWquhca400g=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,15 +72,14 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for The Makers Mill — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=the-makers-mill-somerset">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Somerset · Cafe</div>
+    <div class="eyebrow">Somerset · Bar & Grill</div>
     <h1>The Makers Mill</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Cafe in Somerset — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Bar & Grill in Somerset — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
   <div class="seal"><b>4.6★</b><span>81 Google<br>reviews</span></div>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAzcqA8ThKbAh43W6hGX2vTkmTTaVZwf4xV4I1wIvwKcNaUCYDvnZOKsRr9xQ6DWvMqXnYS3TVm-xqpOFiEpWyGcP-dV1WRgE9aPDmVoyrgLvABK9v4_0gd2k5u67_noApPSaIjHDtdrPADnL8=s4800-w1400" alt="The Makers Mill dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBAgbWW780pn_1BMjdW08vZTKfNVHvirP0C4zTJcBXhFP1utc7gwSKqNVH1qXmfDzaBQE1M4dEQL5VUzFz2rQWhebMedl1Psp7xkBV9EU5NgBXAOdV1lE8lGeiRST3hXSsY347BocC6rvIJOKE=s4800-w1400" alt="The Makers Mill dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAnp8okyFqGEwKamf1lFXNPR4-y0G9ITv2SjiUBD-cJT5VuTc_YnkTgLKF_3RDla8RCiuO3MlRRhDm3Qcjc2wXN7sw8LHL9tnodPU9pab4JtTfnCzN4GlFZrel0kGkYtzQIbgVEEQLgNre2NEyI2IofpA=s4800-w1400" alt="The Makers Mill dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBg4ZG59A_lIPKdoHo9CSVPCAr7xdEq2xnPhrG7ttr-mq7z9BCyLg_6i6dxc2qXCugtdFGITci78hnweF0znBjnU1MxJ2_6ZyiLnXOPiid_LdrO5ned6-d2lNu0aX9zTCv69DjiQ1U6AcKjAJo=s4800-w1400" alt="The Makers Mill dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCzg1TEVhwB6uyVYCdFDZ421eXMK64nIvA9xBav7GAROzz2DKJk6RG6gg--lwQkF8P-lwe6X8R_FK0RN3XQ-DpZ0tGyc36dieQu-yzDUhzP3hFuHL2Ki1FCstzppFkeaq3PRgOT9QovdjwAMJg=s4800-w1400" alt="The Makers Mill dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjC2SPnSSoyU1NlIUZeo3wUls-lSc6tGXsE4HDK9LYPPq6ZTHLqOYo05MlM8EzshoN-ssuz4olBWaN42_gdjZ9eOxSSkFDMcRdZ_ZEjKAubRZHtuqhluEdpppDteefvOJHZuZcuLpR7jUVD_kpPkFqMOSw=s4800-w1400" alt="The Makers Mill dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Somerset</h2>
     <p>402 E Mt Vernon St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/The%20Makers%20Mill%20402%20E%20Mt%20Vernon%20St%20Somerset">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/The%20Makers%20Mill%20402%20E%20Mt%20Vernon%20St%20Somerset">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for The Makers Mill by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for The Makers Mill by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=the-makers-mill-somerset">Claim this website — get it live free</a>
   </div>
 </div>

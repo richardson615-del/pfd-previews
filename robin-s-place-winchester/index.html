@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCv-LkUJxVdCRzxy7ya0xwBebCMFolqRqpcyB4-VrHpzqup5F2kxAp0xxutqGR-LoIy3KTG2ksi_chGZRZbKzU7pplf6D5BXw0QnoKO5JiVDvK3ZhYYKpgYRkyg0L-O5OcshCFryubgUuGiUD0=s4800-w933')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBNoJEuRniGl-Ul7ajHRDDN7F80dz4enwL2gUKFmMIZ823MeC6oosqnVIpfvxH1ec5cOl0DSGeOyW45OussoGuZ9kFAwas_kyEOD2JqNgiJ8EZfyfmMjRqLUH8roow1KuSyjLcZqpSpUchTNcM=s4800-w933')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Robin’s Place — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=robin-s-place-winchester">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Winchester · Pizza Restaurant</div>
+    <div class="eyebrow">Winchester · Pizza</div>
     <h1>Robin’s Place</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Pizza Restaurant in Winchester — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Pizza in Winchester — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.2★</b><span>695 Google<br>reviews</span></div>
+  <div class="seal"><b>4.2★</b><span>696 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Winchester. Ordered in two taps.</h2>
-  <p>Robin’s Place already has the food and the following — 695 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Robin’s Place already has the food and the following — 696 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Winchester</h2><div class="review-grid"><blockquote>"Excellent buffet with salad and pasta bar. Pizza was hot and fresh and they kept up with the buffet so there was always plenty of pizza. The price was very reasonable…"<footer>— Wandering, Google review</footer></blockquote><blockquote>"Classic all you can eat pizza buffet with pasta choices and salad options. A hearty diner chili is excellent and a comfort food choice. Pinto beans and cornbread…"<footer>— Sandra, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAKVpDZdmlLy4saACp_zNZ9MOONb-lmthTjOg2Gxhyd5QmX7Fte8qgy6qJgIqmAwChB86ASVBEJLAqu2v6JmTf0YYDfMpbCZLqMlThi8hAQVvwGZkSbAdL5jXULq4iaCS3FLkD0bWWOe5t2ccHS5rvQiA=s4800-w800" alt="Robin’s Place dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDpxVpAAwHUAzUMkWtnhmXyw_vi1VUeQIuH-qqvfWAXm-qnKS9TXqtAnMawWpeHwZVB39GLlFadVUqVS0GGDMOb2s3bll4lTIANIxFsHWn2jC0lMtrz7WtLJD4Ue2wOWVk-G2laHx23AYGgGy-uqhdW-A=s4800-w800" alt="Robin’s Place dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAgVgDppU8r2fblLrWduFh0sc2_FrsgS-gRmxYIg_PtrAv166ixXHxwvXUKoKJKi4k_I3bdVtgQoh64Vu9w87CXeVuHp2X6nGtIWNbyq96vQATGJ0GpROKkxXynjIri2kjd6sWHhefsNcRTxH_TmyAkqQ=s4800-w800" alt="Robin’s Place dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBdmDIwO6BCBdnPVaSrBWFvcDnW2sFxyt4UZAgi1Z5CegRB0w4z9fW_K-STroW7mds7hDYdwsXxQa_GyI5xk3mm-D66ABL-lvQKAfC1OQKKN9ZR0G9XVZDopQl4CbhZ1eOLZuZXA8ugV1_IK1XKezNZtg=s4800-w800" alt="Robin’s Place dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBOaIXgFlRrYwkO5_ftLvmm4IlkDke1n39duv8TuJwZOaWNgjsBiUvHGOa_2GEU5pnT8N89dEXwDv6Q21CvT0o5V35DeA2QnyoAErQX1FBmJMIMJwa845Qepie7nL2YblyiVhLyTdOA-M5584NjApHxHA=s4800-w800" alt="Robin’s Place dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBUmXbxdF1MTdGjrDLeYbyiSAOs7ivmATXYSC9vqslGCaIPSEpddq2S4x4-EE5-mcAofiZO4ZsQB9xzPzkdsF1l6lbQw739kUW865hGvQifgRrOO-Tcd1WCXpwSeozil_ZGmVYxl1E97qBXGkUv1JPI=s4800-w800" alt="Robin’s Place dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Winchester</h2>
     <p>728 Boone Ave</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Robin%E2%80%99s%20Place%20728%20Boone%20Ave%20Winchester">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Robin%E2%80%99s%20Place%20728%20Boone%20Ave%20Winchester">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Robin’s Place by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Robin’s Place by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=robin-s-place-winchester">Claim this website — get it live free</a>
   </div>
 </div>
