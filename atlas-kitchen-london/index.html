@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAiFhUuAFNVUwJss2QdRPKpPtenwJRJnVW9MPL3dQYvoBphCKT8oXvMYpHAACoiXbFiKRpVsUVkjKVsEwWQpcbPblzlJ3cSzC9m_nn0-CjZqKrYR68ZGfnCXTPrWw7-rVjMM5xq_gfmWwDufQ=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCr-9AVCuIzP2ZYjb3xfbLfNHjtrwRXqNZhw-vFlgxFXpBok5Uj5BL7q22S1P6dq4vFgwnmKcx31S8de-2He5B9TFNFqoRqLoIw73H4EwwisbvjbWPsxGlvOQW7ZtnaAgBgzx6ZI1kaE4E8E2h7vLCd=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,32 +72,31 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Atlas Kitchen — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=atlas-kitchen-london">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">London · Turkish Restaurant</div>
+    <div class="eyebrow">London · Turkish</div>
     <h1>Atlas Kitchen</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Turkish Restaurant in London — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Turkish in London — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.1★</b><span>479 Google<br>reviews</span></div>
+  <div class="seal"><b>4.9★</b><span>560 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in London. Ordered in two taps.</h2>
-  <p>Atlas Kitchen already has the food and the following — 479 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Atlas Kitchen already has the food and the following — 560 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in London</h2><div class="review-grid"><blockquote>"Great dining experience at this creative Chinese restaurant near Columbia University!  The location is very convenient, only about a 3-minute walk from the subway.…"<footer>— Min, Google review</footer></blockquote><blockquote>"One of those lunches where nothing misses 🥢  We went to Atlas Kitchen nyc a Michelin-recommended contemporary Chinese spot, and everything was so good. The kind of…"<footer>— Olya, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in London</h2><div class="review-grid"><blockquote>"We were in the area on vacation and the idea of Turkish food sounded amazing.  Everything was so fresh & made on-site.  The owner was a delight. We had the mixed…"<footer>— BJ, Google review</footer></blockquote><blockquote>"The food was absolutely delicious, from the appetizer all the way to the main course. Everything was fresh and full of flavor. The service was great! Very welcoming &…"<footer>— Athena, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDmmTY2uiazYx1gxKtRM8hXq9Q3VH881VEd8CA_RH4fJ8cJsdmstfWI35oS9SmAdZxLncjGzCEtKiJvKPgM2mMfI1OQJsUwG5pBVeTph3E_ibuK4-A9sqBAYwsTtHoRaz7-T5jWN0NJ8qiu=s4800-w1400" alt="Atlas Kitchen dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAgN9RvzoaNirO1XQvhtfV8FsrhzJCrlAJ_m-IU2GBe_9MDMZNuQgrHLUVJbUfOCEGPtz6bGhZK8y6kdp1_cecvVMTAC_FTuROsIVOoBaYyspjKrKfUR4mLhi0ze1ZT2VtwOrGB02BbjEqpCgv_-l9U=s4800-w1400" alt="Atlas Kitchen dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCoscf0tzvzBVU1JX6RsXVHm2qLVWADNS7TMKTflYGmYJWlW2wdUrgWIs3GQZtuq58o0ghjkhU7lrpEB2cCSHpDXW9SjeqX4CmmtC8HmIQ-eBBLus9bE8ZqOVSfK60CIIVZdvWVsTDvlvtnZZ-XkhBBgw=s4800-w1400" alt="Atlas Kitchen dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCs8xysJs32xi3tlu35BLQRWN81GCY75bVaDV8E7aP-YVZ3ISd4YpkyHxMk0qOosSnioAEOkiw-zQ9fO1OiqKnk3zmwN_7rYSloem1GXhrFXKXk1A7JGC8Bk4eK7L9ink5pXzDGNLQqrtPC1QvmRnzo6w=s4800-w1400" alt="Atlas Kitchen dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBQoq-Gy35UK7j9vuk6OS1xrn3KG_a8HOzXqk8vONtBEqMVdSxbgTW_VL9Ggjz9M22lutEBGwyflS1Lbeasqi5_joKpY8H9mPJuRHHTzchbN08csKQq1nocEwFar65kLDB2sHWTx0Wrthp5-aRLlQVdzw=s4800-w1400" alt="Atlas Kitchen dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCw3lL8PaDFn9RkIQzq6A4GJsr2OdpH5DoGiAcpjjpfu4m12ibGtFC4qc8Wb2iLrLK6PmmwljBbxi6Ge3oikvKeIlS3oLHNTXuoQBMEw04KW89EFeka3jIdHyZYYw9J53IDFfs6EheGZiA-4nad5CwpsA=s4800-w1400" alt="Atlas Kitchen dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -102,21 +104,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <div>
     <div class="eyebrow section-eyebrow">Hours</div>
     <h2>Come by</h2>
-    <ul><li>Monday: 11:30 AM – 9:30 PM</li><li>Tuesday: 11:30 AM – 9:30 PM</li><li>Wednesday: 11:30 AM – 9:30 PM</li><li>Thursday: 11:30 AM – 9:30 PM</li><li>Friday: 11:30 AM – 9:30 PM</li><li>Saturday: 11:30 AM – 9:30 PM</li><li>Sunday: 11:30 AM – 9:30 PM</li></ul>
+    <ul><li>Monday: 10:00 AM – 8:00 PM</li><li>Tuesday: 10:00 AM – 8:00 PM</li><li>Wednesday: 10:00 AM – 8:00 PM</li><li>Thursday: 10:00 AM – 8:00 PM</li><li>Friday: 10:00 AM – 8:00 PM</li><li>Saturday: 10:00 AM – 8:00 PM</li><li>Sunday: 10:00 AM – 8:00 PM</li></ul>
   </div>
   <div>
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>London</h2>
     <p>1112 N Main St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Atlas%20Kitchen%201112%20N%20Main%20St%20London">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Atlas%20Kitchen%201112%20N%20Main%20St%20London">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Atlas Kitchen by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Atlas Kitchen by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=atlas-kitchen-london">Claim this website — get it live free</a>
   </div>
 </div>

@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjA397ZmoDHCHdnHj-3lct4wF6_XXg5WFQJ1Bp4rYMcWbV0nUOZzfSjPbgT32nz-Yg727NSlFr-7pQsLqk7K58FWM4Fyuj6g2JteakSQpicjtroInfj59uW6PrY1XuGG-u2Uc2I0_bjLq9_orQ=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCIf_1fDRB77FUNnvYJdA4iHCzrWkCdceyJiHGXvSLWWprKkPY3KZFmQ3loMfxMFJ1b7I1JtY1A2Tkr2Llx5YDSchko9uV2ZCpdWkxp5qlssN-215hzJ40nqjijQoYkzDfmW1l_0AzhBAVEXA=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Country Cupboard — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=country-cupboard-madisonville">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Madisonville · Buffet Restaurant</div>
+    <div class="eyebrow">Madisonville · Buffet</div>
     <h1>Country Cupboard</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Buffet Restaurant in Madisonville — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Buffet in Madisonville — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.5★</b><span>1133 Google<br>reviews</span></div>
+  <div class="seal"><b>4.5★</b><span>1137 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Madisonville. Ordered in two taps.</h2>
-  <p>Country Cupboard already has the food and the following — 1133 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Country Cupboard already has the food and the following — 1137 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Madisonville</h2><div class="review-grid"><blockquote>"I was in the mood for a country buffet and came across this Restaurant. Everything was exactly as I was hoping for. The only downside was that some of the food was…"<footer>— Ms, Google review</footer></blockquote><blockquote>"Hands down the best southern cooking ive had in years at a restaurant!! The porkchop was so good!!! Lawd have mercy!! Big back behavior!!! The mashed potatoes are…"<footer>— J, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAfrFnj_G32hm8n9x3VEQXxbu_Twv7U16MFYvWlcSSoCJN1YDnCY0SiK8jCkIoEw8DhAISLe0_GLRLqvFabZfoXu1VXMFCmiM0dW1DNQzx6QZ8BhBaeXxP73GPyDOeZ6HKfyA2YxdlBwPx4sw=s4800-w1400" alt="Country Cupboard dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCvaBVPqjwsd8VJoApt7Em4Vv1ezBq5Qp3mem_Ed3WZxkdWXhOWjTWu4Ng1inUI7r6MUDVNFsI9-hWNG_MYvswLB0aHlH-3ilQSgCJO4pdPRfbYz6Dl5tq8o_HVAzUOdR_Rd-R3XWJ4H59_4HHDgb645w=s4800-w1400" alt="Country Cupboard dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCaSUK-6U2W9LAagt0EUK2z6HqY08E9_j2PJNH4b6MPSVrMYDC6NyH7V0xqdI4Y_cWJ2qRSGfD98cLnJz7Ptw90_Khl6o9aylN65Kwq1QpOL_gCSiRcYlXEkpxeV6cMG962KALWoV8S4xS3RTuY_UHSsg=s4800-w1400" alt="Country Cupboard dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCr4mZA0XOGWVzyYpd9woBhId2y3iaSEkN7e0Jf3v7BBqae8vXuGIh-UpyFA-ONPExPeQ24HSxjAwkPfZPbh7SYknBQfhRncyp9F_WqaboSZQIywrsoDup8elSRljRVfe7ab-pljJhtMsdu3w=s4800-w1400" alt="Country Cupboard dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCsrxbdWxB8gelsXrERijZYS2mZ522Fke1Uzf3aUNzF-cqSY_dU_RP02dE8RLsbfBp7JDLeXQoBwmfNlBMLveuVHYcqrf19vQWaReAaRa8zb-X48VaSWxrofI7EK-1qh2yn8CQo718OxOtjxto4OvrGlA=s4800-w1400" alt="Country Cupboard dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDR60Ukecfc_4Db3PFtxz8T0Ctp6n71zEpUnbAs_uspty8pGV8epX5dXr5UKMszgkgykWcjwtyFilSq12XOme8bCWV5PHL15Yge79lvgfWcs-NR18-mZ7Bn4xL3Hr0t86om70GU4ZO-N20DCmmsu8opkQ=s4800-w1400" alt="Country Cupboard dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -111,8 +113,8 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="margin-top:10px">{{PHONE_LINE}}</p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Country%20Cupboard%20581%20McCoy%20Ave%20Madisonville">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
