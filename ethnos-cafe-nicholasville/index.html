@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjB5x3pbkL4vfMEgoAIzUezF3tZPt6WrjGKp0nUi8vLlQJ8Knmuh6Vihqzx5dU7EXbhzA0GgDUFqw5rrHtm4eLxct56-yK7h1WHElbYWrxqOSZp7eztMQnEwT10R_cFy1t3dSvsZM4cjCmCvw0kOVRgRfg=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBS8pPhcOUyqQTxC17VJ2v7b0laEVXqQpcuVZJE_86VCVelqDcCI-Y1m82mU5M-yKRqVG8OhTPJEVRvYASuSkCBke9PmJ5kUlEHvm_zc8Iqx2QeJ5K3gesWmcG-E7FGhnR3MbFtqNCWmdfTtlF-hvx1NA=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,32 +72,31 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Ethnos cafe — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=ethnos-cafe-nicholasville">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Nicholasville · Restaurant</div>
+    <div class="eyebrow">Nicholasville · Coffee</div>
     <h1>Ethnos cafe</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Restaurant in Nicholasville — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee in Nicholasville — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.9★</b><span>26 Google<br>reviews</span></div>
+  <div class="seal"><b>4.8★</b><span>32 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Nicholasville. Ordered in two taps.</h2>
-  <p>Ethnos cafe already has the food and the following — 26 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Ethnos cafe already has the food and the following — 32 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Nicholasville</h2><div class="review-grid"><blockquote>"New cafe in Nicholasville with Ukrainian flavors. Everything what we order was tasty, Nice atmosphere, professional waitress. Big portions of food, definitely…"<footer>— Leonid, Google review</footer></blockquote><blockquote>"Delicious food and great atmosphere! Highly recommend for a good time!"<footer>— Paul, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Nicholasville</h2><div class="review-grid"><blockquote>"New cafe in Nicholasville with Ukrainian flavors. Everything what we order was tasty, Nice atmosphere, professional waitress. Big portions of food, definitely…"<footer>— Leonid, Google review</footer></blockquote><blockquote>"Food and service were excellent. Highly recommend!"<footer>— Mario, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAijdNFLygyQRiNTVVUHmnHAd3NtMTT1Le9CBzWojfvLNTsj0bIqUtUuAp0uPnYS4Hm9zaUldAFWxYrYSfCUxOj7AeV1sOaSNpL008SzaJsjADzi0KDmI_PKcKAQqJ7oALYkbyIY-CPMl7J-o_iJGtE8w=s4800-w1086" alt="Ethnos cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCu60smZQyv3VoEqAaVWRzNbL95tyaoQygP9ZAWMfHNArpHv01YxvKTP0AW0b1Nraxcy1tGT8_jsRd9mrQHJi2yuo7B5k3jXv-B1DHj1fS29G_tCieiMOVyEDKG19mQNlthT1T2wF0EI3FnruZ_cTKqlg=s4800-w1400" alt="Ethnos cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCvmVz2UyPPmJQvAX77zK8UgYrXz-1z7AsapohZ3XdBQ-SztaqWxfvTK_K4eStIVKneCToyEfnz4hHljKC9AsSEha4iTUJvmOHjvs6rS6GBbzs55m12EHhQkmGaF7P2vFgFHzLphwFtdVWYi0VY3n9kJg=s4800-w1400" alt="Ethnos cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCbvJnLkUMGNdsaJN3YUPJy5Dntxq8KMYPWYgBRdjHwdKBYRMeCD_yNny12sHVeuCYoKHAHMQJFePJqe-6reyYhwLvO5HNsDXl81Q2TQcYA3OaU7swV6tW74Sb6l8aIUOU6oeyzTC-oDMwrXQBSC91TKw=s4800-w1400" alt="Ethnos cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD8HQ7YwyphpQulOiILW0RUkaNQRRl1Hdwcv0YyKF3vxbBR6Oblz3qgC3cDXEXoUtmJoD_idl10Hijva9S0B1r0y3pQHqsGd4SW-5IT7WugVsDYT4wd8_uevJ4AM2wBUMrcfr3zHawIy-t4hqCDZAqJyQ=s4800-w1400" alt="Ethnos cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBIrB98bDeYrxLEm_sRW53AjQKrL-FjNAiSv0y6GAX5GKLc4upI9ite61Rtb43j5p0Y2U-stAeHcAqHX_vV--8y8lmgRJfhGaYDmzUH44OP9JH6igGC3hzJ8AXGwkrBbXYjT4992QlcvfgqESY0WXCnDQ=s4800-w1400" alt="Ethnos cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Nicholasville</h2>
     <p>189 E Brannon Rd</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Ethnos%20cafe%20189%20E%20Brannon%20Rd%20Nicholasville">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Ethnos%20cafe%20189%20E%20Brannon%20Rd%20Nicholasville">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Ethnos cafe by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Ethnos cafe by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=ethnos-cafe-nicholasville">Claim this website — get it live free</a>
   </div>
 </div>

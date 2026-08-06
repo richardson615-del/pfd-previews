@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjA5m1_alyXiJudlK3NuI08Qi08EHPTJbhRSAXBNWQV8VA3Tn6_fk68qvwxh_DZ2xYofDHymZ93-BnwbI2irwNzPxDNuNGJIICSya0Qf5VW_OVQF19fYpCUVtH5FKEU765lFlHuvY7m1ylaTqcpuo7rA=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCrdeFYgWhyjVfxi5Zbc3ek8oMisFbFFeXGEWJVrPBR8tu5VAS1RKXNus94gClQBx8AVNvMxwbK0bHm65bc6sJjsVrg4rBvCpf3dit7IXYnH2rs_mTDOFbDxIDsKe88ai6M2WuywBXmV60H45sBI7NR=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Split Bean Roasting Co. — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=split-bean-roasting-co-lebanon">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Lebanon · Coffee Shop</div>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBoL_6Hynlgife6kjRJ-URMoc3RSaHpxGEmVzDo4jqdRYQQ5kfwVWOK4ucCH-hFp3GsQ7791Mp6du7BH2oZEz39OU_T-Yco9RVE7xb1Ob3rLwGuWTH_vZd3mxU1mJVDB9XYah1abcs-U9uELOZHYGBBKQ=s4800-w1400" alt="Split Bean Roasting Co. dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCumGBtgGlPrHE78pyvR-gQAkb0a0zBTUy47YSqvUb4z-21_HumogCfTwTtOkbkPC42hwS5fUI9zi4VEPIl4twU26rW3sKBVmVi9rJ3nLm5Q-aPS5FpVBlsv3slIXfMiNDZphK1SiaiuutG17fSesdh5w=s4800-w1008" alt="Split Bean Roasting Co. dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD3j82N0yUtF_X7gEJG1c7QL15La-gJ1nioXq1LaXehA3QhHYqTFf86TTTgTKyYTkQ9o5R5LORgbNPNs_4flMhvl7oQ_cg79uI4u86fIfJUoAATNRH-vQl7gHyIteHvrGHV20kGi9Y_i0tqLPMGd-aKkA=s4800-w1400" alt="Split Bean Roasting Co. dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAmuhmKdLjtC4FJAZB-dtxt-kgRp-2wFHKLU2EiEardRhz_IdP7lKlLJlh5VoC6COp1thVVDb1n6uGxK39LTLr-P6FHvlSRfwz-RNBtWJbtRArHgKZ6NGJivwOp-6-yMBm6T53uoCnVV5OrGwrfk4PcBQ=s4800-w1400" alt="Split Bean Roasting Co. dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAB7xMglzYlk_UmaI6MqEoS8bVhou5FeKR7prFf-5jnOGVesQrHU21Aqzni9B_snWYaBvfil2sZMHT8HCWIOTfWtbEypahuO3u5_0RD8NK3C3Bx-z72d2f2qWIx5cfWLQKxxJsYcPqrgX2Fno6PqrOPAw=s4800-w1008" alt="Split Bean Roasting Co. dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAMkZMg9xrc-zljqjTE_kVHzhcPTskujM8zDLP4z9iucE17BF5bvD176dxOxZ5OXiTRzNkFsfpThKfxWzoo8ug5SUh4fkhk1aB7jCpAVUQvvJbOGTsuItvX2g5XxdNOJvJN_wGnmy75Z8c2gP8lU6NXRQ=s4800-w1400" alt="Split Bean Roasting Co. dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -111,8 +113,8 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="margin-top:10px">{{PHONE_LINE}}</p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Split%20Bean%20Roasting%20Co.%201050%20Hamilton%20Station%20Blvd%20Ste%20103%20Lebanon">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
