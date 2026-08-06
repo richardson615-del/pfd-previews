@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAAOUQ73vaobs4Woni_51TNs2Y-ulq0Td_cY8eGsMIVz3EC158IQfvctlQ4AtDFQdaSuo3o2ax7UnqwLMu-LAKYqNH5DtyC055jl-0Du6bWqclVb_L5XfVIJtC0Xtwv0rSouszy037Fs_biRA=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDQxPzSSAT5rNST4mxrCdbvdFsvIQLGMZdY3o2ot_VdBdPeXMqJfHRlaRefVwnZTHpZps735gqa0LhnVZk58tMgFKcWfDfpYWRpS9ZQcDEEe3OVN8MXnMVZo0XLH676Yao8dX4X1DQiSEHRFw=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Mirch Masala • Indian Grill — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=mirch-masala-indian-grill-somerset">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Somerset · Indian Restaurant</div>
+    <div class="eyebrow">Somerset · Indian</div>
     <h1>Mirch Masala • Indian Grill</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Indian Restaurant in Somerset — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Indian in Somerset — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.7★</b><span>306 Google<br>reviews</span></div>
+  <div class="seal"><b>4.7★</b><span>307 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Somerset. Ordered in two taps.</h2>
-  <p>Mirch Masala • Indian Grill already has the food and the following — 306 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Mirch Masala • Indian Grill already has the food and the following — 307 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Somerset</h2><div class="review-grid"><blockquote>"​Title: Great Experience (Also for Vegans)  ​My visit to Mirch Masala was very positive. The staff is extremely friendly and helpful. I was there for lunch (buffet…"<footer>— Johannes, Google review</footer></blockquote><blockquote>"The people that work here are absolutely lovely and so kind! The first time my mom went in to order takeout, they gave her suckers and this time they gave her…"<footer>— Miloe, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBTK75sC6yTrpd3QfQ0ExV62BwEbG1V2VyBhkToKIV02erd0nHmD6lPbPjUf9xqPHnGzI_7ICcsQUEBYkLNRE2pZMaa5u6yuwsIiBSGYxMK4WZSANwmuNkcKUVM7HCDPs2QEKXt2JAylgfIO6IEap66=s4800-w1400" alt="Mirch Masala • Indian Grill dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDdNS164AmF3gZj4uF7EvkDDhZ5PKcOqFo7iFtjwmzpRJzCXcqrKWUKel5iizEblbltJVeDEHZfAPeludG48UfvLkL7Hxvky5FJ0mdS18DuQoDkbjmb5IgplIrP926F2nsTgxNfTDGFm_-IPw=s4800-w1400" alt="Mirch Masala • Indian Grill dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDsJrQu_7z3w5WjQupCcMd6Fav-cGBf15fF9mLLiAFvswDPfR-1KWJUdxlBZKvUaZK3Z5VhMJu8pPgZ1PkMHjUxhExG23dQKsPRecjaREN-gHUCJq3wWV3_B3bBga77MkrTFlx-OBYC4uWdYw=s4800-w1400" alt="Mirch Masala • Indian Grill dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDi3c0oNK1caipj7QrDAFvumJQEqxPCFousA2ObZWrkTsgb1033bXlDjNLLoF_UrOZF-XFmdoVA0Vag1om1vZu0oHt8U7xJxQZRR6rE9DTt2C-y6Q-1r4n2oRA5s3Di2kFDS2On1Uucx-IQgdYpkhDs=s4800-w1400" alt="Mirch Masala • Indian Grill dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCSc2PnBP7TVvUy1KYVexkyycYsu3SblTEFwe6-fic3gU7RnCUXwExIAvNUW965LvQCFqLesWVFvKa3MZwQbRaDMO952zC6Y_vBttgnuk00q6GffCneVu7Px3jqGiEcSyrbpMPKp6Z9ZnzR8Q=s4800-w1400" alt="Mirch Masala • Indian Grill dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD2XOlDEP59wtWpm-KQvR_5WnTN4OreU9MFU4-2dyRnDY_gYtffErpzs3vm0_q97anoTwm9evo885Rx61CkOT_E3p-Axmnrvc0LCs81inbLGQPBtkcqftfPUmT4mSVj417sT_N_nKjLHIZOJw=s4800-w1400" alt="Mirch Masala • Indian Grill dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Somerset</h2>
     <p>370 S Hwy 27 #13A</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Mirch%20Masala%20%E2%80%A2%20Indian%20Grill%20370%20S%20Hwy%2027%20%2313A%20Somerset">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Mirch%20Masala%20%E2%80%A2%20Indian%20Grill%20370%20S%20Hwy%2027%20%2313A%20Somerset">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Mirch Masala • Indian Grill by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Mirch Masala • Indian Grill by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=mirch-masala-indian-grill-somerset">Claim this website — get it live free</a>
   </div>
 </div>
