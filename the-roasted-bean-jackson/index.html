@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCYnsGM2xj8i-Pbdrc9ZuOYSK5wZw6rHo7Ows-pcW_XZQaZFxYd8Kh-BxlAg_reMZ1HKpE_9vRKl0Uwnp8J5nvTcEE9yBLP2NE4zz6GX3RPzKSi-SadZxiJmSMp4z616-Ou_02XCjsWdnSLcI4=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCH42O39pTeUo6-rS-nUuXcDthjQff2YIcY9vy9cr7NTywXvvkwewqSmLu50e3Wipd6h_2mSdE83iiBByxOcrTGIMHjinHtzmhU6eZgKIakOZlHc0ToITSjdcMF20J2Y0WFA6ROlioekM8BN1o=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for The Roasted Bean — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=the-roasted-bean-jackson">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Jackson · Coffee Shop</div>
@@ -77,24 +79,24 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Shop in Jackson — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.7★</b><span>68 Google<br>reviews</span></div>
+  <div class="seal"><b>4.6★</b><span>70 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Jackson. Ordered in two taps.</h2>
-  <p>The Roasted Bean already has the food and the following — 68 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>The Roasted Bean already has the food and the following — 70 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Jackson</h2><div class="review-grid"><blockquote>"Stopped in and got two frappes, a piece of cake, a cookie, and a fruit cup. It was all delicious and the owners are wonderful and super kind. Will definitely be back…"<footer>— Brandon, Google review</footer></blockquote><blockquote>"This is a hidden treasure. Off the main roads but close enough to be seen. Good food,good people and good prices. If you have any food allergies, no problem, they…"<footer>— Richard, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Jackson</h2><div class="review-grid"><blockquote>"Stopped in and got two frappes, a piece of cake, a cookie, and a fruit cup. It was all delicious and the owners are wonderful and super kind. Will definitely be back…"<footer>— Brandon, Google review</footer></blockquote><blockquote>"A MUST try!! So many fun,  delicious coffee flavors to start...I added flavoring to my unsweetened tea and oh my,  so tasty! The loaded fries are "bussin bussin" 😋,…"<footer>— Kelly, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBHG5k-3nN-eNMKAadgqx1-FZor12Th2c49-wzKkkluIiEDvdyhosAr9Gs8L5R3fBhm_i3n2-jS489wAQq-fpPjArpv3LCHPXPS1IYNpnbml4NR79R13qYlDZJ9bEbOa9yrCk3GLbnpRc1o-g=s4800-w960" alt="The Roasted Bean dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDm1HraUCY6-AZQcZw7LEvDLh8M1J10VdHGWabU00pQ2lc8hOA7kN84VW58PS6h5ihNi9mjgjPtimq3Ucr1QwlQmf8qyPSYUokT5sWkpYgN-elxC26n8H1X7HHPdBNs_ZkYEuPfnfHyrGY3ckc=s4800-w1400" alt="The Roasted Bean dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD2Lb_B7M39BTrOc4ZhDy8ACx2VfuiW-ZrxMr_Wxp8AcoWNLzI-MtInOH0YCJo6ley6_kKbAGh-fcj0UlDCoMY53qiPoY59SQFAZ3dWYfe3vyO5cNMsReCLG1_rJBRGBIHNl12XFmsd6aLLdQ=s4800-w1400" alt="The Roasted Bean dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCEak-_Op_BETiFu14ry6lpRoPbTkSjK56X7WHq26F6fOvyTdcP2qq_cdLQ4Wj9sK0eD-fjM7iyYiDJ3YK2nqDnKq6Je_Az7KxnR8_zwBS9ncYcYRhDYtMqJy3X1D1rgf7nB3iJfAFTc20Xcw=s4800-w960" alt="The Roasted Bean dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCG2kGoM3IWh5AYLWv5jxoxBuQDrT3gP7-pAmofzJ6SC84rXTRN2GPDjzA8_mgNxthOboK32gB6E38UD4Ulxt1O5WjLL-8SRmbHrJjZ1gfBY-URGLy0NM_0OzXRGyrgvUlogAT6krT97jEpBvI=s4800-w1400" alt="The Roasted Bean dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBUpN-hqW-tgbTVrSnZ5eq-m56rlVurs03SGTlSQq6rsvvNy-jzqTAREWF-A3hUiTBC5MTF4cWhpLf83B_ijEFWPOFgGGAjy7O8kqk5P6Y38LBkyDtX85c76gwmao1eW_ymnz3EsRbmdnwDOg=s4800-w1400" alt="The Roasted Bean dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -102,21 +104,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <div>
     <div class="eyebrow section-eyebrow">Hours</div>
     <h2>Come by</h2>
-    <ul><li>Monday: Closed</li><li>Tuesday: 7:00 AM – 4:00 PM</li><li>Wednesday: 7:00 AM – 4:00 PM</li><li>Thursday: 7:00 AM – 4:00 PM</li><li>Friday: 7:00 AM – 4:00 PM</li><li>Saturday: 8:00 AM – 2:00 PM</li><li>Sunday: Closed</li></ul>
+    <ul><li>Monday: Closed</li><li>Tuesday: 8:00 AM – 5:30 AM</li><li>Wednesday: 8:00 AM – 4:00 PM</li><li>Thursday: 8:00 AM – 5:30 PM</li><li>Friday: 8:00 AM – 4:00 PM</li><li>Saturday: Closed</li><li>Sunday: Closed</li></ul>
   </div>
   <div>
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Jackson</h2>
     <p>21 Meridian Springs Dr</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/The%20Roasted%20Bean%2021%20Meridian%20Springs%20Dr%20Jackson">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/The%20Roasted%20Bean%2021%20Meridian%20Springs%20Dr%20Jackson">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for The Roasted Bean by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for The Roasted Bean by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=the-roasted-bean-jackson">Claim this website — get it live free</a>
   </div>
 </div>

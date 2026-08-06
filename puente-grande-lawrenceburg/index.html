@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAbubo6ROKErv7pbSwzBbwYGN9yb_yIRp9BKI1A5Av_pLzHRPVrSPXPXrHax9I_KcKEprpUMEWVCy2yWxvYjE1a1mG1gt2cIIkYFYdjmLg6r-dasBJdjfEHo-g107CSrJwYrpnJyQxi0v1H7Q=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCpEZfR2RaHdxoVbwpdZdCX0wRnAEMbjFvoqh550uInOGSGDZQkQDCRI7wEZvAHSG5Mw5J96jdraOg8gnu5_3K_sWKIsPDF-tzKY2o4Ov5cfXlldmW1es-KcKfUEZO39cwn-mgIeCMI-cBkRQ=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,15 +72,14 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Puente Grande — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=puente-grande-lawrenceburg">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Lawrenceburg · Mexican Restaurant</div>
+    <div class="eyebrow">Lawrenceburg · Mexican</div>
     <h1>Puente Grande</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Mexican Restaurant in Lawrenceburg — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Mexican in Lawrenceburg — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
   <div class="seal"><b>4.5★</b><span>581 Google<br>reviews</span></div>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAD7sQqD1FnvkFnbYmkYVpYf8wy4tIYARqNwvzhadnPy5XZ1nl3gBQTvM9PcWyheWhvLc6F-52Yap9kVrdzc2OSXi5Epea2WdK-NTs36S18VYm-_KcE2HfA73s4Bvcx2mveSRadk5GZ91WW6A=s4800-w640" alt="Puente Grande dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjC6144XNkS8twZeSO9YuSkkYAYSVNDC0N9d38Ot0bMhQ0Hm_mLWrZ5ZssDpQ2fNpHf_pqihyt30vJxcMTk4AEaNkiLBbn45VUcacBkxGkF5ySMnAzTM385NSEmgs5ppynpqNAbUQETCnBpQ=s4800-w1400" alt="Puente Grande dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB2YyiPze63SNDBx4ehHQHd6gfvejOywec_BugbDwxFK6PyshrqbAE9ergbj5PxjNVf0Q45TFcyksooYqUGCKYsLCNz2_RixV9GcGof4zVKoF69dLVV80GA0xsC2ll6L3GQfvVYgf6wGrpmLyg=s4800-w1400" alt="Puente Grande dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAhMOXTaGspFEDwFsv2Y79OaqFilvui731HLwTMTTkp_7UvBI7dd5laFLRCBEu-W5x1TvX0Yvo_c2SkyPwxBhCy2_y95w9nrhrnNU-LwZ81yv0ZBMaYswV3Umg1NB6EomIaF1dihzNii5z8rg=s4800-w640" alt="Puente Grande dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjC6Z2AdyoXZsl-u9gGQjKv45AIUCmxmgJVan40_q16XMF3_DOOBkwwfMgEuxQNgrNyJUCG1P672OY_vWtsezPhC5dUhU5v2igLzhiQ2bItP4ePekynwXqydb5cn-3J9NovI4WwIAWnKTHde8A4=s4800-w1400" alt="Puente Grande dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDnikx-7BR80U-DpJuU8ds8dg_oqX-jPDfrqkBf63nfYK8OPGkqq8I9GPoWtSyIef_3cpXkEla22xyU7OeL3p-OzJzhLBELUN7Oz7RlCG-8BFdF2q8Xtg7fM3qqGUgR0Io0HdEjFqSDrgCCNg=s4800-w1400" alt="Puente Grande dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Lawrenceburg</h2>
     <p>2022 N Locust Ave</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Puente%20Grande%202022%20N%20Locust%20Ave%20Lawrenceburg">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Puente%20Grande%202022%20N%20Locust%20Ave%20Lawrenceburg">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Puente Grande by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Puente Grande by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=puente-grande-lawrenceburg">Claim this website — get it live free</a>
   </div>
 </div>
