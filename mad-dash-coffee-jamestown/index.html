@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjB8tmmwQkDRAe8iQuwN1m-8J4LL_PD7Cr52Z-noEPXgRFeGOKHe6SQMfotCFVxpATRPmq_rgardQDc0hPfwhdn5pejatR2E4pwiqMxTPUEyow2w2He_QQ8jcnu62Vd6uHmBMe7qb9Bg5Sjz7A=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBZagpxIbt5BibaX4NrMwmoejKlJXnYPRfHP6RY5xrhgCc6MGL3pQ5tT0IaGrzd9_9ACXymlri-E5LR8orGYqtxYnZPDV8qdcPBwINqvulQVCL4t_yVT2EliMBk60wLybot0jvZHIYYR7_enkI=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,12 +72,11 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Mad Dash Coffee — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=mad-dash-coffee-jamestown">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Jamestown · Coffee Stand</div>
+    <div class="eyebrow">Jamestown · Coffee Shop</div>
     <h1>Mad Dash Coffee</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Stand in Jamestown — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Shop in Jamestown — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
       <a class="btn btn-ghost" href="#order">Order catering</a>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDcCvEqfmR2FyIXoUUU8rEBlSOG0FKe_Odpi-1V_-nE4DiRS8xyh7ILHrvmsFjC9NLQeB44yPRBO2XXnU05srXy6vDb0Mnv8KPwQIv-bkPMNtz6TTKQEsNV6sHfD2_Nj4nolDCJoYQAC38-yA=s4800-w1080" alt="Mad Dash Coffee dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDUPSuhYA3vKW-j8M2ZrhKb9-oMdAqIBrDA6y3BhtFB5zgF-KFzucfshBDnsGmvgA0pkCuHQ9U6v8NPAb4mgF0KgiUwQnxFjr9hrTzOpJE_BKDXo2nDgJxyIwtBINqP9DVRGm9-_yCuRKib7fuhlM7sMQ=s4800-w1242" alt="Mad Dash Coffee dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDnlFy7syrk0RkafbpaqBxaHxu5wsDgyQbTnxYwE7V7eFqHrXvBrM9oy0xHO9Sg34SFshfsfO6ic8gB-vECngVWPOvW861gQu40kuEMwMWK6wV87NBVY-ng7Zov7wuB2kwOzp3kGsHjvqbyJA=s4800-w1400" alt="Mad Dash Coffee dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCmFTH2v7JqRnqlz0KZlvVIurZAkLDTDOTr9FrCSCm9OZrvh__hs95C6jEXuIUZH-_-vQUspCsCI7zzH4I3wwfLputYjkyPOiXbyjoHaAWeHd3ggIECsDz2062BMUWFhlzu6p182RlNKzkzxlwONiBn0w=s4800-w1400" alt="Mad Dash Coffee dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBzLdguz9sf_Az-ZpK7MxDFBNarJEAnvEZk0Tmj2INTZcU4ESLrMQBJV-JqmjXKxImv0y1mzLJ8tn5przSgj1mV4v1fGDbUpPJdYrSl5HjsisvqrbP15GVhqU9scNKBQHvFkwDTU8YSr6CedJlvE7HNeQ=s4800-w1242" alt="Mad Dash Coffee dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBbAOigNuWANwKa-8Q0ElRZAoAeh2CLR_Tvv7mPjvGK2JZxx7ueL8O2i20U6dn_J698EiroQm4wpzpFDmHyT6kVmx_dP9C98yDjdtABtkoLgmPNiuaKY5llw_Vo99OjAg_W-Y_DmtqNDIe-Kw=s4800-w1400" alt="Mad Dash Coffee dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -102,7 +104,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <div>
     <div class="eyebrow section-eyebrow">Hours</div>
     <h2>Come by</h2>
-    <ul><li>Monday: 6:30 AM – 7:00 PM</li><li>Tuesday: 6:30 AM – 7:00 PM</li><li>Wednesday: 6:30 AM – 7:00 PM</li><li>Thursday: 6:30 AM – 7:00 PM</li><li>Friday: 6:30 AM – 7:00 PM</li><li>Saturday: 8:00 AM – 2:00 PM</li><li>Sunday: 8:00 AM – 2:00 PM</li></ul>
+    <ul><li>Monday: 6:30 AM – 7:00 PM</li><li>Tuesday: 6:30 AM – 7:00 PM</li><li>Wednesday: 6:30 AM – 7:00 PM</li><li>Thursday: 6:30 AM – 7:00 PM</li><li>Friday: 6:30 AM – 7:00 PM</li><li>Saturday: 8:00 AM – 7:00 PM</li><li>Sunday: 8:00 AM – 7:00 PM</li></ul>
   </div>
   <div>
     <div class="eyebrow section-eyebrow">Find us</div>
@@ -111,8 +113,8 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="margin-top:10px">{{PHONE_LINE}}</p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Mad%20Dash%20Coffee%20446%20N%20Main%20St%20Jamestown">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 

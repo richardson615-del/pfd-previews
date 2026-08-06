@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjB-5tHRP3NKWNvvMzyJG437lzEdXojDcINfLRdkvBG-0cOn5HPMYvX4I3gCjAczmnEllq0s6xrP-k1Z4cpgtC4_CCe0ZJ1wtV_JsXfoYHZXt2mzRRLN3i0sWPDgdYVNDPzGBOgVFk59EW5fAw=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDh8vcAJz1zDfSO5vYw4IvBsZ4MWg6tNpqSN-xb_mApTzYuCxJWSLA53e5GFSH7I4RlfFBzO1YuAr4RiPKafu_OqRY5XHe_X85cQpvpw4-is7fv9Es5z3_w6JvcKyh7Y-eVqhGgJ8ZYIZn6CQ=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Jack's Java Urban Cafe — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=jack-s-java-urban-cafe-paris">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Paris · Coffee Shop</div>
@@ -77,16 +79,16 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Shop in Paris — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.7★</b><span>242 Google<br>reviews</span></div>
+  <div class="seal"><b>4.7★</b><span>241 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Paris. Ordered in two taps.</h2>
-  <p>Jack's Java Urban Cafe already has the food and the following — 242 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Jack's Java Urban Cafe already has the food and the following — 241 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Paris</h2><div class="review-grid"><blockquote>"I stopped to in for a Caramel Macchiato and a Cinnamon Roll.  The Caramel Macchiato was fantastic and the Cinnamon Roll was divine.  If you are looking for Coffee and…"<footer>— April, Google review</footer></blockquote><blockquote>"Jameson and Kelby were truly the best.  ⭐️⭐️⭐️⭐️⭐️ An Absolutely Wonderful Coffee Experience!  We had such an amazing visit to this coffee shop…..easily one of the…"<footer>— Mac, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCbjHd-zTCF8i_JUZ4g9ClNwzjZwM6-GHKkD3ige0BT7I-vekjPQ95REogqGBhZaa632_mQe_E97prP_bFPFmvC0j2lPYpXkIh3XjE0OVd5WkIcH_u6QYQYPdvixFZXBmgimNXYYy3pvC85sA=s4800-w1400" alt="Jack's Java Urban Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAlxQGDl7sJfKWLjFBdwPc8du7mUa8tmX0v8hO4-11l5hlk-nbwLtZ05zC2B80MN2ndxIbfC5mUSYeyLCTD3j4fWwfCY4tzwa4Y142ijPbgpqlvhU2zxEu-AANnR55wlVH7Q35WZ4N7AiEWUKV0Ov18nQ=s4800-w680" alt="Jack's Java Urban Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDgucnO_KW6j4FaL3M9i5Ea3k-852wCwIi_NhTFIa5V_EJcELSFUY4L09BASuKllYTUKk--QW_rRuE_3rBOx8lUIL--bgFx8Sd_if5G6o47goEu8fouCrd8tF5IOIskajOQDItLb526T2THW3xKThqffw=s4800-w680" alt="Jack's Java Urban Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCHAKKjrldxCrtoGG4cAARCHV5Ryd93ke7n56_LRIcCLvrhqw5mVPJ7hNULX2s7sWNXr7JZsamum66SGkgmXsrpeNMyFSiZ24GH5eV41k5ASif9-wT0ys7nu0_iOoWHgf5o9r8eYerPqo9zng=s4800-w1400" alt="Jack's Java Urban Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjALq873sH4YA8V_KfC0eOZzqeatOKPYxgVr7gSR4Lwp17pbpfQ_p5Jpj-E-pZmlgB4tlmrmU7QNaurtoOzEedpQ-WdSuxRVQu2gyVWi0BaT_M6MVVAvFC0weZsfVP9OW5tBFcrSQ0tAWRFome5VQIViIQ=s4800-w680" alt="Jack's Java Urban Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjACPEgiKUs8C-cgWysKuLe8D8wQDONMBKyjiSRQM_T9z6M-RmrNIyeKQnSPZaboeBILO8pBL6DztOJspI-LMnLV5l6BK2ZF2nqvPl7wSblcHsqr6kJaYzjgpCCGs3N8J8F8C80cm2ayXXy63kwo1vWndw=s4800-w680" alt="Jack's Java Urban Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -102,21 +104,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <div>
     <div class="eyebrow section-eyebrow">Hours</div>
     <h2>Come by</h2>
-    <ul><li>Monday: 6:30 AM – 5:00 PM</li><li>Tuesday: 6:30 AM – 5:00 PM</li><li>Wednesday: 6:30 AM – 5:00 PM</li><li>Thursday: 6:30 AM – 5:00 PM</li><li>Friday: 6:30 AM – 5:00 PM</li><li>Saturday: 9:00 AM – 4:00 PM</li><li>Sunday: Closed</li></ul>
+    <ul><li>Monday: 7:00 AM – 2:00 PM</li><li>Tuesday: 7:00 AM – 2:00 PM</li><li>Wednesday: 7:00 AM – 2:00 PM</li><li>Thursday: 7:00 AM – 2:00 PM</li><li>Friday: 7:00 AM – 2:00 PM</li><li>Saturday: 8:00 AM – 2:00 PM</li><li>Sunday: Closed</li></ul>
   </div>
   <div>
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Paris</h2>
     <p>210 N Poplar St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Jack%27s%20Java%20Urban%20Cafe%20210%20N%20Poplar%20St%20Paris">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Jack%27s%20Java%20Urban%20Cafe%20210%20N%20Poplar%20St%20Paris">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Jack's Java Urban Cafe by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Jack's Java Urban Cafe by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=jack-s-java-urban-cafe-paris">Claim this website — get it live free</a>
   </div>
 </div>

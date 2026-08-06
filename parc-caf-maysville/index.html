@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDd-rfURcOV8igagUo6H0LQlhTau9px1DLrp8l_-SKcG1tDzA2VP5P-dWMXAbstOsd0i_sXmyd8yOr6TyCyWCRxz5W1kmyiszohsDs3MvcIyVYPFPbb2nXxnq_tA_DnoRTDQSMPV8jNW2cSAcmHflBn=s4800-w1024')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBlt_CgIQ5KsALssB0UpTjCF9ZCcJQUTh6MqJ6BthGTGIvNCSyvTS65kSEa_SaoPT4PrwdFXi4YiV6Zj2l21fJoSVUBBuFy3GUy8FZUne34JAIRuiIFQeslCNNV3lXGP0i9zsoCpQt6f0-jUg=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,32 +72,31 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Parc Café — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=parc-caf-maysville">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Maysville · Restaurant</div>
+    <div class="eyebrow">Maysville · Cafe</div>
     <h1>Parc Café</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Restaurant in Maysville — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Cafe in Maysville — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.7★</b><span>567 Google<br>reviews</span></div>
+  <div class="seal"><b>4.8★</b><span>285 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Maysville. Ordered in two taps.</h2>
-  <p>Parc Café already has the food and the following — 567 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Parc Café already has the food and the following — 285 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Maysville</h2><div class="review-grid"><blockquote>"Its a cool little spot in Sylvan park and if you've been to Sylvan you know that neighborhood and it's residents are very unique. Unfortunately I didnt have the best…"<footer>— Oceanthebartender, Google review</footer></blockquote><blockquote>"Not only was the greenhouse dining experience beautiful, but the waitstaff was some of the most helpful and hospitable we have ever had! The food was incredible and…"<footer>— Mickala, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Maysville</h2><div class="review-grid"><blockquote>"WOW. I stopped while passing through Maysville and was so happy I did. The space is inviting and beautiful. The staff was very friendly. And the FOOD. Absolutely…"<footer>— Bethany, Google review</footer></blockquote><blockquote>"I searched ChatGPT for "fresh and healthy breakfast" in Maysville, Kentucky and this placed popped up. Smallish place, even a smaller kitchen, but with a big heart.…"<footer>— Jeff, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBZF0ARyyQjx2NJay3nOBCCWmTrO-kQZ2FqtkQBkZ7sWWjrOKb3OImctTSJhY317ulP7KfZVWSWzEInVhUQluJaj0r6V67Nq1_QzLLeVz15GSEgiwaN8LFqGIG7usL3f8aO0zykTAxa1kuUkhW9wiou=s4800-w926" alt="Parc Café dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBePQEBnZAisjO61vW3kHg16D4yaWrxIjF0Wxq9aaB6DPFnk68nDt2P0U8rnftnlG-eoLpy4ssgo-buM4FT4dkif3ikk9ra2un50efDzT_RzJ5F5v-oAyxDLh0AD45zllSDABQcxZtfsthrTZp3RE12=s4800-w800" alt="Parc Café dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBFMyfr7rPqrsTvKgjKSS85kfixNWU4zZVXZ2H0JO_rqPnjskiEcaIsNCLXULw8Sypm2nX8ieWEr4iw02Q2mlXQo8ovvoteO-qZmB0b9R7XO8XVzNkH88xrgI2MoIzMuA3qi6uR7DEZAxgjbPOwfMrhcQ=s4800-w1400" alt="Parc Café dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD_LXjkL0-HK104VI0pskM5-oWq3x9rZeAQuGNjE3l3jPOst0b_au-iZJ_JyYhu-exV0rS8WitvQOnBl5WQ4_c68TeeJi7QeRrf4HyWXC6sroYmhdV51zK2-MygGI7KfvEmM2SIoIl3EEtH66o0EwAWQQ=s4800-w1400" alt="Parc Café dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB_WHMrfU-uaN30HoU-VXy5bhC_8d2EdpgLTdo4R25Qw_lILVj9MfDupfq9VCt-8ROJEpXB54rb0EZI7PDV1uPtIWVnOEfWjfsETlbAHDjMb4eNmHTEqjYUxJA40KdC-EwjnilfM2uV2hQCgLAhYm9H9A=s4800-w1400" alt="Parc Café dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAdxj4iPav2W69cDkVltf5E8MMWqJS5mKtHURVq99vvaV5h_BKdtCyeRxMbeLnbPV0YFRAelpHsZYL3MoCQmP-Dy6mOdccMPVxut87YLEjfIB5pazkhoU7lHF1wjHSK2avXQ99lK03cVsiiPqTyRBhx7w=s4800-w1400" alt="Parc Café dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -102,21 +104,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <div>
     <div class="eyebrow section-eyebrow">Hours</div>
     <h2>Come by</h2>
-    <ul><li>Monday: 4:00 – 9:00 PM</li><li>Tuesday: 4:00 – 9:00 PM</li><li>Wednesday: 11:00 AM – 9:00 PM</li><li>Thursday: 11:00 AM – 9:00 PM</li><li>Friday: 11:00 AM – 9:00 PM</li><li>Saturday: 10:00 AM – 3:00 PM, 4:00 – 9:00 PM</li><li>Sunday: 10:00 AM – 3:00 PM, 5:00 – 9:00 PM</li></ul>
+    <ul><li>Monday: Closed</li><li>Tuesday: 7:00 AM – 12:30 PM</li><li>Wednesday: 7:00 AM – 12:30 PM</li><li>Thursday: 7:00 AM – 12:30 PM</li><li>Friday: 7:00 AM – 12:30 PM</li><li>Saturday: 7:00 AM – 12:00 PM</li><li>Sunday: Closed</li></ul>
   </div>
   <div>
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Maysville</h2>
     <p>35 E 2nd St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Parc%20Caf%C3%A9%2035%20E%202nd%20St%20Maysville">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Parc%20Caf%C3%A9%2035%20E%202nd%20St%20Maysville">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Parc Café by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Parc Café by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=parc-caf-maysville">Claim this website — get it live free</a>
   </div>
 </div>
