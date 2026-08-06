@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAoLPGzUKTOtTIgufrgIZlda4D4LGih7bKH3BZ0LO4lwo0fMjpnJWm34gimafxFSiqEfSULbXxwlAKIyoP8Ybn-4RDn0tXfI9RD0AuMVT0_k8VeBm2A2u8858-J-G8R6IqbK-hVX7-bEDVzsJ_0owaRbg=s4800-w683')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCphV0nBVW_BeNWk50h4K9oxJ4CmzekszMf9wuhHEaJK0SphwP3B8qImjKnFFDDeF2I2RF7TtAFllfcV_umHdymCIFc_uPvKzG3Xay-Evvy-z5XFjGOolnVXUX43zJC8IUZ_LSchH8DMM3DZWYu-gwcUA=s4800-w683')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Dub House Coffee — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=dub-house-coffee-benton">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Benton · Coffee Shop</div>
@@ -77,7 +79,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Shop in Benton — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
   <div class="seal"><b>4.7★</b><span>27 Google<br>reviews</span></div>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBZ1bZqPOz9_vaAxFpFIs1ZHfzvrzzsmhx5m97ZOHXzGAsr1adp2NWYJ-R7nxDHMfLZJ2xWLTty-ZAuJUjW77jrpq1WNZxTdZwIwMIT1ZJ6GfrG4t-AD3U1uwBG1wTH4F35mbi4zsR6MvjJ0afGKpBL=s4800-w1400" alt="Dub House Coffee dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAoaXpV8PX56iB3AtRyuxeRS6izPn6tmVXWscfKGhbP5n3rZeZZAb9-Yv5K4uUSRR9NYe1LEB6X7If6hBlqJqmJum9nAVP5i5EBpJctTJcVsUc6_L5Q_FZG8squeaLPaWKMi0zPMpPo-JQU93zIH_qD5w=s4800-w1400" alt="Dub House Coffee dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAKIg0y53uRsjw3BtvZBawx-4A-V1jTb7QfOWgxqIPkV7X3Y7svckJEXoKsLY8usJn6ktDPk3R5o7YU5JT-8zhKLxJviKA_E7Bkr09OWok1mYIGFtcfO4ZrMzl5W1dLII6t_uCRNijksjTYK_dfQ7Fc=s4800-w1400" alt="Dub House Coffee dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD6jO8pf6bX6OYg9ti9xJEvwvI4QVjRe0GWUwvXHPdbco06Xv7vh7JBnAf73VmDuLlpuvByQtEjCC8wOWoM5WymaR7Mh-5wMPG6GR_aIqE4TCzYxJq1B0NTMdGCIQmlJ56LJSsj7S93Ujsv6bXNTz5a=s4800-w1400" alt="Dub House Coffee dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBuQH33ANVFlVNq7sSeT_ojBffIGih672_vYYhQNwyCBo5RkCZ4mDhNQTYkx4GlpHzhTfTNVyxnltAzexBG-nA-5svu2JCLoCHpxF8jAr5ias8YJaCdyw60McQda5wgSid_sQhJUqRCYH_SICJjEvW3Mg=s4800-w1400" alt="Dub House Coffee dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCtrgP7vA_0vsQBOhrLvJr8dpVteTi_1viT8jbLji3tbNMQtH6PCq_perhcAyzVIn62UdqcwG4WLGJBOTepEYp1CS857yPWhGIur2zszhGce8Hyl7gWRthoia6cOSZVOY-u54cxaGMA9AULJqteyP76=s4800-w1400" alt="Dub House Coffee dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Benton</h2>
     <p>406 W 5th St Ste b</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Dub%20House%20Coffee%20406%20W%205th%20St%20Ste%20b%20Benton">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Dub%20House%20Coffee%20406%20W%205th%20St%20Ste%20b%20Benton">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Dub House Coffee by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Dub House Coffee by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=dub-house-coffee-benton">Claim this website — get it live free</a>
   </div>
 </div>

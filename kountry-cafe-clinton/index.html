@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCps1nyStK2b8Q13w5GerX7AqZvJ4T4a7YjfgOR1f4WcQb5sZ82pKcAK2URXJMC8olRKgDAX6SRZKRsJfXvpzCvsSzNsd_nyteOf0gmF5APc1qqwuTlzEa0DdPWdwHSh_ePgWFT9v6elYzGtA=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjA0cjesZBBr0emshcDgjq2jJtBAhi6GhmDU3sR6QrWiTNJhYvFwX8t-GvHA9TRSiWNlf_GuPrenCrc3gVxbmFWwKW-62FkaFtiI0G7GGVx0LdahRBxog0PbA2fLHGPIpssvNTbW2yqfhKW7AA=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,15 +72,14 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Kountry Cafe — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=kountry-cafe-clinton">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Clinton · Cafe</div>
+    <div class="eyebrow">Clinton · Diner</div>
     <h1>Kountry Cafe</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Cafe in Clinton — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Diner in Clinton — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
   <div class="seal"><b>4.7★</b><span>45 Google<br>reviews</span></div>
@@ -89,12 +91,12 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <p>Kountry Cafe already has the food and the following — 45 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Clinton</h2><div class="review-grid"><blockquote>"We took them up on their lunch special and it was hot & fresh. Enjoyed the strawberry shortcake too! Plenty of food."<footer>— Annie, Google review</footer></blockquote><blockquote>"Wow!! Just stopped for a summer cold plate.... Bologna with lettuce, tomato, onion, and mayo, and it was fresh and cool and hit the spot!! Crisp vegetables and tasted…"<footer>— Kim, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Clinton</h2><div class="review-grid"><blockquote>"We took them up on their lunch special and it was hot & fresh. Enjoyed the strawberry shortcake too! Plenty of food."<footer>— Mama, Google review</footer></blockquote><blockquote>"Wow!! Just stopped for a summer cold plate.... Bologna with lettuce, tomato, onion, and mayo, and it was fresh and cool and hit the spot!! Crisp vegetables and tasted…"<footer>— Kim, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjARcSLovVaU5tgDv9T5n5_k-HyYXDdD1v_FGdEj3h1UlOFBFnt7mpnoRKvGvnXgp9lPn37TrgMpg8uqaVaHyU8ne33aFYozdOKsi_vv3SAK-YA-GVG1H-oqbBy-R6yA1pTPh8D1a7_IWfPinQM=s4800-w1400" alt="Kountry Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCA-ikBhzdQUHcqUhlKwjHel8Kuwaz_U0R3CamPulqHc_czpHrexuDPT7KNdv9pPAPQNLU-2RvsPckeVdeZpKMueoQMq1UHxQJNzUai9m7fLMtOFbdt-Eewm6Q8E6DOvltZ-gM93e9-Hxbw=s4800-w1400" alt="Kountry Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCk5oNVzzGoncJDU4JVMAnsbMpa8fkuWe4DhLfSmcy6Gf6r17hx7guzyQNSCzZJ9BbxEvAknTxht8vowcFM3xAnjohEcCHSjFkol8VO-uf1kkBGLBEcmo3_nKA6vB-uynZhUj9cN4rz6vjUAw=s4800-w1400" alt="Kountry Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAA2u2rg5xC2p5UVOPD1OarWbGNFLGlDEsLDTH_AxuHtQa6OVVImnKBpiE-0ADNmtDFUii0FPzcvjWiemBF7sQLVdxRFVBxFtkOrVTYefkLB7AEZ9RuWW94B3aaaAHWCLFy3OsyrsNHGSsWjso=s4800-w1400" alt="Kountry Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBC0JRZ-3GLaVeFHQZNpEeiBl8cSOoiiaW3NbEgfHW6w8rB1rm4-xv_y6zUHehIpCk9Hvr2F9o6qM8wPsDHNk0QAY63gC1gVUvvsG0OkrRN8bSYqY_Tv1B7JykUCgbJC3jLyJoLKRqNoP9PZKA=s4800-w1400" alt="Kountry Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBoxCsup1JfPI8qnRNlOrLub5G5IDvNMcCREvvXsin3zHjU0e_W_94j-XZjOUVWKBnEgPvVjnoerCNjRFSJRopRRJ8bZ-TIB1wnuhu4xkotboEit3z-Mi1fuRHXpw6Co5pLDMsJ6qdFEY6PZRM=s4800-w1400" alt="Kountry Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Clinton</h2>
     <p>105 N Washington St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Kountry%20Cafe%20105%20N%20Washington%20St%20Clinton">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Kountry%20Cafe%20105%20N%20Washington%20St%20Clinton">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Kountry Cafe by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Kountry Cafe by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=kountry-cafe-clinton">Claim this website — get it live free</a>
   </div>
 </div>
