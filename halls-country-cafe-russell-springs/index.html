@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDyl4ldo5-y523-AknHXS4ZT7d1clN9oO_vYLpDT5SAubFqzjIQ5I1phTvv8C59dhal74xBtibE9-wI1rBPhdo7IyZXrongFwHpPK4XO-q8ium58cScg7DVS8jZbizVgCE7neOODqjMMYfx6g=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBPdwgqP5hmRTARP0WlfmNx4YfNaYPmTHyT_0BbJT0a1iEPtdGepeFXzLFvzchmhdc_VPIyIf66m7nwVnkodnH8NknvN7jbTb9B4BZ9C8Vud0FLAg4Ox0ioF9fOVlOVi5gGUncs4UneHLVgnQ=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Halls Country Cafe — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=halls-country-cafe-russell-springs">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Russell Springs · Family Restaurant</div>
+    <div class="eyebrow">Russell Springs · Country cooking</div>
     <h1>Halls Country Cafe</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Family Restaurant in Russell Springs — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Country cooking in Russell Springs — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.7★</b><span>306 Google<br>reviews</span></div>
+  <div class="seal"><b>4.7★</b><span>307 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Russell Springs. Ordered in two taps.</h2>
-  <p>Halls Country Cafe already has the food and the following — 306 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Halls Country Cafe already has the food and the following — 307 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Russell Springs</h2><div class="review-grid"><blockquote>"This is a quaint, local, pleasant cafe that was welcoming and friendly. We were greatly quickly by our waitress who told us they are known for their fish and boy was…"<footer>— Regina, Google review</footer></blockquote><blockquote>"We heard about this restaurant in our Church Cross Creek and we like to try new places so we checked it out and Wow! I cant say enough about Halls The owner is…"<footer>— Debbie, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAR8SuLAd5SWUY2b2iQgPTUj_9UwRxhCU4fmck0cswvxltQiX5LWRvrjJ_sIBCz6aSjX4m9-C2tEMg4m7Btryv-xsmqof-lt2LW6GyhVvj9qQOm3HI0fOlzfbEjp1PmP1559jcRrgm_7eaNsPk=s4800-w800" alt="Halls Country Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBrZ24Qj7mSXYYSy4vto43YRniLBRgzOx-_ogc6aCZtyESBO0pSPPPWUzkRW9Hf5ubUUJySqs1FAbdNuwY0vOe-LK-pslfbn9gnAsfEuRitX7MWR-R0dUbqezu9SlyJDSNttSbJx0DUpSS-UH2DNrl0iQ=s4800-w1400" alt="Halls Country Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBF2IQNhj7kG6Zum9R5DzQhhN40u7xw_3TaHAP0hVQwilnNyWV66XCwOKoQI6YNMb5tdQIXmnKxhDQzZ0dJ6SdolIuWPT4AoebfT-2Q3NkFucATqin8ci3nDR0JI2vUyvk8rui9M22OXmpua1toHKteaw=s4800-w1400" alt="Halls Country Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDzrv3Luu5lPsR6xwPXMJo7PtWJKgMlHz_1bgTeovceuAbPIr8zDxJ3cLlO0uEUz3fOen9m_bhwsKxNMMpql744lFJSBftuKkygJuZOSBOVm8euvLoXYoDZci9tBKXgpaN1-i4hFftTCt6VU3I=s4800-w800" alt="Halls Country Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCxrbmW7EL3OV4N9c33jcQxZOSkhL9LRJV-E-fzByQ3H3sHjgjehMhRQHwe49YCbz0Z6a689phzS_iXruYArmafZ8AXMlTadyvRFvw47m_IirBIbf5eQEIuKtHfUFH6QIa7gYQYy8ua1htYU0DZvpuRAA=s4800-w1400" alt="Halls Country Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDoe3JFWqKXoSCTWLS69MTHtDuxmyD9Sh_yEwq_w3hs_2rOo1YfVH7OTnJhV27YxLl9XuWy2zApes4GfASuHsRhd3wks3JftNUJR_UPWFqodOKGKgm6HaFf7KqAfrrmmydhIVOchMEjDi67I8IYhnKw_g=s4800-w1400" alt="Halls Country Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Russell Springs</h2>
     <p>4152 KY-76</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Halls%20Country%20Cafe%204152%20KY-76%20Russell%20Springs">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Halls%20Country%20Cafe%204152%20KY-76%20Russell%20Springs">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Halls Country Cafe by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Halls Country Cafe by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=halls-country-cafe-russell-springs">Claim this website — get it live free</a>
   </div>
 </div>

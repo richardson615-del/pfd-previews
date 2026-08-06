@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCwj1LWZYMKIZ-SpxFT6y_917pbdzmASv4ovHKsDlS36ybvKeg4m0DI1myzxzcl-If7KONHnns1HA9etqjwQinoCu4GlfSQ8nzP_2MtOH9aLi5Uk078cqiMnjKrinfRKlumh-OuAoellYelzKE=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDcUpmYfvFaoh3zzW_1aXKTjePq3xLahR_S-hs0RfpKVAS4kGQJjmCiuIgOfg2uo53_fnp5e2fp9xviwWssMaNwScrqO6xil6GlBF8_hl0BjTkfP91Y9NfEFZDAXZkA8Z3y9sc9Jkf16N3fahQ=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for The Mercantile Cafe — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=the-mercantile-cafe-manchester">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Manchester · Bakery</div>
+    <div class="eyebrow">Manchester · Cafe</div>
     <h1>The Mercantile Cafe</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Bakery in Manchester — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Cafe in Manchester — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.7★</b><span>553 Google<br>reviews</span></div>
+  <div class="seal"><b>4.7★</b><span>554 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Manchester. Ordered in two taps.</h2>
-  <p>The Mercantile Cafe already has the food and the following — 553 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>The Mercantile Cafe already has the food and the following — 554 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Manchester</h2><div class="review-grid"><blockquote>"We stopped in Manchester for lunch on the drive from Nashville to Chattanooga and found this great spot. I got a plate lunch with roast beef, mashed potatoes, greens,…"<footer>— Molly, Google review</footer></blockquote><blockquote>"Took my mother in law for afternoon coffee and cake. WOW - what a find!!!! Delicious cake, yummy warm banana pudding, good coffee, and just the nicest people!! She’s…"<footer>— HOWARD, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCf0rQiPmXZnpSVzgtGNzRpZvJuSgm-83kLK943vQaqTV7FQDV7Yd9gZukuMC2k9GH-xVz1BiGl5W8LrU5ZFnZisOyPf7qTr3dZwk9arpgflhUIDZa44gjHfteGgqF-ExsY-3z8qY9mkC75wzo=s4800-w1400" alt="The Mercantile Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBf5Rn4x2ESakfrVcY5ELuoNO5hfuLii5OMGLSWn8fiws7e9_o3tUO26ugffxc8mYvAXefT1byIdWNJMFO4rLUlIm2K4qJCt-NHwnxJMW1z-cR1r_ss4E3tdrR_0WHLTyj9cPh4fFEV1KiAvic=s4800-w1400" alt="The Mercantile Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAHaZSiyWIF304J48ysRzv7hxWxdoPm222j9nCrnuPXcwbx9SUBqhoRUrEOkVUWSHVNFeg5Fz88DmAldM8yuPde_txUNTVhJ8mMNpSNX53wENEBrcwXGp-eFbV_cj6Qi72N0KnrguJNftBEcw=s4800-w1400" alt="The Mercantile Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBWmwxBggrDeY091HOvfK_KueonDzSaxo4wh2zEYE1owWQ9cBnTL6Digl3R6v0RrSiSMuuaDzLSMOSksGfPHujWywGNfs2ZHiFW4DnYtvkvIo1wOI1jyZSCydzWxT_x30dNF1EHkiShcHAVLaQ=s4800-w1400" alt="The Mercantile Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAXUg-Gji_XMevDpqvdBtJSKccchmtY9t1IxPeQAXyBEfc3iHpk-nAZ9XVhhXJWcL3ktKrhlxXic00W3MfHd-fyZ1xTeM9lpohmvI0dCKM2MpLwGgS9z4_cO4yQVeKJPdrkBRPYqd7bIxJiZOY=s4800-w1400" alt="The Mercantile Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAlwRNdVXir-K_EEzhCWHqdZe7WfWfIbUwseqtOD0ST7Ev0nLuuvLAsHZqGDsZEZDItpyR6Ocy7i46QFjqLGf5GexG0bTvoNqBNU_uBHyT9GFiwBtc9Ork5m-Zkao_Jj9InW8WfLHC7bodLZg=s4800-w1400" alt="The Mercantile Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -111,8 +113,8 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="margin-top:10px">{{PHONE_LINE}}</p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/The%20Mercantile%20Cafe%20210%20N%20Irwin%20St%20Manchester">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
