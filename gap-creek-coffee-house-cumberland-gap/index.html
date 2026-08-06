@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCE8YqdeM8ztwY8QXer5jMneCQk9Sw5Se63PAthscGJ9Vwy2OB2YzdxOgrqzJrkJf5-CUNGbyInvrB4FYl2m4OfwUS5ws-Z0xX545nR5UZq6Hk1ISjqxuPbQsjrQNcu1wjSuN0yTSuAfP9GLw=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAI6dpfJgiLsqsU3OGM62htkdegZfXb9zA2UU_0GkagvnQrQvULuNZW27febxx4XwfKgSoqUAwxSqsEExreVoDHzPCZe8wNOrmwr_dPgY2-ZMawgD2w0Rkt6Ybrh3wpwHHEAbe2MGWhNNRpEw=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Gap Creek Coffee House — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=gap-creek-coffee-house-cumberland-gap">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Cumberland Gap · Cafe</div>
+    <div class="eyebrow">Cumberland Gap · Coffee Shop</div>
     <h1>Gap Creek Coffee House</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Cafe in Cumberland Gap — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Shop in Cumberland Gap — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.7★</b><span>814 Google<br>reviews</span></div>
+  <div class="seal"><b>4.7★</b><span>816 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Cumberland Gap. Ordered in two taps.</h2>
-  <p>Gap Creek Coffee House already has the food and the following — 814 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Gap Creek Coffee House already has the food and the following — 816 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Cumberland Gap</h2><div class="review-grid"><blockquote>"Absolutely adorable stop on our spring road trip! 🌸 We grabbed lunch before heading out for our hike to Tri State Peak, and it was the perfect choice. The salad was…"<footer>— Patrick, Google review</footer></blockquote><blockquote>"One of the very few places other than fast food that is open in a Sunday.  This place is really cute and has nice breakfast/lunch sandwiches, coffee and canned pop. …"<footer>— Jane, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCbW7cZw0K77B9A8l5i9IAyv7f_pCymMHtJkISVQXVJ6KeOdzff346ZZw0_CUSbwoYtK3mAMbH0i_NuLDe3TkIjEX1HViZj-x1dcCWzymPgudl7A5EcdJIlb-rzFWabTm2dcGLvn-TGUWtp2w=s4800-w1400" alt="Gap Creek Coffee House dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDhcJcVrNEW2AyCg1xi5Swg_bGrcHfMqR-KmHJMQhxxHGZQ-mG0ElvHJXiW3e1I8uIRpE_yQKkS1Wo1ytX9tVqghf9jLGhtpUIBlyDcM87NLpsF_DgsG1kdHDrRoQgRB3-6-sjgQe8mbh5d6s2aPe6jZA=s4800-w1400" alt="Gap Creek Coffee House dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjC84LzklRPCUxIdBnxvoS9NqKsdlWfwpuLwDRtd2i64D54fYg5k-G4KJJq2hl2VG-nFDiFyyGcjHb1FE1J3ZiD4wfT5OXoTMWkC57MC3d60S_4NxixV36Y7ajTaZLG4h9Mmh4glTpfiAKkYLycf3UKX=s4800-w1400" alt="Gap Creek Coffee House dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBeendUSFIWQZGFlXfZd14IwaVuzGMLEptladfnJNJoP0oH8qoZ4hlPePe7upoFLznkSQ8MM2W5DBA8yFAC2Gv2HA2TcNU2d47_T40oveSmig1XR2hWXTzbOF39IwHp5InSst12Xr2FAR0eyg=s4800-w1400" alt="Gap Creek Coffee House dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBUy_zS5VlNJDCTAZiQf5jaALFGcCfK-iCT_19ONLdTdoaHYKMEDD9J3VtxmbktRUq-8NIA3NG3HYDsOnGkeWLd_czsuE8Aozg3AtV_axnda3CqdsrK3uX5QLXQN60ttVYpjKf3N75mvxKnMJ7KF_pJjA=s4800-w1400" alt="Gap Creek Coffee House dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBN_sCM1bswIPmzYQlbMIe1fMvAKYQG8QIk2tgG2MfZUBSV_A4js6ZouSk_8pQrN3m7jhKtCYNbm4ISSSkp9fKugnlbg9TZd6jhBJUEwWmhz18CEMMp6Hw0HdwX3QflUHAotaQikmPuGo76qEOu64qD=s4800-w1400" alt="Gap Creek Coffee House dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -111,8 +113,8 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="margin-top:10px">{{PHONE_LINE}}</p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Gap%20Creek%20Coffee%20House%20710%20Pinnacle%20Alley%20Cumberland%20Gap">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 

@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAdjwN9-o95Jp3sIh1Q7l9SdO4bZ_sZyfl0mAQ9U4ViicDWJaTs-iVoZN9dPd_iIzayust_oN4ux69H8fcSkiZ2g63PuRFv5OMuv2-eUhyfX0Zch2QqD129gajQcSL-_2znbSj9zLJ31tNsetI3m53EOg=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCb1y-_wZkN93EA_-buNemGAP9OKQ-WgYWPPJ-RsSPqvU9apwvuc9lY_QEA5Y2RmAc6tEacmeRlNkVq5WDUmWdfbHjnG-D7jm0w9zVpxmZOcgNy9oBFkWkIRJxu38Gmkyzp7Wmtd_rak-0lvGX7SOCRSw=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for 50s on Main, with a little Chicago Twist — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=50s-on-main-with-a-little-chicago-twist-london">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">London · Restaurant</div>
+    <div class="eyebrow">London · Diner</div>
     <h1>50s on Main, with a little Chicago Twist</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Restaurant in London — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Diner in London — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4★</b><span>22 Google<br>reviews</span></div>
+  <div class="seal"><b>3.8★</b><span>24 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in London. Ordered in two taps.</h2>
-  <p>50s on Main, with a little Chicago Twist already has the food and the following — 22 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>50s on Main, with a little Chicago Twist already has the food and the following — 24 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in London</h2><div class="review-grid"><blockquote>"What a lovely find. My family of 4 and I had a long drive home yesterday and we were a little hungry when we stumbled on this place. The atmosphere is very cute. The…"<footer>— Chris, Google review</footer></blockquote><blockquote>"it was good, but i wish they would’ve played 50s music instead of newer stuff and matched the theme but overall it was great!"<footer>— Kailee, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBqX-kq8Pai_lG7wkc_Byx2u6-Mx5dT2Q9m3lcspeKlqacJYjMezCGz13ss3eTGLmype1OFTWhgrgQXh57CJkrPZJyvzjyX5sEOs6Pyfvm-yK8mkwUSDzUM6dVNj6HEx3Q54sh59fP7zMRBT0CuWZtopA=s4800-w1400" alt="50s on Main, with a little Chicago Twist dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBjaUWnTWSgBhTLNczV4543c6HdbJYSq7LZN4J1kyWzFaqWr7_BBGULTkHWmUAFzxH69xi_LXqvbnkgG8qcfKk8KwnasbStWeGiwDB809nZwfjvM9BGU8iBbRT1uTBwSyjSaGszZRQpFFULp5JhMp9ddA=s4800-w1400" alt="50s on Main, with a little Chicago Twist dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB9s2vddEpbJV3YBPLjzOl2BdJh-JUFSZXFw2bpE-1BAGmB2ZgansZrT-JAZMtfpgPlzjV7DMuNo2UBIP2IzwnG--uq8oiCszU0gNzlIpq9m-JczR0w_Niiaba2eQn0O3HbBaB87bde4BDpP8v92gTY=s4800-w1400" alt="50s on Main, with a little Chicago Twist dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBipPlTZXx9Am3hu_CgZzyEa4vZ2miaGMw8g_8OgNQzfu_e-09x1biuZUNd0cQvFvblR8aj68JC4FBQ1XrbuepaVksZoctUu52IpJWQwXMNalC0bCp4glLuCIZ1_A0im6yD4uQc0KYxogBhjbVj9Y1ATA=s4800-w1400" alt="50s on Main, with a little Chicago Twist dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBk0VW_DsKRVbtv9n5m95eAWdAMAK52cLNZ0D-EYOmxuV0Vgy8MHaAhaS7IgFwTYkhA5Gytss1N5w9m-fRcB8ylNcrm7o0lz6UnZVGxvVT3U16pAZptGZ0sfXoXEa8T_bbFCdt6gRDc3oYMCP2sfaqDEg=s4800-w1400" alt="50s on Main, with a little Chicago Twist dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA4DYS6YyLhjD7ARmkm-wrme112MNhN4xSJi0YhUCasyMEHefiyTHye7Xra1ZPkm9xUpR1gGu876j8w7s7q5sY7biEu7PpZSRin6k724-t6M0wgbSKrwzlSULhA4gCM0OpVUPZCCh4y38z0k31cil5H=s4800-w1400" alt="50s on Main, with a little Chicago Twist dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>London</h2>
     <p>805 S Main St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/50s%20on%20Main%2C%20with%20a%20little%20Chicago%20Twist%20805%20S%20Main%20St%20London">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/50s%20on%20Main%2C%20with%20a%20little%20Chicago%20Twist%20805%20S%20Main%20St%20London">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for 50s on Main, with a little Chicago Twist by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for 50s on Main, with a little Chicago Twist by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=50s-on-main-with-a-little-chicago-twist-london">Claim this website — get it live free</a>
   </div>
 </div>

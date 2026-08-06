@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDfEgx6pz2Tb04S0TZq36Ja_5fOPEkONXZRzaDRaQZD3R4mgaLLa-sImWzmmwe5dsnwjHZgSXTHq_wHk6xBxEIrsLPzwXBesnFyGPymj9UNZzoEioFlXHb_qPzOBLyy2gjZSGnFd1HBRb5QjNY=s4800-w640')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjA5pMnZ0wCokjvNGU4ANStnuLgf4KdWyAuK3kUyKeZBdF9ANFg_A5jgkFuVYw5kaatd6e7SC0t_qN_WDYsJY_Gbf1c65Jkjz-jdUzcKZF55ixIUw3hJ2D8o3AfuJNGFGQScYomvWrfCFIf5mpg=s4800-w640')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Cafe Au Latte — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=cafe-au-latte-mayfield">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Mayfield · Cafe</div>
@@ -77,7 +79,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="max-width:520px;font-size:1.1rem;opacity:.94">Cafe in Mayfield — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
   <div class="seal"><b>4.5★</b><span>313 Google<br>reviews</span></div>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDETS5Gua3k2SMsc4BO3gypWKH75jssIOMqfRGnUKuVxb253NXcgvmo6NlJa0460QvCedBownsQSEZ4nOCdbkwwgDHHsYygHRK6aNRNosnQ8Hy9vr4VXtl0YC-ncuUA4SFC_iFP7dcHyBuywho=s4800-w1122" alt="Cafe Au Latte dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBqNdvENS6ZiJo7kz8rbetE3xagkyKaYX0Sw3ilu2yK-OW3pgQAtFyWY9Zg1iw22ixzdKDZwv72cp7lF92YTPrMMbIzt94_DlsNpBxAj1IEWcjehw2vzMH_9JkmM0SgclqZm85kgrsU7r-rfYQ_P4ZLzg=s4800-w1400" alt="Cafe Au Latte dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAGg2dtZGX_gppGD2zLyCA0YeZWaCMQluoNyX1VhGGRQTKm51bNbW79-p3lG5Ae1nAzaWpiOH-Fsep3AWDFoOmrbwntOzb_LtFgs9yufckwofRD10tcI0_f4Y_HOhVd4pYcLW4lEO0VCPpcfA=s4800-w1400" alt="Cafe Au Latte dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDZCeJup7jslrn-ldsABVrdbM1X-irHv7wqpouaooUXHHK_4o1QEkRYDkcctqLCGyjiBUM6RIRnd95eCQfimAMYOt8C4rK8nmvxmoPOLBc5OCqsgvIvTjGiM8Iu7G23yZF252r5Ylc_hDaqtJ8=s4800-w1122" alt="Cafe Au Latte dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD8_LpAuxVkg4v7Twko4uXoRJF49Xb9Mmi5P81c6nBNtRe44Ag9n4qdC2U8qksHhkItk05GnM8eEIWWKQtWCf8k-Ja5Rh30Rp3lmIK2PmcqcP-0YxLiw8zRpod2iCG1BNyrVjk4t804nrTyXg=s4800-w1400" alt="Cafe Au Latte dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAqdbxVciERoua5pToDA3nn8tcb_LyJpDkUdUinCkWx_6Ndt5414BERYPhDGOb1pWdA-P8mWEUX6Z02k5oNrfodcRF0lqA1nFWGTw1S0Qxh_TNbuIae-T1U1ttlker_7ohJJJLo5WKcq87-VRlazoO0NA=s4800-w1400" alt="Cafe Au Latte dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Mayfield</h2>
     <p>1011 Paris Rd</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Cafe%20Au%20Latte%201011%20Paris%20Rd%20Mayfield">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Cafe%20Au%20Latte%201011%20Paris%20Rd%20Mayfield">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Cafe Au Latte by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Cafe Au Latte by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=cafe-au-latte-mayfield">Claim this website — get it live free</a>
   </div>
 </div>
