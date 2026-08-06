@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjD3eGYCcC-1s0coGEX-QI3oZat_54UC8qRl9vHxnkfe15rQL1ZW2b5CRLoPBLF2-0-RoZV6jDW0AAG9D9Pt0aiHtYTbVTK6z1Rdp-zjKrCyDgqQhgRGPYjzrjiO47ZQab6zntEoRywpkMcW48EqSFSkzw=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjANTxgqeNKce1uzXdYUGmVwrxr2wCJYFGnoAQ7rk86mGckL9xuBUwgMhcHw1fCx-a2K8iFQl6x-KbUepYERiDFJ6iLQpOkDngslfe7Zz0-KZ5gjYPSApetEoylnnZQE4OewBXcdFf0LBdCMQLNsRMZ7zQ=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for The Bridge Cafe on Elm — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=the-bridge-cafe-on-elm-manchester">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Manchester · Cafe</div>
@@ -80,13 +82,13 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.5★</b><span>1347 Google<br>reviews</span></div>
+  <div class="seal"><b>4.5★</b><span>1348 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Manchester. Ordered in two taps.</h2>
-  <p>The Bridge Cafe on Elm already has the food and the following — 1347 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>The Bridge Cafe on Elm already has the food and the following — 1348 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Manchester</h2><div class="review-grid"><blockquote>"We've been stopping in here for breakfast since 2014. Every single time what we order comes out just right and tastes delicious. Fresh ingredients prepared by chefs…"<footer>— Mike, Google review</footer></blockquote><blockquote>"I’ve been a customer of the Bridge Cafe for years and they have pretty much been my Go To breakfast provider since January 2026. After all the meals I have had there,…"<footer>— Steve, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAm0BSigXwXLe6EhwjZQWv2XPedLjykyjbUFQVNzxUfjuq1jUphCwM8MABagxJ-y5uZ_BEh07fiS8qqlXtyipNS2SiOfLOl2xMJ6Qj8idC0E7bC9XzT23yyefuPgllTh0WaxTZ7SKmUasfaGw=s4800-w1400" alt="The Bridge Cafe on Elm dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAMcDsJQTSyfaaStJ2NNoapghj6l5vvvTWoMfu3VUNEFxYPmkonDxJma9ZfWKZ4T2pvQ_gc4JMmlaP5aoQjtd1JqqzzgjIc0EG0n37aLL-z9ZUuuG7jw8wrNAvJ5XgGm85a40x6KBW_X5MGkIA=s4800-w1000" alt="The Bridge Cafe on Elm dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD2079KFvvARGIGU5M2PqrQIEVVzdEvFUr5-YaZt9AxtWs9dOWB-g7hGDj36b0r5qfpwi-0IQBGOgbzYxxeIPgLt2CHSje1IK7JohkiZZXDowLmSFd-u5BpKBFIpWccB_TXCJgEr6ZbpqxI=s4800-w1400" alt="The Bridge Cafe on Elm dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCapVL-FLu9S5Qt2RyvUn9ux7lhUMU_QfuxaYm-DHE9O6eguCJ28BWFnCRS48wnj2Ll5ACXnsO3cnG2bdV-gW8zvl9KgaHkqAZrfjxRzAEUPVvv-nH7jXSKLsRa2cd86-VwJUtVXv4sWAI4Fw=s4800-w1400" alt="The Bridge Cafe on Elm dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAA1Ft7OjUcltZ_QRJpGufbS-7sXYmK0cCA5SuhJ8DMUV0_PdnOIvNg-GTu0egpuZANCAvMZRMUD5Etnm1TymBUOKTn5acWJQgyduepLjwY61JRIF9QlzR-ZAaM0IQWFcSM2h-Fgljvfe0PKMM=s4800-w1000" alt="The Bridge Cafe on Elm dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBvSilbg4xJlHPuX--HXrbdpbjDZ817e2bHo0iiMQE5uFaUW-gubbo0P-R5rdtRQPjZ71o8Nnw3RlO7bRrxM3JVLA3KNt7kEwCp0mklASfS-v_NxMDyScx-Z9USMjz-P6lhrAU4bYQfPcxp=s4800-w1400" alt="The Bridge Cafe on Elm dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -111,8 +113,8 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="margin-top:10px">{{PHONE_LINE}}</p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/The%20Bridge%20Cafe%20on%20Elm%201117%20Elm%20St%20Manchester">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
