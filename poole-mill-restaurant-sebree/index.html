@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCfRRA3d-dbeaJP-VG-VzjGhl1cO7HJwqYLJXDQiGjp6BnOKnljoFosQvSSAFXgvVmIDZsEIr2T6QhRoK_E4ggu7yafNFZ3WYKk9uoPIr3a73Kmyyoym5ItI6afpu6dab1Sve3nW5oUocWYeg=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCSMXjMe7iux7wVdlbLOAdQtQ-wk0fb9rHPVqZgOn-y5_GopceSLJ9wLiVM_N4n3m1beI7C062sp84oRQpyuhGhLJsINLg5f3g6koes1mhjwl4x-gBVfMAdHkTRzRCxKU-av-Rg9ULFiZNbpg=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Poole Mill Restaurant — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=poole-mill-restaurant-sebree">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Sebree · Family Restaurant</div>
+    <div class="eyebrow">Sebree · Restaurant</div>
     <h1>Poole Mill Restaurant</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Family Restaurant in Sebree — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Restaurant in Sebree — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.6★</b><span>285 Google<br>reviews</span></div>
+  <div class="seal"><b>4.6★</b><span>288 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Sebree. Ordered in two taps.</h2>
-  <p>Poole Mill Restaurant already has the food and the following — 285 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Poole Mill Restaurant already has the food and the following — 288 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Sebree</h2><div class="review-grid"><blockquote>"The BEST! 🩷"<footer>— Nixie, Google review</footer></blockquote><blockquote>"YUMMY FOOD!!!! AMAZING service 💦💦💦🤤🤤 EGGCELENT salad 🥗🥗🥚🥚🥚and BAWK worthy chicken 🐣🐤🐓"<footer>— Yazmin, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD9l06UIZOeKvGJvfd33etV--OCHqUTpWljTltYOOpJctwUgLkTXjSuXMlNpszDoKxnTCMR7YMPa21SzG70oz4E3FXxxZk_h08ZvYp9K1gAnzOI47b2UM-zxOSrQotLmFyy8f1jd3G_U67Fymg=s4800-w1400" alt="Poole Mill Restaurant dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA4lkHXzYEaQI3F09yCh4i9jKCOQNDmWpFSvSdetIkb2AVLNOsU3rdz7ls-zZYUTu4_JhpGLQ25P6Tj6X-DTX8zm3t2HIxp_iIRu0mLDeT5ZoMXMtxFNPTeCBfcWAdyrAHKeyy5m5NHN1cn4uI-WI3v_Q=s4800-w1400" alt="Poole Mill Restaurant dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCTPyFuFQi5b-QnlX2jZmGyg_wF-yEecvFdpOZFaKkDSkglrxuKwaM5bOHYpME8P52NVb4unv6VtydJi2v2xKN7sE7CvHb17Q2hUrlDmcReJOMA_UgXSelAlFzJHrE7vBk4ZS7wN35QiIivCvs=s4800-w1400" alt="Poole Mill Restaurant dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAMgRFfBcYLZ5yE8ozBu2Qv9rj9aOZ74vWCu6JgMzL1JYURfM-6CZQB1RHr7Z0te460rkf-ydJsoXPU28OpG6FmrcUd6AHpB1MLZPWUsC0bcOiPpmEKTYm0jzI2Qsvn2khVacthgDZKn0d7ggs=s4800-w1400" alt="Poole Mill Restaurant dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCSc3gDIGtHGG23CWJ8YIbIYnlI9nRnTYVegZDayxtXvfdlTe3pVINmPLVIE-AQ0Az1tPyjQ4Cnllhts3Z4-DmrILLvNVW3S_3ENWWI3mvMtorf1ryZKX5I06qEEzICGTkI7Cfezxc0ifc4XSXOEr31bQ=s4800-w1400" alt="Poole Mill Restaurant dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBA3UmC6NT3dC_ZhNArDjn35DHZQYbYwYHUiaMxJpwY4-kbvkD8fXDKYc9Z6fEphTO_q2SK1Nj71_ZGY8QdShIufCV1sl_5p6gDlL9Fn7beT306K6068MzIoMAhc9c08b0DNJDoKpjGN8J-2lw=s4800-w1400" alt="Poole Mill Restaurant dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Sebree</h2>
     <p>9625 US-41 ALT</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Poole%20Mill%20Restaurant%209625%20US-41%20ALT%20Sebree">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Poole%20Mill%20Restaurant%209625%20US-41%20ALT%20Sebree">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Poole Mill Restaurant by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Poole Mill Restaurant by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=poole-mill-restaurant-sebree">Claim this website — get it live free</a>
   </div>
 </div>

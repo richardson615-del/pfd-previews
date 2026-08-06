@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBw_vRDgQZhjca1Yb_LlgM0uLmq2nja476FJ8pyFEhbrDXRg2zHvmHetVHo1JDbixx4OAXyaZYDePgWrUVSriloANcK5L2Wbl6WGmQYL9WGk7zcc0QYMl0z3pLE0GbczHDSkkxBnrHDyWAn=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCCCq-6QpejDdVy1DL2hDRoyFNR_9ZnVdi-aWSFYRjHad9EvbQy3IyAqnIztMrQVX6lvwPQwiYLgpLxO-D2OGTXn-FWpxjCIde1z_bd6n5Y7Z_o7cCQZqkpMq5xn_Voq87Wvd03O72lzv-v=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for The Coffeehouse & Cafe — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=the-coffeehouse-cafe-la-grange">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">La Grange · Coffee Shop</div>
@@ -77,24 +79,24 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Shop in La Grange — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.6★</b><span>159 Google<br>reviews</span></div>
+  <div class="seal"><b>4.6★</b><span>162 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in La Grange. Ordered in two taps.</h2>
-  <p>The Coffeehouse & Cafe already has the food and the following — 159 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>The Coffeehouse & Cafe already has the food and the following — 162 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in La Grange</h2><div class="review-grid"><blockquote>"Love this place, great service and the staff is very friendly.  One of the staff, who is new to the area even remembers the names of the customers.  The iced latte…"<footer>— Thomas, Google review</footer></blockquote><blockquote>"Nice place for some coffee and breakfast sandwiches.  Tables are around the things they sell. Very cute place. Quiet place and low key"<footer>— Luis, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in La Grange</h2><div class="review-grid"><blockquote>"Love this place, great service and the staff is very friendly.  One of the staff, who is new to the area even remembers the names of the customers.  The iced latte…"<footer>— Thomas, Google review</footer></blockquote><blockquote>"Cute Breakfast place, Service was friendly and inviting, food was good, cozy places to sit with family/friends, or even by yourself for some piece and quiet. Lots of…"<footer>— Dave, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjC2wNGUmyGs5glYzBK2NlO78XFMxMsUkCEMdvSbjNjryGK22syae3iHSZ2XcVX9v3218_Gt_7ouXkXTH0bnFDdtKSPk43T6QQOwq8y8km6u-EBhyqtP2xy9zDf3wbjs0wObgnL6COy3r7mkqw=s4800-w1400" alt="The Coffeehouse & Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCDSHlugWY9pFomawUsF5J0PB3SxzSTk7gYjzAH3WEvu1viIyhGsOVkyjNpEYipWPgLFzjOiub5uS63CrO_gsXzXGrGmCqki-EFwJXo_Liq4XPpqFXtaO7KzPVlKH0VeHNNg57tATfg2Vis7sqAbUQj=s4800-w1400" alt="The Coffeehouse & Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAmzmE5I1e8Yj05cAx_sUe9Stv4LISszWI-VpHQmABQGK4aCoCeiY9Qw3-losTYXyqBrORQgHcVF7sj7NQdLm5y1UxdBEXN7nnblxoZ2h1Rma8RYaai-uD2ZYOSS4w4sOpLUegp1hdV1I9IvEvkM41bOg=s4800-w1400" alt="The Coffeehouse & Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA0aE5pWnvjsWAb7mB8iizUtyaeh0Hml1sq1Agmwoh4-yBrT2pbsHCRYnvUC3CJEF7ZbMZEnwRtzve4AYx2-YFVE9W_R_2Q0mRn2lG4lRKUzwJVyjurdU96XUqZDH283b0VHtiecay_rVojiQ=s4800-w1400" alt="The Coffeehouse & Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBRkwdeAuoXzXOZKuYqzIUBHemZzKQhQzMUiHy95qpY2M_SNbUNdybaTP39FFZ-SWA8xdgcBSE1PO9txm6Zq9xfxbNUxeDfzBEQ54W3jOTc_sUFJ74VRgHpu6ujW_bO3PEBQCziQ2fPe2ROr_051maC=s4800-w1400" alt="The Coffeehouse & Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD6_pLWled9WcYDpLsy5cc76wbJmrcicm6AqkHwU02a7RaVNUxif_KbAi9QR5iqDsuth8_-vNnuJWuhpoelrr2BpCQQIof1_Tlj5n9JugefCQ9Sfl_GX6e6MyWz-EatP6Ys4NNgwU8L0MNh1TYL1cK-bA=s4800-w1400" alt="The Coffeehouse & Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>La Grange</h2>
     <p>408 S 1st St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/The%20Coffeehouse%20%26%20Cafe%20408%20S%201st%20St%20La%20Grange">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/The%20Coffeehouse%20%26%20Cafe%20408%20S%201st%20St%20La%20Grange">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for The Coffeehouse & Cafe by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for The Coffeehouse & Cafe by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=the-coffeehouse-cafe-la-grange">Claim this website — get it live free</a>
   </div>
 </div>
