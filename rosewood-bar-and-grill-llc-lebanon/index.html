@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDYkQUKY7oVnZxwoza7_701ori7L-DfER_YZ_hU8tRi7OT92GtSiw7KDS6DsfJSV4UiNTSt9kKBTWJVb1UXy6HZGRWAnBpxOZYDB_iAOx9Gtj7qXDu_tttNYL0RLClO639-BS3tSCpIzhHLcg=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjA1N47MDckthvRATEZyRbZnga_qIteFdlqEoYeSf47utzCte3nSLr0d1-9sqMShyx9yfd_ciG75nfIr8J5CPzyAdBPkIgaUEGnR7W_hRebYb7jAWWKtkYGK5ZA8rgWnK_xx91E_KwkBpYLlRg=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Rosewood Bar and Grill LLC — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=rosewood-bar-and-grill-llc-lebanon">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Lebanon · Bar & Grill</div>
@@ -77,16 +79,16 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="max-width:520px;font-size:1.1rem;opacity:.94">Bar & Grill in Lebanon — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.5★</b><span>242 Google<br>reviews</span></div>
+  <div class="seal"><b>4.6★</b><span>245 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Lebanon. Ordered in two taps.</h2>
-  <p>Rosewood Bar and Grill LLC already has the food and the following — 242 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Rosewood Bar and Grill LLC already has the food and the following — 245 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Lebanon</h2><div class="review-grid"><blockquote>"Best surprise!  Place is at the golf course, only real place to get steaks and such in town. Great service at the bar by Makayla!  Had their high rated fried…"<footer>— Jim, Google review</footer></blockquote><blockquote>"The food was pretty good. I ordered the 16 ounce ribeye. The flavor was awesome but it had about 4 oz of fat. I ordered it cooked to medium well but it was well done.…"<footer>— Kevin, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAwqqsBgztF14R40pyQj2n_FXYWiq3YoYksjIpxgcT8bOpxNArhPptRHxn2Xes1S1evCiu7OTqn0QpNepH_zadZUGXL9FUlOKAfdf3AV_t0K5M5gkcGdhIqWQUgA3ubkQpcmmbk246NcJCR2XPrdi5X=s4800-w1400" alt="Rosewood Bar and Grill LLC dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA2RYNV0Y50tOElkXzD-k2IeQldR46Vwnh5wc6j1NJen4w4ecPBPfazs7CuVfWbgTuUtteAE6Gp1OHMGn8t1GvsHDXVOn-PeMl9bdqKBnqRixYPxFsB28xeebZ-Fnat2lIyalhWNPZpL2G_cj8=s4800-w1400" alt="Rosewood Bar and Grill LLC dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDD2i1x1o1bXhQ_OGdH3tOpYb4orYzQX5XEakafkinOU6rpJLMR1egK6tnh_Xt6vUyCzT1qRzJwnzCt8ArIkuA2Fu2eP8J5kg9b2TSCoD9PNVm-SXeDXNtwt8S48hj5EKUfuixDkin88M3S=s4800-w1400" alt="Rosewood Bar and Grill LLC dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCyTxdBIyNSDgoTzT_sqKS_2p_KheYTMhriceK7YSRPEQNLxBXamTrj3sY7Dw1XcmzKV4Wx6GYxZImjIF8VaxwQBbyYZQwYvi0VDjexhUkDthhSluLFjnQEIkMWERpNzigBeX40mCVrGuaqfsQxGQZJ=s4800-w1400" alt="Rosewood Bar and Grill LLC dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBcjnBUvq5f-eA30tL_vqWLsQro5RpnGItix-VAoORzD9ZM-4Q6r4vsS5HFrBMU6EEClI7Hd4R36j5UuuKPEQ0Lu3BwkAY06KWnuYivsYjPOhp5LOp_H_C5HfFMq1c7nu4cEdUHPignhi4ldAwJz3Aspg=s4800-w1400" alt="Rosewood Bar and Grill LLC dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAguZ-ocnzWe9aQR4TF2JdJ9U7vNeICKYOfMfMHaUXxZqr2JwB7b6uZ1evXWxR8arcjUnF60NOlawm2omq_TO-2gNb8mMJOz0Pxe4WffqrPJIYmgkZi-yk_wWsQUv9aULBV-2yDdcqt37UL=s4800-w1400" alt="Rosewood Bar and Grill LLC dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Lebanon</h2>
     <p>520 Fairway Dr</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Rosewood%20Bar%20and%20Grill%20LLC%20520%20Fairway%20Dr%20Lebanon">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Rosewood%20Bar%20and%20Grill%20LLC%20520%20Fairway%20Dr%20Lebanon">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Rosewood Bar and Grill LLC by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Rosewood Bar and Grill LLC by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=rosewood-bar-and-grill-llc-lebanon">Claim this website — get it live free</a>
   </div>
 </div>
