@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjABot60up0WRu9NpRmf7Eb1TfFrREI1Zu16g9nTKLRPCiIvj-_Ttla7b9vhZz1Q3o3vrytI0qdbELkVMgDbU5sb7lRB4L1OffPaPnazGkOivKi-ueWQLBHF5s7yB9mHkB_9hq09Ceb6eLGcEuM=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCAAQY0lY6UmqdSCqmEg0o3VChCtBPfnBJzKDqzNG9H-td_WS3hM10C3gLJVTLF97BveOEfbOfLmVyVoVCkETZgJGWD6MUW8vtGjY_sa94n1mALjWXnQ65a75TTLl_2fHUR21vLkruUP24x_ww=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,15 +72,14 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Rey Azteca Mexican Restaurant Grill — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=rey-azteca-mexican-restaurant-grill-liberty">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Liberty · Mexican Restaurant</div>
+    <div class="eyebrow">Liberty · Mexican</div>
     <h1>Rey Azteca Mexican Restaurant Grill</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Mexican Restaurant in Liberty — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Mexican in Liberty — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
   <div class="seal"><b>4.5★</b><span>202 Google<br>reviews</span></div>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAwg113OwCBvIxwqXns93sMwcHFh8OsHDIKuKLArTyHrJeiuuRm5wh7orsJ07p1duDS7UGenP-5YTu_jJXjGrsbHg7mVSrAMNEVyTZ5s216P6gQZACYtbDs-NlR7zXZupArWJ_M61V54VP7i5VU5ntk=s4800-w1400" alt="Rey Azteca Mexican Restaurant Grill dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBIzpUzwOGVyrUn-GNNhSgRqbAwyncNhe11eAJuar-aJgCCh8OmIpoZ9y1NQfpPrW4RZGLvW_2VgQc2R-OGrNt9suWQav-i2BiiBNXLMNLmQtj2xOlajRMMknuA81V88D8dv74Hqg04rb5qMhY=s4800-w1400" alt="Rey Azteca Mexican Restaurant Grill dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjApx79idCt2Ssvif2O5lgpLRvEj6rZGgThABx2IxlpZ4-pp2w3kINKbPG0x5aGqz2xKu0GM1Fpi6egVKoglYPc_-I8gt9lA2ya_DthiDyI8TMF7RH9auEeyrNEjWVN3ZnGAp2OnlFX5GBOIaWTiDkGo=s4800-w1400" alt="Rey Azteca Mexican Restaurant Grill dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCUyKpfXY3T3g5JGHY6V3fct8hZxC337on6OeOmlExvIN9akNPw1UoSNXMzITBB7Ckhpg3tF4VyFzQMSVyYl-drfWeEJVCmXH9aWo_2HrX7yI4vKtgG-KW2Kv8xnfRb1DdLxb_x844okWafJH4qlM-G=s4800-w1400" alt="Rey Azteca Mexican Restaurant Grill dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDEBorcO1axBH8lxZ1eYGDuqvZdBoZ_9GwgRKI_T1Xh8LuH27tIedoinGV4OLCBhEiTtsyoKZSSXJF66wOeaUnZGqXRRhNR9COcLVVdWDewXePQSiAfwYoTBVlLeK-sO8ZvXcVeCHrXYgdqxVI=s4800-w1400" alt="Rey Azteca Mexican Restaurant Grill dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCT2FbvsQBhUCUq0u_H4PyKqq4bQ9MgtOKshzKUzZt5iokKyeKN6f_OkgvDjgjUkcyYuHqkxhoddVEOW65BIwsHoSzNmrpB4GTUGwk2zfh15Oqxdo8ug61410_-rVHWJId_vHfCQkn--SKgdo9xbGw2WA=s4800-w1400" alt="Rey Azteca Mexican Restaurant Grill dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Liberty</h2>
     <p>535 Middleburg St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Rey%20Azteca%20Mexican%20Restaurant%20Grill%20535%20Middleburg%20St%20Liberty">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Rey%20Azteca%20Mexican%20Restaurant%20Grill%20535%20Middleburg%20St%20Liberty">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Rey Azteca Mexican Restaurant Grill by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Rey Azteca Mexican Restaurant Grill by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=rey-azteca-mexican-restaurant-grill-liberty">Claim this website — get it live free</a>
   </div>
 </div>
