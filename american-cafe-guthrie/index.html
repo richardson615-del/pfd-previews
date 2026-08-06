@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDfs1wZ0CZAlKEun7oVMsaIfANdAX8AP4YrLeY5otmxuVLoKYHMV4y1gkz6DbnQP7C8WZu9mUG8Pts_yiMIzMQOaFBFVOtYMYr_rvQ9imGjzV4GDqXVgQWkO3lf4lO_Go-3icE1ItCRMfbj=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDwO6ZlsKA2_nXQZ6xov21ngKqTtPSCh5-_Gk12L0zzPLnfhuMF7xy1LzWRtuM6LpHPI3HQ6xNHtrQ9Rv9O-TG6uwCvIaxbupXcOo__iIJjQNIZXaYaNr-LfeAZiVfIub4knhdUdlBZhopS=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,15 +72,14 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for American Cafe — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=american-cafe-guthrie">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Guthrie · Restaurant</div>
+    <div class="eyebrow">Guthrie · Diner</div>
     <h1>American Cafe</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Restaurant in Guthrie — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Diner in Guthrie — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
   <div class="seal"><b>4.7★</b><span>251 Google<br>reviews</span></div>
@@ -89,12 +91,12 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <p>American Cafe already has the food and the following — 251 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Guthrie</h2><div class="review-grid"><blockquote>"What a nice find!  We just happened to be driving through town, and stopped to check out this little cafe.  We weren't very hungry, so we shared an order of onion…"<footer>— Ann, Google review</footer></blockquote><blockquote>"Talk about a gem! Love this place for breakfast. Owners and staff are great, as is the food. If you're in the area, this is the place to eat. Bonus that they have a…"<footer>— George, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Guthrie</h2><div class="review-grid"><blockquote>"I found the coolest cafe during my short trip to Guthrie, KY.   I had a couple hours to spend and happened upon the American Cafe. Brent and the rest of the staff…"<footer>— Mark, Google review</footer></blockquote><blockquote>"What a nice find!  We just happened to be driving through town, and stopped to check out this little cafe.  We weren't very hungry, so we shared an order of onion…"<footer>— Ann, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDNM8RC-16wIunu_b_KKAiEMfgWUGT_rh84Qwh_KXr4shYy5-N2uJIkmZ_pplHaz6yi2mh-QlEk9AdZ5juqi49TFmcvV2OGfSWtOxO81IcF7d2UAot9RdCb9kL_Xz1RUBixhZl6Dj-Qcs4pUszM43WZ=s4800-w1400" alt="American Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAxwXYbpvSYZZ2Fb5bSKkQslLvL9n2YjqLZd0Bjn1qrWHbPE22rrSZfTLSiEWTZxMQsDEtO55M19eo8y7lWdpCN6r21h3v1GmugjPmnSUCElf1FGDHTz6WY_lsepOr29vixIwVGA_7i_Rg6c-q8rU31EA=s4800-w508" alt="American Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCHYksqsgntAhWc-Y4Lp4S2KTBs6ueFjJDRnkhQtvdGKWRs-xatUq7hLCV_fTLp9BpNyAeQsNk9LJzptV-JK_hkF2d8WLAQinX4VMHPI34uPaC3neJXH_4ywuzgvDOZdo7Ho0b_f5bCbCKnRA=s4800-w1400" alt="American Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBol6dWYchj36CcV3ddmBYFMlzLwyu5sFFoAr8QB2fFj2OWV1SRBwb8aoTq77lMrh4mYlatdivP_abzPk3jqRgaW__LdDBF7XHLdP_nF9uwCBx7vEcyRRewM72fePHTmAmw7YOYk0UjNbsz9ZeUYSE6=s4800-w1400" alt="American Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAkJ05hFCiec77lHMdVn_ecFQjgwUTysaSo-2a2rBpwvnhBma3-761xKx7jtkgXXQAiOl7gDTTzvbK2103AGh4Lt8u5IswDWmwpcwfdFDidmmYIw-XjRU7GnaSAUEkycVSJgHplNO4mFN5jTVsYKbyzTA=s4800-w508" alt="American Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDPGTpI_wbMS0oJbp3qTK1hfRyqHiYGhM8BDdw0EKRoKDdnHy21r1onJ311ZVth5AdCofaP07c1vlCbiT4ZuJW9DOHToPbAnd3p2b2Iup8iJ8GfGtr99EL84mydyzttxFVb_Gb5C9SYVWtFXg=s4800-w1400" alt="American Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Guthrie</h2>
     <p>306 S Ewing St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/American%20Cafe%20306%20S%20Ewing%20St%20Guthrie">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/American%20Cafe%20306%20S%20Ewing%20St%20Guthrie">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for American Cafe by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for American Cafe by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=american-cafe-guthrie">Claim this website — get it live free</a>
   </div>
 </div>
