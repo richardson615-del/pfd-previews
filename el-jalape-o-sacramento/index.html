@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjD93xRltM4YNwRSqDYnAL3ntmjJK_mpDmTEC7RpFonCmpZBtkkK0nv-FVSdEAYDyv2YXvFm2x3WFO9qknMLYIK13uI7aYlHjF7StMMBsp6Y6j4VzG4-irtP5etx0fpU1WINKkc_UQWyBePbZff4gX4CDw=s4800-w1125')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBNbN06lDEuyIC7-Sn3gB_a_5NB19QoMjIDfuJgNZIXlPvrgjFx3fUqhMmLA8Eu372supQwANM6x59g7UeQ_ZyxFCMHlU871taWbOGqcSOWBFA8A3t5DiJuuyLloLp78RleBDzFI13zofBT1xC-Hj1CZg=s4800-w1125')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for El Jalapeño — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=el-jalape-o-sacramento">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Sacramento · Mexican Restaurant</div>
+    <div class="eyebrow">Sacramento · Mexican</div>
     <h1>El Jalapeño</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Mexican Restaurant in Sacramento — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Mexican in Sacramento — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.5★</b><span>24 Google<br>reviews</span></div>
+  <div class="seal"><b>4.5★</b><span>25 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Sacramento. Ordered in two taps.</h2>
-  <p>El Jalapeño already has the food and the following — 24 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>El Jalapeño already has the food and the following — 25 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Sacramento</h2><div class="review-grid"><blockquote>"Excellent food! We ordered a giant burrito and fajitas. The burrito was massive, packed, and tasty as heck!"<footer>— Stacey, Google review</footer></blockquote><blockquote>"The BEST Mexican restaurant in McLean and all surrounding counties!  They use seasoning, so many don't!!!   Love it!!"<footer>— Dana, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAs8-4z3Nb7YGYZwi3dtUpseSv6-vflGSpLeAweS9Fxdq5mjtIWcMR0JVp2eEqKNzqTJvAEP49lCL-rK12b5qVvmDKSL8eui87PH29YTdyqH9PHOUnsQo3szdA5D7lw0u2-RX_kjHDFzLI-=s4800-w1400" alt="El Jalapeño dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDBxQS_CDDFK_mev-v1Tpa66Y9wjHmrHh3DGCHNzmgCdQb23Idwkpb_VpXmxTekFxVxJ8cD5IN6K7W0c518w7ezyN3YcPV83bqqb2Nj4mAK_rC7JXNTrqN10H6uPGMXxCfIIv5e322_UhROh__CC06kkQ=s4800-w1400" alt="El Jalapeño dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjC17wNRU3BbJw4Ab8MkrxYF6zDjthedDRrct-rhXQnG6UwlQd2NAuRr-N-RNZHBFFF-G6JqbO4hsMr3_Any6DPxjAjXgIOY-mx6rcsAs5bickAjOoy0MXtdv-13mYIQqoQ7inoWuageoAHtKVCofUqFXA=s4800-w1024" alt="El Jalapeño dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBg4bNlrbxibZ_rXOorHrGkAzjxo0wB_zkflAFvay2zJWMUVDm015LsK7kzZ24A3xYYYFnmcYg2Lv-moA4_epqLjGc__D4FlXaRq9NRodSfUre0EP7LmCWvKn0nq6WxdJ8cH61pMvV3sgX8=s4800-w1400" alt="El Jalapeño dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCum-OJsGnVjQcjND_A65TjvD_xHAeF-wclTGBaA2mSGAp6iutKg0meo4FttDbYFDchyL4lIqBND2lYks_WenkrdIuSFtUC6URmFIG-Xo1ml_2MG6KMPaTu-aKQ5cEn-WMDK6bEJU5t6Ig8lvGItwUL7A=s4800-w1400" alt="El Jalapeño dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDtt-mLlec7_aXRnVrFLHalLPx0q-KiqNOmOIwkiJzSIekg_4ZGt12Pb-DKKhX8dokTgEgZZLi5J1P7KvXTg3qoGoR8vJ1mD997p2EmufOLt6Ut4gS1K1UuybLt00LVugVA6e9EVSSA5HZElYPt2ekd3A=s4800-w1024" alt="El Jalapeño dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Sacramento</h2>
     <p>370 Main St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/El%20Jalape%C3%B1o%20370%20Main%20St%20Sacramento">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/El%20Jalape%C3%B1o%20370%20Main%20St%20Sacramento">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for El Jalapeño by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for El Jalapeño by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=el-jalape-o-sacramento">Claim this website — get it live free</a>
   </div>
 </div>
