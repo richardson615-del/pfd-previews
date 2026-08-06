@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCqGjTYFLailFNA4V3XeI6yOoSb3osTUk0U8VB-AHSm4AxU_2UZ02V-UaDssIAOwGRTF18rVMzr1j8iPFC7jMgxKSLTrnyoIUGoGw1UbNv8mIv5NFA-0gAadZ2iA2ssRZ1YJJJOQOH2SvsO2qRpgiwFOg=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAsxRA-Yaem0jrIn9rLMnl9MTIF9rNwcRcALXA54EvkK5qRthmBTeFzpeasWLDltDxTczMIzO-uR8H7jJ9SclhUf7eFxi3gpLfQ8sKfNkV8lhLyeaZbme8Bq7XXANHR4q0aMextnIanw3F6wB9NCy_2dw=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,12 +72,11 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for The ole Towne cafe — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=the-ole-towne-cafe-westmoreland">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Westmoreland · Coffee Shop</div>
+    <div class="eyebrow">Westmoreland · Diner</div>
     <h1>The ole Towne cafe</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Shop in Westmoreland — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Diner in Westmoreland — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
       <a class="btn btn-ghost" href="#order">Order catering</a>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAhdPzM_4Ns929sIIO_28fsJcyzMncAcHQ_39dtBtPm-giqYGR9mA585GbZRzBU2UdGJjThzfI4a_mi82ZNtONLtqxPsshLvYdGLzTxFgqSDfPZ_RN4MQmeb9V1pBrta-mRpwE46cSOSH7Jh2TfZwJIjA=s4800-w1400" alt="The ole Towne cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBqcDasK56Qv7EB7F51SfZU6pTfkNS2zw7V6LU2eIawIYObeGjq1MVXOuAWy-hZrqtsgT6ufdjG3C5rIx66W-ZVDlks0TIKAHQOEwgxxLIk_SRN5ECqVtgebr4odqVfieGYCO4IyB8EEL-0nyYTO7VMsQ=s4800-w1400" alt="The ole Towne cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBPGvl5qJrA28WShwVIpG0Tc4n1Ip_m3WJhl9ZgzrMy9_kH2syvn84h2AtUuruEGs9-jyPglN9_0QRIzhBKvsO8IuXz5oyhsgY7whgv05tK0uIuykMrJMRArjxEMap-MGutVPfXVikmaYzeruwualT-aw=s4800-w1400" alt="The ole Towne cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDYTb4pM_IqAgLzvPYorfoi6j57X1gAed3afTuEj6Nz9XIpj2pnlX1SXaiDcyei7N9t3dm1HxafWRrMSk2gtwxwGpZjWhpaMXJaaKOLbWlI84fWrCPRTQsszAwTFebaWASqPo6Ciham4RtZzR3o5b2tow=s4800-w1400" alt="The ole Towne cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAhsrhqDTFMp-5LysW2TzRJF9sU56JDRyARsFHBSgKTyz0I_iHAL2R5PKNM70zMd32D2DkYHq9XbdxqG8vy4uA39gYALpkDlgwVWRI4F7djeba3d-7KOsoLsbljIxVI6SmDeK_0RCiT1cXr6J20q9yKvA=s4800-w1400" alt="The ole Towne cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCiXFUanzimtvfa_tMdhwoDGxNxcUnixlUOdlrbB4oAwpLsJr7ofCa5d4lVHlsVMwDplR2qZ0RIF7xtLk1IXVtG1VvaYAF7ExPO-6_EfS2xNOfHRiTq5begX1p6hr40_C2xquYQITj7-2aVs7qWPXLqRw=s4800-w1400" alt="The ole Towne cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -111,8 +113,8 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="margin-top:10px">{{PHONE_LINE}}</p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/The%20ole%20Towne%20cafe%201032%20Pleasant%20Grove%20Rd%20Westmoreland">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 

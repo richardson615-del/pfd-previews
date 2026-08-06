@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBVHW8QSuSrKMjX3l-j-VCHO0ndwsK5Rs3-cYM6W-q_c1PySJYdaX6vOLpUptJP3ELr7vtBKg7zqxj8DF3vP1gI_41As-JptBcNSd-4j-JY_GsYMDxknPDUx4fo182QBGUWzWQpfdKRlKAbZw=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDqtdJbhE7f6q-juVZg-kMGwEiJ3WkT53F7HmlxgAkgeplgahmTbq3nt9Shb4CCavr30Qi8DSZgs66zgmq9Y5G9tVamJRSdfGShFjC8GUFcGQFqu0nMWzl6FcH31twXvrRL_FcYWiOQWTVc8w=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,15 +72,14 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Emma's Southern Style Cooking — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=emma-s-southern-style-cooking-cumberland">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Cumberland · Family Restaurant</div>
+    <div class="eyebrow">Cumberland · Southern</div>
     <h1>Emma's Southern Style Cooking</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Family Restaurant in Cumberland — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Southern in Cumberland — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
   <div class="seal"><b>4.8★</b><span>47 Google<br>reviews</span></div>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDbiFcdIshN_R-6ZOSEHrwgJtrrVs70cd5jVA8bwEzV_NDZoAaDdQlHT-Y8w5fO6Lju7FqKbDEvzNXiR42uFi2pTWb0KY9QzU945Wv52OLQxCqP55IntQwZiyOng1ROLuIpaTS3BSsbmpswXg=s4800-w1400" alt="Emma's Southern Style Cooking dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBfz3IgzKNosuHN1j938VOYj1acBY-QETUUTZlGhXpkNnSD49skTdzfe-rXq5PrmyZRYufrHs-c17xximhXLf84sWpY9Od9e_IB48SlSkvw3WKHTreGqSW6jQwukvXszh68dW2-HiogJssV0w=s4800-w1400" alt="Emma's Southern Style Cooking dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCumZZCqXvgXwW7fl2V15Te-Vyi7wYKbzOqFRf0gAiNJnYslF7l8viFNap7CHZyXAGAO1ogHbJqwx8x20lQvXrfidFNzetv_tIe7dqgzEtz6yemC6OAkxPLNeogj-aN4aTi32yiF550JRNonAE=s4800-w1400" alt="Emma's Southern Style Cooking dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDUyDdK67lT9Wu0WzlI57o9HgsL61wrcb45Y5mb_s6xHNsDlLqeZoMpp1bxfGTIxnVy5e0v0KXl7uhbE5dwhCnNjnjCUPlrbq_vYNSW0Xqam3GXI500fgfGKqROaRb4BW-Fng_js6Ar4fGAVg=s4800-w1400" alt="Emma's Southern Style Cooking dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD9w9aHPPo4_A3JNjuWnj_bzFUbDIpyBmvoHQXYZHrO5ajhVK_QhMlB-EoCtHtyl194PB61RiMjMC1AYqDaj9RIAIuDX_3fWzeFoDxubMbqDE3_J0slqvg8w9QLDNBhwOTgItqPAfNFzNXHLQ=s4800-w1400" alt="Emma's Southern Style Cooking dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAfXB5DRi0hv1UKRj5HHi5NmlbEBECCSzaaKFZAZZDi45XOXnJjaS2IKnjUrbPk7jxPcp9f7Bvs1iPidYJ2JDEyTD8xYNrfp1O5X35MF8qxraA6tkdS74pYsHd1uVdX6Fn8JC9DDPVGXPZxMbQ=s4800-w1400" alt="Emma's Southern Style Cooking dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Cumberland</h2>
     <p>203 Kingdom Come Dr</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Emma%27s%20Southern%20Style%20Cooking%20203%20Kingdom%20Come%20Dr%20Cumberland">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Emma%27s%20Southern%20Style%20Cooking%20203%20Kingdom%20Come%20Dr%20Cumberland">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Emma's Southern Style Cooking by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Emma's Southern Style Cooking by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=emma-s-southern-style-cooking-cumberland">Claim this website — get it live free</a>
   </div>
 </div>

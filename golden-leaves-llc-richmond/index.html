@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjB4NXUt5coSaA13dvDSz9MtWY6rMLmeXNdbcJyNOu514X0yX8Id6P_IiRuC7sCjt8cK6kiiKwFw_1XqtRuX0Qe8bge1O-y47ouJDCQ9fX5p-KtWTGJDz_q8VI-FTswqkgTebTSh4hEUctOkX8cIJvZw=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAXovAQzN3U7uwmsQsDxTw8bEl4PFksmUAP6zJg-wsimF95Ss1VmkxHF2PjkHqCTw0r-DBvu6p5DGk7AzHBJOscdn5F5hzBFxtPICf52s8APcYacu11PG3lKzCXtBcy0OcGA5sD3eCC6YHRs9hTqJpc=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Golden Leaves LLC — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=golden-leaves-llc-richmond">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Richmond · Cafe</div>
+    <div class="eyebrow">Richmond · Tea Room</div>
     <h1>Golden Leaves LLC</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Cafe in Richmond — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Tea Room in Richmond — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.9★</b><span>100 Google<br>reviews</span></div>
+  <div class="seal"><b>4.9★</b><span>102 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Richmond. Ordered in two taps.</h2>
-  <p>Golden Leaves LLC already has the food and the following — 100 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Golden Leaves LLC already has the food and the following — 102 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Richmond</h2><div class="review-grid"><blockquote>"You all don’t sleep on having a tea party for your special events. My husband knows how much I enjoy tea and he booked us this event to celebrate our anniversary and…"<footer>— Lindsay, Google review</footer></blockquote><blockquote>"Everything was amazing!! We came for the Valentines Tea and loved it, everything was beautiful and cozy and well thought out! We had the most delicious chicken salad…"<footer>— Makayla, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDreCtfh_UAp9Xea-7xXBp__4hju8b4OPXv1p_je-RI8KHcKQcu2V1E5xiw0nJrtG8rxDgtFP6wIWncmhsHbMiNjY8jB3zlabnbkRzrtw3y7SYVD_2z5WW-hMqTWo532SAfUC7hpfLOOj3iwr72696euQ=s4800-w1400" alt="Golden Leaves LLC dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBQVk0v-om1D2VRf-qYnjrFD2WlAj0qEhXcx1G2GYktrdGu8vYmR4T6nJcbJxoIBQKc2AWVX8cujBPjWV6n5Ja_qMQNy4HKN2n_0rhNpBkR7Xf88C7ciUpAw2M-K324O6dHoJgj3SOIm0e3XRnZjDP2zA=s4800-w1080" alt="Golden Leaves LLC dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCSl32yn4h8XpKZiMU5Icnbs0-x5kqHEaeP0F-wSbzkCFPe5yCV8_crqTQZy0LjhwpVdAGHcJ1E7RQthiIgJChWHZh3JZ0wRkN_E7lbaRDS78_WxJG_GoRy5Kny8XVbNAgp9SpOocf0uo05eMyVn_hAfw=s4800-w1080" alt="Golden Leaves LLC dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDVVtEFXk8ViAta6QB_g-gDY_J-n9U-7nqqrSr69ZDvj_AHHXZwYgfosHbxHpcXll7QBzeFWSe-FFvYScaE_n2LIVbZXx59HA90ueZfA8B_Xt6gpZewGRY7mEupjtdMSY5ttPbvWkaN1WZjsmMcbvQOiw=s4800-w1080" alt="Golden Leaves LLC dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBTxrj9KylXKVDS4HtkTKpBpeP3ITrJhSjhCWsdFsGLTMlAPmZqHN_SZSLPUjZdjAPgfdTmfhGug4Cp0AoHr6jfRefOEFsuR6rWY37tpkehgOT5OdvvTJ2u-2anv02hGZP2lRDNG34JbGBn73greVf6=s4800-w1400" alt="Golden Leaves LLC dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCMnX7EwTwRYobJ7h4ui7TcUJ7V0siAZcNtnEa3H54aN-ttqZ4TtPNOL-cf5Vqd6Juy5ZH26dClwJG3GGdIKMPj3ne-X1z89BcUTAfdk2rOPVHagedX5CRjaBzOU3m-cuLd5ujrfKBcZJnn27rjMMhZ-A=s4800-w1400" alt="Golden Leaves LLC dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Richmond</h2>
     <p>2008 Merchant Dr Ste 4</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Golden%20Leaves%20LLC%202008%20Merchant%20Dr%20Ste%204%20Richmond">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Golden%20Leaves%20LLC%202008%20Merchant%20Dr%20Ste%204%20Richmond">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Golden Leaves LLC by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Golden Leaves LLC by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=golden-leaves-llc-richmond">Claim this website — get it live free</a>
   </div>
 </div>
