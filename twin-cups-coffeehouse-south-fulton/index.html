@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBkMbJCPNQjwFcxicbARzCW0pydQ0fCuYkSoZTk68dR9I1l4vnoNPDKrQbZyJSz3th69pBkIQY8aPLk_FMGD-z10u3CnJsomi1S54d6mEQq5ubdAOX4AZ6VVe1uq-sdDGuoWcV721jVY_Oafo4=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBqwlU0kPrOKT2qoF6PhMoWZVYFynHqxym_yqCVrp7qU_nHNHE7QJGbeziVG-HO-4Qx-IRmekIClx3Dcf1MD3mMdQjy1NXJEBeH1DvJiLb1XVixdeuxrW71196vjkrwDLWpj1Q-QY05fbfJ-ZQ=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Twin Cups Coffeehouse — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=twin-cups-coffeehouse-south-fulton">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">South Fulton · Coffee Shop</div>
@@ -77,7 +79,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Shop in South Fulton — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
   <div class="seal"><b>4.9★</b><span>45 Google<br>reviews</span></div>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDuw-ZKBQcIscv7_JlDukUIcoCgbpkJxs1WX9Ca1T8q5NExx_e7XyhxN9JE4qHyT1UjuWLwiwI1T28o8q5zvcC_ESRBteraaCS9yIy25JaI3qnHm75zk0nFQylOIbUpxOYX4F5h1ng483iKAAOdy_b9xw=s4800-w1400" alt="Twin Cups Coffeehouse dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDWhbMoKC7I4MUe91aLmTZuypLR-zpKBWTdeyU3fkaPzcSYiz9sTYPUfecVBZeYV06bVClJypXA6ekfSO1Z1qcmmFY6sNWE06nGCzHCrmhADTJL62S3ae5_H76tMD81k1BZdNoMQ88-smnH0wA=s4800-w1400" alt="Twin Cups Coffeehouse dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAono7xdFunpeFsQ9YnldRW_6ERqc7vQqpXpnzlBUwyRJuzzFi8EwbOEbxSHzKPPvl6yaWrELka-3LetKgxV_4VYMvwbOa5nv7AYdAqH4q7QZmzlH6_s1gnkGQVs9-MCYwhUjAhRYx6z363pIs=s4800-w1400" alt="Twin Cups Coffeehouse dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCF8NiL7-4WPchZAMI07EOvF9l6sxUhVANymQVgbAz5gYcsmeuIubZgzLg8gC1Pe54ma_ywMYGRK8pbpCP6DBEtQqKAuMNcykvMWxJUgz4o0qOm2R0f7t50yEbgMJok75UII5Hlto8OR77mcgp5ej_JBw=s4800-w1400" alt="Twin Cups Coffeehouse dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBAATEIhqvooj3C6KonUhbPGS5c1YVedch8fkOspaRgF6TsD9p2O21ftN1hpu8vWi2gaw9PBrLR5CpKut69vXJ3PZfeHf8WfjL6wBDiOE7IDNlzO819aXD3EKk8cVDuB133TsfEjS0GABwBwao=s4800-w1400" alt="Twin Cups Coffeehouse dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDgULKKaKDvI7eHuIIYo_qXL8WE8FIhcVwfFH6togQvtKnxmt_tu-56lrToKZ5mjplpMxLnGTVOluXPMPrHKUknP5DZI9AmSDF_Sp7luPVAZOJ-s9n9Y1OLuBcMtng4_6NauDanguYHVHKb1qU=s4800-w1400" alt="Twin Cups Coffeehouse dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>South Fulton</h2>
     <p>127 Broadway St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Twin%20Cups%20Coffeehouse%20127%20Broadway%20St%20South%20Fulton">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Twin%20Cups%20Coffeehouse%20127%20Broadway%20St%20South%20Fulton">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Twin Cups Coffeehouse by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Twin Cups Coffeehouse by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=twin-cups-coffeehouse-south-fulton">Claim this website — get it live free</a>
   </div>
 </div>
