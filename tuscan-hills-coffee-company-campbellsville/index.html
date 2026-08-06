@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAr3rkDmx5V6KUBcnoCuWVJHwliAWQr-3Cm0xLn-h5K178Vzi4nYU1KXATsEJQ8yBVFrXRMLFaDoba_CZc3BMQlZ22XpfgmszSBvsf9T7TfPqf6qhrcEIuj8DKh96HMEathUizPx0NrjyIcxg=s4800-w1158')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAauWRMbu-SMkXUHPZ6d55Pu5L4QMKoGy_QD2CDAesB4yj1QPtsegj-m2z6tCapmpBScO8UUGqyuYOVXbvBh1_U_4vbWaBJu0kORePKC464Bw9O-hqFZLNS2qzs3R7nD3ulrGfs-phyD7TyGQ=s4800-w1158')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Tuscan Hills Coffee Company — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=tuscan-hills-coffee-company-campbellsville">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Campbellsville · Coffee Shop</div>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBQQy41TsFi2OBj-KqsEFHqV0Yjh-UXorqlVoG91gwT695y7-sWQQr62OWNKwN5lxSAnfJfUkzct_IHCjOW846_HVN78mqznOCJ8UJzwiaSGqJZ5bHb8FCPLUOR4UL7xIQ7IUB10HHOgCe76n75GjWvlA=s4800-w1179" alt="Tuscan Hills Coffee Company dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCZfFlgrZmqKLb8q3ukmB9UEzq9-Y-Q7c4ppDSqraY5LFm4nDJc8mZ1DNyS79-MeVp3_DLRVtulHR91sD-hW5AIJrvE6dMoYyYrEzWmqtoZolIgFr5zalqRxLArGt00-x7sJ9mZf3KfiYyADiw=s4800-w1400" alt="Tuscan Hills Coffee Company dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBZEUmBLt11Mjs10bp7T-UQxTykxft0l8Pggro-xFaUaZkhe_q2uk8kEwFHf2f_pw2k3W6HabborsZElBiV7JDZibLhILgfdCqrGFFFloQhuPVrYTJ_STi_pjabFEf7svNSKV5UOhAZksQj3Q=s4800-w1400" alt="Tuscan Hills Coffee Company dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAvgAhEaDRsxCHvCtJYd4-P7lY50bHsPZTz3241Nz-hIxXbOmxFu5JEdW8N1bgL0Bcj2Fg7JMkN9kHTjQOkWJ5EXjazyCEhsua83GtQtSK5hCGtxUoRSc8thHBOeBpKNHU-cfgzXsiecgXFP_OxjpgGKg=s4800-w1179" alt="Tuscan Hills Coffee Company dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB5RFtPq9a7rwkN3Tf5S2QwiyAm4do77k9Qv4OncDeIVb32dW3SqgJE8TbdJh1P_4VCVMSTDIDtN8OPGYpwXN9E7sd1eIc2vunnqzRndgcqf3RbcWKshI1NSGXWsPBrE0puM8RWO4PLs5DUV5Y=s4800-w1400" alt="Tuscan Hills Coffee Company dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAXkGU-xAyS6x_YIpvfxBZLWkGpYEX7N74BpXHcEVy-sGlQqLq4TsACCWmM5bFTMTWtnwR4Mvrk2na7M4ClVdCTTx7_KO1xA98C2_mEMM8edybaCqZSUlSfbN4J2ZtrsNnjw_TXKSJatGJqbA=s4800-w1400" alt="Tuscan Hills Coffee Company dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -111,8 +113,8 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="margin-top:10px">{{PHONE_LINE}}</p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Tuscan%20Hills%20Coffee%20Company%20407%20Campbellsville%20Byp%20Campbellsville">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 

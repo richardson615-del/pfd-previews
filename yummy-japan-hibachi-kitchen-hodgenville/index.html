@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAxj1q_no5ht5y4tBeXsAeWW4KY7CeBrxjjqHsy-zpLL0ArSS2NjF4OVc69_jfHcLxy_c0pEa5vpwdsauxMmGLI6Vrrz6VPUEEJvShANd6oxBxSP2yArJYQ7SJyY-TwcLGn-C8-Jxh1rqCeTA=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAY_yVe1JgXYCANpwFRcGuc3JTAr82Kosjlk6K8HUuoIyUthGl_PCryU_UfjJOLh86ehP0VW7HHoCW2y0NkvRE9Gsnby1cNFCoFjn0nvpu-mvouOlPWoX3CsNEQ_oUz6QZ0mbOgkCG3dZouWA=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Yummy Japan Hibachi Kitchen — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=yummy-japan-hibachi-kitchen-hodgenville">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Hodgenville · Restaurant</div>
+    <div class="eyebrow">Hodgenville · Japanese</div>
     <h1>Yummy Japan Hibachi Kitchen</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Restaurant in Hodgenville — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Japanese in Hodgenville — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.7★</b><span>42 Google<br>reviews</span></div>
+  <div class="seal"><b>4.7★</b><span>43 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Hodgenville. Ordered in two taps.</h2>
-  <p>Yummy Japan Hibachi Kitchen already has the food and the following — 42 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Yummy Japan Hibachi Kitchen already has the food and the following — 43 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Hodgenville</h2><div class="review-grid"><blockquote>"If you like Japanese food, you won't be disappointed.  It's a quiet little spot in the middle of town to enjoy some authentic Japanese cuisine.  There's a sign out…"<footer>— Michael, Google review</footer></blockquote><blockquote>"Amazing food. The portions are enormous. You can’t beat this place. They are extremely kind and the food is great. They give you your moneys worth. The staff are…"<footer>— Caleb, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCo1S_bYTaRccYcvXYgOl0RrE1_2VdHpc6Ibf6ae73CEMwiD5ef8UMS89e-j5FD6mpH6LSChu_D4UvSoQ3j2HS9rSZK9ruKLDGyuxIXWWEsejcw3xpFhNNqixotbR1R61xhRbV1FOZNSFMsNMjmMvPT2w=s4800-w1400" alt="Yummy Japan Hibachi Kitchen dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAGGFEib4MYK-b1WUOOqOtw95QyF0u69tROJw-c388MlUr4nm6G4PLk19UVoItW_9DBT5go7OnsGt7GkBntnWLRgwit6a6TQcVwSGg7P27OsQfpU5aoQehdIdl1JgykwWdekBwLYmjEbzzGUbA8Hi9QRg=s4800-w1200" alt="Yummy Japan Hibachi Kitchen dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBSxL3QGdUWZswZ6F1YBJ1duf2FQAHPtqlJN5H1hyg-Oa6DfBPJOvaS2tkCupQfUW4rtGgBp7r6-5I4jMBFWM5wFx2HRVjHiTLkpDTvPPp7qRw0b71cBToer1zd3ESXej5mbjL8cPs6wBQb2aZbGOnR=s4800-w600" alt="Yummy Japan Hibachi Kitchen dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjC4JKVT7XvnWfGcEoMbVgx14wlmechDg2iLEygewQOfAJ38H4oRNHanyZC2ltyi9GFTUd_tbQXecYGO0r536Oj7yfN7-e7RgyiFb__alOgckrhxd0aUbJHT45xtZ3G8YFEi4Q6l01_kU_52SsSg2CSv=s4800-w1400" alt="Yummy Japan Hibachi Kitchen dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjC9aIJybo0DEo_bEHGtCF0qnk76Hm0XT7CRHog4pRDN-DKHvT-pfGknO3q9q6rl_BQX3SPFc2LD0C20rP8Xzhne5S8bhbxagGExRC6cUCgfQkkZsddKTFp2pzxVVVET_bsQ6Df0P67ZJt7-XJEnxk46yQ=s4800-w1200" alt="Yummy Japan Hibachi Kitchen dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCTfpTHYnOGb0EsIr7MkKWpyYCtMwDssRbk8tXcXX3htPLqWm_wKCa41tDaTe1dE2_62di-0wHsNaXrXBQNr6fhykvtglaCSS91PoprTNjhHJPDL1Z3WnuDBTJXMw2kftowNVxoEcbhTvPtsfjdhX3MKg=s4800-w1200" alt="Yummy Japan Hibachi Kitchen dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Hodgenville</h2>
     <p>704 S Lincoln Blvd</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Yummy%20Japan%20Hibachi%20Kitchen%20704%20S%20Lincoln%20Blvd%20Hodgenville">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Yummy%20Japan%20Hibachi%20Kitchen%20704%20S%20Lincoln%20Blvd%20Hodgenville">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Yummy Japan Hibachi Kitchen by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Yummy Japan Hibachi Kitchen by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=yummy-japan-hibachi-kitchen-hodgenville">Claim this website — get it live free</a>
   </div>
 </div>

@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDktaetgdTrbR4nRU4BKe4wIlGzL-2r8HeIPZVH3aRRWRJ0ABCCTAEQWnQzEfKWwQB1AFCvUYtMQsGZ-qsAoI8WkcswUJaShQYGa_w-tbmNvQfnrz5X89we4MkZ7ZL6uG0Fp7OlNDsUSdmba3I=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDvbUJ3rvXwjT-qSbB5wf4blmYriyfw9P_9rVGnsSerZq29Zk7nm1lCW5vZPl5ZnzlVoOP699lAi3hSh-u03ASPbuZYkj_C-iUuVC54BsoG3mG4V1RLahQItcc4zVQLUWoKjfBZrUcXKY94y8w=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Dairy Freeze — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=dairy-freeze-island">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Island · Hamburger Restaurant</div>
+    <div class="eyebrow">Island · Burger Drive-In</div>
     <h1>Dairy Freeze</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Hamburger Restaurant in Island — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Burger Drive-In in Island — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.6★</b><span>942 Google<br>reviews</span></div>
+  <div class="seal"><b>4.6★</b><span>946 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Island. Ordered in two taps.</h2>
-  <p>Dairy Freeze already has the food and the following — 942 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Dairy Freeze already has the food and the following — 946 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Island</h2><div class="review-grid"><blockquote>"Please NEVER change your banana split. The best I've ever had, coming from a 'nana split connoisseur themselves. 😌 The BLT and the Butterscotch milkshake is also a…"<footer>— Maejaci, Google review</footer></blockquote><blockquote>"Visiting here from California... & I ate Lunch here today for the first time.  As a person who was raised at In n Out... I can say this Place is one of my favorites! …"<footer>— Andrew, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBpf1e6t2Vjj-UsieDOU3ZMBSA0GMq9COEhyaX1QzHqI98N-GFaa2vhealefp7maJtzQ7XzebKApWk7HL2eJt7IHnm2eVZtJKPzmIG4xDdgmzqd172eFqgX5IDZUGVDinXyMUmVNwiuzIaS6nA=s4800-w1400" alt="Dairy Freeze dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDEb4hCc6yniQbNYIrpDVy66xmZbZ8ioodeSMXlbe60RZoOYR_OsRf4Ly084M_FcZHEZ35AMAOXnW9OdCXGxqLHILvdS6X4pLI65tzkKsNMM5g4BxTRvUVjMKZOxTM88UYnBXwy5Gkfx4bcz78=s4800-w1400" alt="Dairy Freeze dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCQMFJewv3naNVVzlIpGyKN6pzpiaFGLsZNlqsxzk7dT-B46WOczqAHC1SV1eCHFrRUVKoGNd6guD-Zs_uN6na8xt8UHLZBwMz0GCLr0iYTM6tLXD-34SmEX07VDShx9wuOy5cEJC5EWEylVQ=s4800-w1400" alt="Dairy Freeze dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBnXSEAZ9gtEMEZXLerIb4yO1U_M8a8aKJXAZjVP7A4m4lA8KeLYnCy4JoOJPbi2wLehseSTUA13nBj21dahzkWluyPoOEGkcpV8cGwd1zHdHrn23Zq-2wJJj2a8yeGddLLfnL0HM3OtrftrObK0hNg-g=s4800-w1400" alt="Dairy Freeze dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDtCCV2C4ouiAfEJCcl7-ATwSKinIEw-DeW3JHILPoaHugR6xekBGg3itAdYNf8cS9P5tvtb8fmSFR0wD8lhPo6rwmauvtUtnlah7tJtk5yJCsK8LyE7iyJvxykRAPDj4kDInVsBbojxEXnqokehDxlXw=s4800-w1400" alt="Dairy Freeze dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDxIfYwnQRE5fIag1QnfG-2nxbW-Y3yaca0jTdr5s1wiu2uACCg-61Qa5XtkIY4CtIJiR6cHVWRMFBavYYlGSOV6bHferG68d0MoIr7ShH5BNs5zLUsYP4nX_5wCdPcc65Ow7Qm6kNMS7cQuw=s4800-w1400" alt="Dairy Freeze dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Island</h2>
     <p>660 Adams Ave</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Dairy%20Freeze%20660%20Adams%20Ave%20Island">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Dairy%20Freeze%20660%20Adams%20Ave%20Island">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Dairy Freeze by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Dairy Freeze by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=dairy-freeze-island">Claim this website — get it live free</a>
   </div>
 </div>

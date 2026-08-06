@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCzOT7GT2tvqGgHs9-UJBGwva9NOkCjHW7qznTWIMbhnt80Bb9tbQd5sFVuxgvJjJmmXZ20t_mncOuG-C6zhAALaLVMvE8AbDpE92wzzh6eqIECRmgGdt7e0f9URJAVTV7ZwpXYwr8dpLpIPQ=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAwidWfVCu4WPyJgp84AZW7P6aFWgy42nHheReFl0yO9nFxNyY1l5ShfI61kP0zm3y1avJiwe3hj5O2uw7RsDyJumZW833VtCTEzlFuHdiellkGs6ZvMWscbOFzwk4JgPx783gKaNVwXdju7g=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Sacred Grounds — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=sacred-grounds-london">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">London · Coffee Shop</div>
@@ -77,16 +79,16 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Shop in London — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.8★</b><span>224 Google<br>reviews</span></div>
+  <div class="seal"><b>4.8★</b><span>223 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in London. Ordered in two taps.</h2>
-  <p>Sacred Grounds already has the food and the following — 224 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Sacred Grounds already has the food and the following — 223 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in London</h2><div class="review-grid"><blockquote>"I am in London quite often especially on weekends and end up by the laundromat to do my husbands laundry - I stop here! I have been 3 more times since and I have…"<footer>— Brandi, Google review</footer></blockquote><blockquote>"I got the PB and J coffee and wife got the neopolitan. 100% my coffee tasted like a PB and J. It was very good. The neopolitan was the best out of the two though.…"<footer>— Jason, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDGGLs738PMMyGYR9526pPqA0GdZnPnvfqx3D5aeuFnzGDsaSaJ6iqp9mPlFcCJKRNpFFSVpqDKmOteaSEj8JLRsD6rkAeo2hHxmD4JEDj4KxJtty89uUw_Qq37uyFowZCE5b3DTMrcFfBAKw_WAMAJFQ=s4800-w1400" alt="Sacred Grounds dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDS3G5zfYqCVPmaX-k6dq9mZDkEy2OChkza5bIUEu9VTY21HQT0SWjofAtD2edHpLLnOfkKj3j7Excc1V9-4ZC6Y_4rd89XGhufeK4FWxkf-h5xgl1qoZq469w8Gu9pyPegE2yNw-wx4n2iE-YKhVZL=s4800-w1400" alt="Sacred Grounds dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBeOg_Hzyc0IS6gESUq8FiANHLyhV2qy4dTwboS2rzSw4NsUGZTOyQxRjJMCLJqBJc6fefJU2Oy6Zw3e9k_U7bB7Z-ixG_W_JJvUFUQ66Y-uhgnOcm1eQ4p5ZOe3ZwtaiojkHwWl4cs9xnUmw=s4800-w1400" alt="Sacred Grounds dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB5IIEo8GWViMcXNBPBK__e1rmqc6NhJhvnw5flBc5fOKBhphLBGZVRvCxHj8IdjRCXShIqEDvSq3MlhCAi6HTV0ZDktsS1yiiVKqi2ednGBq0xUliAm_BVBx2HrKMPyFnVKbaLJsfEYxollNvMkd-09Q=s4800-w1400" alt="Sacred Grounds dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAJh1liS-1uGtGrM3HE_4Kd0aUaMceuVT9NgD6t8IwxrvaXApn-ot1eZg9qOfczUVkaOrN_JmxviKE_3kqlQ4KeQQTY9G_pAAJeTVQSaMa_dkhTLcK9z91LCndT92dco3aYe546qs7yrxmZCwlD25mN=s4800-w1400" alt="Sacred Grounds dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAkvc-0Vodgsc5LEnhwVgkom3KmU8b7gSv5HszoexRlVVn8Qob3hKhHJctWgPqQB8uwsHjeGI90qAzA0awzm3-XkIZcAT0cQox0uPyyHifrYehzQ5KXy8m3Md-SCpObbYIajave3C8DATTM7A=s4800-w1400" alt="Sacred Grounds dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>London</h2>
     <p>865 S Main St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Sacred%20Grounds%20865%20S%20Main%20St%20London">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Sacred%20Grounds%20865%20S%20Main%20St%20London">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Sacred Grounds by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Sacred Grounds by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=sacred-grounds-london">Claim this website — get it live free</a>
   </div>
 </div>
