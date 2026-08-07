@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjB7ukxtDJY61YdhmrZOcV9vq4qu9yapf2Vcr4UTOH7wqX-l19L99EWKCZCNUZ85k9MJsR7LP2aLuU33hTLMo9hgJo_Ieab67dgfNVKCSIZixtxAUwDatYS_GZWghfJnWBC1DAIbDVuCTpOgvKAiutwGEg=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAjtPLfZWYNK8ImValKvszyD9_579BdKs4kJeQL58mFNfju0EyhyH0JzAPCa9biEzxw1waH9bxC9TM--e3mGUQ-Uz569eCYGUDhrUQjWSb7yeDvYaodxyHDsgsLyrZ9zFJvK1g_PaXSh4r1edC7jv9Zng=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Country Boy Cafe — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=country-boy-cafe-elkton">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Elkton · Restaurant</div>
+    <div class="eyebrow">Elkton · Diner</div>
     <h1>Country Boy Cafe</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Restaurant in Elkton — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Diner in Elkton — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.8★</b><span>50 Google<br>reviews</span></div>
+  <div class="seal"><b>4.8★</b><span>52 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Elkton. Ordered in two taps.</h2>
-  <p>Country Boy Cafe already has the food and the following — 50 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Country Boy Cafe already has the food and the following — 52 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Elkton</h2><div class="review-grid"><blockquote>"Such an amazing place to have close to home.  I have found so many uncommon plants and gifts there.  Haven't tried their food yet, but the icecream is delicious. …"<footer>— Debbie, Google review</footer></blockquote><blockquote>"Everybody's nice, they smile. They treat you with respect. I'm going to keep saying positive things about this wonderful place that I could ever get enough of. I stay…"<footer>— Cornelius, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAPIp94MGoRxXWwzR0z4FItc6O3FxhfmtMDtemm1ku_tM4WP1NGEY7Aaj21N20mVNxftwQNWBO6m0fNhCfHMwdR_o4lSIiktpO4enp4PEEUGuyxQBUvgo9H-hePWiUG7-aKkHsj1GC1bVrKMddGp0q6ZQ=s4800-w1400" alt="Country Boy Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB2fLPvpr0bYSXEAltwqbV4Ze4wDgUB44Kr8n2c5R-aso4PfHUKiyltccwWazfWM2BtqP0KmYd_386Fv9tAmAqecv5Kzymevrov6dDyQBsBms_srXqUb67h4xO7buuRc0dJdT_LaKNEchQyvw=s4800-w1400" alt="Country Boy Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB2LJ0enzKxVtWmCfkaTr6hu5u_fTvD8ChAv1B9ryQY1YC9k_nkNO3k8wCAjtmS-xGlBUJQuA2gDfJ0UTPoj3UOsKXHOiGlHlGfLW7p7a9-tXwc0-65SKeP3wxWMHJg7oc7QmBI2VIdlgdEYOvn4MMiEQ=s4800-w1400" alt="Country Boy Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA99EqmRTUiVGkrhiWL7O_7YXMsC9qZd6Atgx7ckkOdBZG__qp70pPPr4PDg0KUy9UzqhNSAayc-dgThUMzcDLF4svmfl5Ujn4C_-CH91TMbeFmnT0xgfDje9cbzG5H2fr26KoxxaUmq3V9XxZkxforeQ=s4800-w1400" alt="Country Boy Cafe dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCvPS39i6YgFW7y_EeU9MUcufoZcWpKZKPnQkae1zNaBHUTON1NuDOncFcU2WauR9yt51YfFXZBADIb0_X2QDlzrONPRROfk5CaEnAYb1g4-Hr_b4VsbvgGFkQsh7zUXsx075myj4jb3G3H4Q=s4800-w1400" alt="Country Boy Cafe dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjABTIJSmEDRdd16E1_jH3RN0vtKe94SMxIJQ4j3OHZ7hLR8OllScvGGPwtadQhhSW9skysFgARlicgnxi6VRS_jZd0_Zu2mtTXj03V7iuIztX_O0kn8HBm01r37491n1B5hK-HcWvTHTOvy4O8yrJSt3g=s4800-w1400" alt="Country Boy Cafe dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Elkton</h2>
     <p>112 Britmart Rd</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Country%20Boy%20Cafe%20112%20Britmart%20Rd%20Elkton">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Country%20Boy%20Cafe%20112%20Britmart%20Rd%20Elkton">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Country Boy Cafe by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Country Boy Cafe by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=country-boy-cafe-elkton">Claim this website — get it live free</a>
   </div>
 </div>
