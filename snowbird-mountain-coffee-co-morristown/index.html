@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDzY6eXEPMmf1BLdet97KAoGaw1Z25lrc3uSHfOjH7m0WrHu9qKrb_gZX6dl7sCvh3mVnToyeptEsEHZKqigFSXGzVg5NJT1caIjMQTur79RMSkOYOkKNbsjHnDaExqfEMABSEFvRciilvknuk=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDwWHgULDf6y3jmrhUNjtWQyGAIOw8qaTUbDc6saHIxkYIQ4YUBLNgbaR0os5l85_ZFfDS4OT79yeHOLmUR5uxLCoJgLLmfvCURgvaefQygbnKVSGr5jWVF2wXnm3vwxfva8-67NCcGqonNfqk=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Snowbird Mountain Coffee Co — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=snowbird-mountain-coffee-co-morristown">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Morristown · Coffee Shop</div>
@@ -77,24 +79,24 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Shop in Morristown — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.7★</b><span>221 Google<br>reviews</span></div>
+  <div class="seal"><b>4.7★</b><span>225 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Morristown. Ordered in two taps.</h2>
-  <p>Snowbird Mountain Coffee Co already has the food and the following — 221 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Snowbird Mountain Coffee Co already has the food and the following — 225 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Morristown</h2><div class="review-grid"><blockquote>"Wanted to try a local coffee place on vacation. This one delivered! Staff were polite and kind. The seating area and layout were adorable and cozy. Breakfast…"<footer>— B, Google review</footer></blockquote><blockquote>"I love this little place! The drinks are never too sweet or too bitter. Just the right balance of milk and coffee each time I’ve went. They have cute shirts,…"<footer>— Leanna, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Morristown</h2><div class="review-grid"><blockquote>"Wanted to try a local coffee place on vacation. This one delivered! Staff were polite and kind. The seating area and layout were adorable and cozy. Breakfast…"<footer>— B, Google review</footer></blockquote><blockquote>"this place is amazing I got the chocolate peanut butter frappe And it's one of the best coffees I've ever had in my life And a chocolate chunk muffin I don't know how…"<footer>— Jake, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAId5bNCVK4yD7xUO0JLGzNru20amGWqaA93bwTtWREewnpTXq9Vz7ffA2_6rg18aj-di2r22JsB_DC1hvz8tcP39eHQvS-bZ4f6O09teWgUVEQjOlB1Yi3V8xKKkz-pteuvH9lJm3CkrbIF-o=s4800-w1400" alt="Snowbird Mountain Coffee Co dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBJmxtOlndtFxAakkdfjgitj-BeZhr9_KLQfViDTFJPbkPsdI5RDhCeaL3pQAooim0E85u0rTAH07_dF6oSZPOpxxzCf7WwCrdkwd1WWCimcxPglyDO7AP5gqBAiVrnNGSMr_jdQPYmV9zq=s4800-w1400" alt="Snowbird Mountain Coffee Co dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDyY0cPhzrETaooLKZQ3oWR3W3BXSwjDY8HTOmE_d9dwfNkRM5U3u5-Qk1BPNNJRm8UzOpVsIjswxaXTsTfJSlZc4KDmkMTPIvaBR7jBlex1APXLBfk6E0ZUNpFVPSQZxobKFPJ-aHRXhlTzFHrjw-VXw=s4800-w1400" alt="Snowbird Mountain Coffee Co dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCvXTBweIMflLTTzpdMl3YBsjOLfYxUp4tqZ7y3ifx2kB3jflDIJDbPWn_SG8V92dVmX6HitoEztBq16hFzUhCw1nDw4aSEHchzTB7TxrboIHoRxvGN45VDdANCrwmXF1e30AZD_HK7hX8Sc9Y=s4800-w1400" alt="Snowbird Mountain Coffee Co dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDC73SdUHP03MjncaDSIrAFvSv1yx__ulauZcp8JqpNHIExttKXENEbWzRvIEuZ1lAa1c5ig7Y80ycXrmzIB4SkdPTzHZhHehIkAMVaasVrZKQdMKM71qCB-xRH6iOip7hewZlwezFjJX-O=s4800-w1400" alt="Snowbird Mountain Coffee Co dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA1eL5_UU38kT-TkvhENM6eyEvXr6b10WXqS20J2mwyyhOYS8MfiTaLBRLM6dGV8cAm3Q3QjFvZ7rRmAlGWUaaiVjFCP_EH1le34ef0uu-Br3fJdwt4GoI5mD7rGT1D-POyTrX6g5xbO5w3_NbWvDF49A=s4800-w1400" alt="Snowbird Mountain Coffee Co dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Morristown</h2>
     <p>400 E Economy Rd #3</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Snowbird%20Mountain%20Coffee%20Co%20400%20E%20Economy%20Rd%20%233%20Morristown">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Snowbird%20Mountain%20Coffee%20Co%20400%20E%20Economy%20Rd%20%233%20Morristown">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Snowbird Mountain Coffee Co by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Snowbird Mountain Coffee Co by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=snowbird-mountain-coffee-co-morristown">Claim this website — get it live free</a>
   </div>
 </div>
