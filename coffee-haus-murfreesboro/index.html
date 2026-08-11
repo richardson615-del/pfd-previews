@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDwYY1HwQwLUtL8rj4ve6ked2HHPpJmvKTMpQVMLo8EzziBAs5MYnOrZk8pwfZTZgWjcVvUgKcz94Ag7KVznb4L9b-H4mIPUJwbN_09XA9Z0THIqRNaaTk7K4ZUFCBpxL1oY_u19pA4g6-s3VJ83zNcJA=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjD1OLpE3atrd476QNa1080MwR7IlQk6FokKvZDIa9isj211Sr97P6dv1V42jLfhccxMcMwQCOHeZracQs4BIahnUYupARIDt7rqWhHQ27NcTbQ98SbebAwJZdjx_DlRfEaWwIO_KZsNTsOjAjbeiY0rjw=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Coffee Haus — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=coffee-haus-murfreesboro">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Murfreesboro · Coffee Shop</div>
@@ -77,24 +79,24 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="max-width:520px;font-size:1.1rem;opacity:.94">Coffee Shop in Murfreesboro — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.9★</b><span>306 Google<br>reviews</span></div>
+  <div class="seal"><b>4.9★</b><span>327 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Murfreesboro. Ordered in two taps.</h2>
-  <p>Coffee Haus already has the food and the following — 306 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Coffee Haus already has the food and the following — 327 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Murfreesboro</h2><div class="review-grid"><blockquote>"First time trying this place. It’s going to be a new favorite of ours for sure! The decor and bright open windows create such a gorgeous atmosphere."<footer>— Tiffany, Google review</footer></blockquote><blockquote>"The croffles here are amazing! During our visit, the staff was friendly and helpful."<footer>— S., Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Murfreesboro</h2><div class="review-grid"><blockquote>"First time trying this place. It’s going to be a new favorite of ours for sure! The decor and bright open windows create such a gorgeous atmosphere."<footer>— Tiffany, Google review</footer></blockquote><blockquote>"Best people and they are very sweet, I go there very often and they always smile, and it makes me feel happy. I’m there right now and I had the best food and matcha."<footer>— Remas, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBvjya2R9k3T_38HchKnIv1PtQNkzsMZqFHNddOFzBWGG8A7ZgT1IAdmps-86adcB1f8F_8Bexrwq2RX5fdFLWpe49xv6tmt5MOMRrO3PgC0jzvvP-sUDcpraDl7ZZ5BHjI_oIy2zKuO0kotW7G7WTZDA=s4800-w1400" alt="Coffee Haus dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBk_mTzjCUWadlIiUcnKa5zgfvt1WVQqEE1QCsMwFaBcBEv20fP7E5rIszc6kiJWSIbx4CVZVuK2vr-yN3Pyzg2NrdMh-3leMGj9ZNi2uCTvu_Gu9spBIN5F8zmIo7rRiZsJnl6isR0Gbulzv_x6Up1Jw=s4800-w1400" alt="Coffee Haus dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBW-jlCyvTJQHj-_Fpt0wQ92NefON3aFpjzdmJgbPHc7wmr58T5aCN9V6lYAMrnp72p6--OSIMmth2eyV12uqDxE_2Oow64xtAgC6rlEKuacTaj4944jIUEiU6NXjys7y0E5NB4mse7W9wxWUDJp28Ofg=s4800-w1207" alt="Coffee Haus dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA6iKnTgbmAvmI1HcCygSxZRBGwoBp2Cmy97efNsgEbPdWLXCt3AarI3-sqaT2iiGnH7GP0w7VAggBVsrkIshpNeeUcqyGWCGFidGFVr1y3Bi2NjMkgpukkDxpERvvl3uJUbu5DfWW_DMpAirB0t4rkMg=s4800-w1400" alt="Coffee Haus dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCEd2-PZnuzM62ymg7Ek-LO3iFw7xVhq-QOspjt6TipvictBcZWNSD6o2yzIivt0B9J3YHRd7nqILWv36oadDKQoa39uQ0iY-r6XHucPRp85HXT9g0-fqjkLhJOWXW5IV4vlQTkkiL2gT8de4Aly-hLvw=s4800-w1400" alt="Coffee Haus dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB7F9uoERtSXe6I7cH-jCny2X2STuC2Bzw4TsM4aJIqEvww23TxgkQC5AAOhcm9n3KZgnaDNcIxY1akThs6_O0oQPo_v-_WaiIXD33xCD6EuImi_WEjD0wdM35AKLh3coOuN_V_zPSWSWLK9wr2eicJ=s4800-w1400" alt="Coffee Haus dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -102,21 +104,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <div>
     <div class="eyebrow section-eyebrow">Hours</div>
     <h2>Come by</h2>
-    <ul><li>Monday: 8:00 AM – 5:30 PM</li><li>Tuesday: 8:00 AM – 5:30 PM</li><li>Wednesday: 8:00 AM – 5:30 PM</li><li>Thursday: 8:00 AM – 5:30 PM</li><li>Friday: 8:00 AM – 5:30 PM</li><li>Saturday: 8:00 AM – 6:00 PM</li><li>Sunday: 8:00 AM – 6:00 PM</li></ul>
+    <ul><li>Monday: 8:00 AM – 6:30 PM</li><li>Tuesday: 8:00 AM – 6:30 PM</li><li>Wednesday: 8:00 AM – 6:30 PM</li><li>Thursday: 8:00 AM – 6:30 PM</li><li>Friday: 8:00 AM – 6:30 PM</li><li>Saturday: 8:00 AM – 7:00 PM</li><li>Sunday: 8:00 AM – 7:00 PM</li></ul>
   </div>
   <div>
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Murfreesboro</h2>
     <p>2108 Medical Center Pkwy D</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Coffee%20Haus%202108%20Medical%20Center%20Pkwy%20D%20Murfreesboro">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Coffee%20Haus%202108%20Medical%20Center%20Pkwy%20D%20Murfreesboro">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Coffee Haus by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Coffee Haus by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=coffee-haus-murfreesboro">Claim this website — get it live free</a>
   </div>
 </div>
