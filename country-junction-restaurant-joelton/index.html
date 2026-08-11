@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBGWS4Q9Igj54sGk5qoNP4UFJ6nGMje9xUqLkEGeoWe_JAFg6DCgyC_4DOwctEjQ8Gdb8PAteZCGfAUNIBcSEnFhzh9stymLjOaMTRpENtMhxk1dZjDtPorGoMEh83scuSqsGsNz6QRLLf_7A=s4800-w960')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCFwSeH3UMTVhryrpKqpkm6jrr2HDRVmt9ywobW2CX-Ek5wEzNUT4njI6JkOD9JbmbGiL8mG81bU96T-bONGHFKL0WyF3buVsiBnZC8JCK9oD4yFgC4WjeG2cgxbTeQ3bqInZC1Vo_CqL_SlA=s4800-w960')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,32 +72,31 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Country Junction Restaurant — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=country-junction-restaurant-joelton">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Joelton · Family Restaurant</div>
+    <div class="eyebrow">Joelton · Southern / Diner</div>
     <h1>Country Junction Restaurant</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Family Restaurant in Joelton — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Southern / Diner in Joelton — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.4★</b><span>865 Google<br>reviews</span></div>
+  <div class="seal"><b>4.4★</b><span>869 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Joelton. Ordered in two taps.</h2>
-  <p>Country Junction Restaurant already has the food and the following — 865 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Country Junction Restaurant already has the food and the following — 869 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Joelton</h2><div class="review-grid"><blockquote>"I've never had a more pleasant experience at a small country diner. Its perfect home comfort, kind wait staff, good food, warm atmosphere."<footer>— SydKitter, Google review</footer></blockquote><blockquote>"My wife and I eat here at least once a week usually on Sundays. I see at least and actually it is once a week. Today our youngest daughter joined us for breakfast."<footer>— Danny, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Joelton</h2><div class="review-grid"><blockquote>"I've never had a more pleasant experience at a small country diner. Its perfect home comfort, kind wait staff, good food, warm atmosphere."<footer>— SydKitter, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB8TzOTFrOkq1cuhdEMTmhU4nwWge6xjpR3dS03GlGUHqLVKmwi7SXRlYe4VQ4tftIyNc9ADUnBMKbfAYkG9DmJdDasytTTr0Nt9cDLIFsPLTx8gSj5FVOLGTbuJ9qDZAJKTQhjVS-mG6GFwIA=s4800-w540" alt="Country Junction Restaurant dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDxVgc6tvZa8MnRocqrD2l2gRQp2J4tCwNY7yE3-7sOfETr5WOoUXix1-uMppTkeDohKWXxTDyqRnZsvZ5a4POKmNStws73yKqqeGt9gH6wwBizVf8qvhpJTRZeBbZV1P-Y2M53cSYfg87va-shQebUXg=s4800-w1400" alt="Country Junction Restaurant dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB3IzBaToEEdubq2pTNlIWm72W7AVHsJ7LcwFcWfDfoGWDdZcGzWUnAtWsFvp_JWByk5hYMdLM68hiEgXmAeX62RDQQcIPweqzUo4AYeDHNbjBcQz5OHiU2-VHQ9BrYLCMyZjYRI-oIrHpNjVAvdEr_=s4800-w1400" alt="Country Junction Restaurant dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBZUD4YbHqaVFBfRjaH2nEAORvs2Fx6R9xE6d9xmrcHpqABV8hbh0nB6Ly0qVX4E7yx0gu3JnxVDTYpe2cOiQSk2cF73X6QONvXI1caYLzAPvjyZaXH-sKBmlCaCW2JHFLGDyo_XZKhtH_X0Yk=s4800-w540" alt="Country Junction Restaurant dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBGFbfaWRN3JDBiV2xHF4xg705U_4vu6aniRxgNGvXasr-4r3fTVSCawpJHGRXVX73oVhcEPKPvXLMAIXFnrBlduu99SUI8AhzEcf7kOofKGCFMM39lploczQFDPPEUWHQqGZOToFpivhTtb3ZFTncNxQ=s4800-w1400" alt="Country Junction Restaurant dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCzW0xGJuTlmRXktR03ZiupQTDKGA0w44AT-PsS51YmnffIiAQyPuAc2RLb6-HXsH9O3c9oTkQUdufGj-_a5LhsIgCy1sY0GQYd5JVqF-w5Qr0Fc6lgofYrLjX_Ro-uTna_XhGAnB7an9p31JF1iYZa=s4800-w1400" alt="Country Junction Restaurant dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +110,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Joelton</h2>
     <p>225 Gifford Pl</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Country%20Junction%20Restaurant%20225%20Gifford%20Pl%20Joelton">Open in Google Maps →</a></p>
+    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Country%20Junction%20Restaurant%20225%20Gifford%20Pl%20Joelton">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Country Junction Restaurant by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Country Junction Restaurant by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=country-junction-restaurant-joelton">Claim this website — get it live free</a>
   </div>
 </div>
