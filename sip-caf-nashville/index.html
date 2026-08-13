@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDABZu0bBwynMZwAa03ZV29uLYTDcFLSIMDJDmK9MBk10I4TBAJ6_yspO7sWRf-M69MemeeNrNSapC3JTUiqmB1whhTL33yyFQbBD_TOocB5q7olhDu4oc-pjNf6z-D_3KsDSg0IpDmxgQip-D3eZhpyg=s4800-w1200')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjANdp4KXZ4eaLPeebAbhLWyCRPlbUvbVNomel2YuvraU6Pnqb2gLxmB0oB4Kd0NNlWtMayW1-DJs8hQU_Fkb4xjK-pnVO1SSDIUDp29j4YVGIejYS1tdTY9_RURCV5z8cUwHrZFLyNgKBm1QjiPsxwyKQ=s4800-w1200')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Sip Café — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=sip-caf-nashville">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Nashville · Coffee Shop</div>
@@ -80,13 +82,13 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.6★</b><span>1065 Google<br>reviews</span></div>
+  <div class="seal"><b>4.6★</b><span>1066 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Nashville. Ordered in two taps.</h2>
-  <p>Sip Café already has the food and the following — 1065 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Sip Café already has the food and the following — 1066 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Nashville</h2><div class="review-grid"><blockquote>"Still the best coffee in EN! They change out their menu offerings so it never gets boring either."<footer>— Gretchen, Google review</footer></blockquote><blockquote>"Love that this is in an old bank and they upcycled old safe doors and hardware into functional furniture pieces. Staff was so very nice!"<footer>— jami, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBpKMiybgzb-UUGBXIsnn2hHI29WirGN2baIwgkU1LH0uo3_9IOFnc8QYta-fKgJsiyPevGqR3kjK5nQdZyhFzUxbD-7Gc5OeH18wnFPoZ3sZxhUCHhtfH7AbSLiMikxb4JjMVloz4mYgkNDbXmqOQtOg=s4800-w1400" alt="Sip Café dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDGz7gVeVYxhbLwgN72I1lq7FSeDj-YHwMF4hdkXC3s8wAX0Ggkq_Ar92_hz012Z39FnEQG_Rb3QLiizAQ6vYkPomhPSIXc6Gj9JFK7Pf8JrudvCMu2koIxqbrdrtTfjfjyi3-y8-4tleKCpg=s4800-w1400" alt="Sip Café dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDnxm47L0ykN4WcILAF-r5zUyXHvJOeFjJdgpu5dxlRl82qjT0cy1Qi4fl62gGFVyzNcrVzPJVQPAN6TTK0Eh2lZYT6CN7Gu8hLWuNNJ1uj8EWeKUYwkAYo3ouAV1bzl_m2PugaI6-cTgQn36ISJSPn=s4800-w1400" alt="Sip Café dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBWSa966uluUGJVnsNZPzkRzx6LzzFmEwB1lJgPCDBBpDP_m8y3H50Gjoa0ZSd87k8F2ZxCnVmPICBt8OiD3aYyUrGxlxn6P2MIrCebRwTNxBJO6TDeAa_XKz9I0vNM2XQWl5SXOvooZJRF_u8YBbZbkw=s4800-w1400" alt="Sip Café dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDNrxL-lopzKaGC_CcJNWR_zr5mw7wZIOftb6HK7rFvTHS2BBOboIj72UrM1RcWFJvqIzY6v090p2Ji2ZhR5HJusi2Y9AnHWrf3oi4Ot7My9vrK5MPppGqWFBQdt1jYuhG67xv78M8Dll9GSg=s4800-w1400" alt="Sip Café dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCIInMbgdd1jD18FmIn0Go1fXVBVK9FCvlAZFdNDtPbfTfovBLSi0ciIlFG35Q9cPl_TtIMs-6iKprvgy1VoviR8r-LldehwfvPsg4UhAAdkp2BBI2onzkPmJfZ6oHb7xlrH-e6wFNiiZcdmuyVJLJr=s4800-w1400" alt="Sip Café dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -111,8 +113,8 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="margin-top:10px">{{PHONE_LINE}}</p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Sip%20Caf%C3%A9%203939%20Gallatin%20Pike%20Nashville">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
