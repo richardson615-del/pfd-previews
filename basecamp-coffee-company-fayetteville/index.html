@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAl9LQK-MvUqRtae3kFA5QDfeg9fRCe-vbeXd6uYjpDyfPLCWsGAtSyQNiWNVWZY3947V5EYZREOvHmt4-fsIYKKBweJPzsjurpVSr1LQsueGP-m4wF5xaWb_ROO8CtkPFZJnRT7IrmR4qgKw=s4800-w966')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBwK0E1V6HeDXuvB7ltrSPL5vJKraoHvraTR4VXmsn59a45vnOrEpzN3bzmse2bmF0Cp68r2LJUbL-b2vd0wV3AYK9qX_CztrYIukOdwxUZDmvb5JYK-cYO3BDb9ZgAVdORweb30IZdMemBCA=s4800-w966')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,7 +72,6 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Basecamp Coffee Company — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=basecamp-coffee-company-fayetteville">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Fayetteville · Coffee Shop</div>
@@ -80,21 +82,21 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.5★</b><span>614 Google<br>reviews</span></div>
+  <div class="seal"><b>4.5★</b><span>616 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Fayetteville. Ordered in two taps.</h2>
-  <p>Basecamp Coffee Company already has the food and the following — 614 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Basecamp Coffee Company already has the food and the following — 616 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Fayetteville</h2><div class="review-grid"><blockquote>"If you’re craving those moody, eclectic Pacific Northwest vibes without leaving Arkansas, you "Naud" that Basecamp Coffee on College Ave is the spot."<footer>— Rachel, Google review</footer></blockquote><blockquote>"The coffee was absolutely delicious, and I truly love this place—the atmosphere is warm and inviting, and the staff are incredibly kind and welcoming."<footer>— Razan, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Fayetteville</h2><div class="review-grid"><blockquote>"The coffee was absolutely delicious, and I truly love this place—the atmosphere is warm and inviting, and the staff are incredibly kind and welcoming."<footer>— Razan, Google review</footer></blockquote><blockquote>"This is our go to coffee shop for espresso. The staff is above and beyond friendly and competent in their coffee making skills!"<footer>— Dianna, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDUsKBwoEikaEH1DJ67U1SFMC98saVackWXpaHbFAfGpJQ3y24WabHV6ELyTPnalk9Z1s2f-Q4DKUiLjp6JFu53IpS490ZSjjY3VbSGDYS4bBmb6O1EaLQ-oG5tExmlDj91iwp97--lTHa7nA=s4800-w1096" alt="Basecamp Coffee Company dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCIhOSPxH_nIN2f0c6D0lOMOgcDGAYPHgvoDftuoNXU0mNt3TMYfDydbMXCRuyfyR8krUM2t3ASf2S3TG_H27uH506H6pzV5nOPx6IseZqA64XX9FmUFV11L3Cx4NwQltc9y6KAjWVIvoYUlUk=s4800-w1400" alt="Basecamp Coffee Company dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDQczARMJdn6_eaB-zwmURTvspmpTb-5uyRVUMzAnZrlq1q5B_3qONcnM4r9m554tbXKcdtQ1-z9XcQf8W49ne6GKcnJ7QpbIV-bOQu2x0c7K_Q9mBz2UrO_SC41lL4CZefllVGSrPa2gZOUp8gnZ-RCQ=s4800-w1400" alt="Basecamp Coffee Company dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDxyHY-Pcx2F23B621Bj-2BoqkImE0BVHjFAqBUw9TZFJjd_oqf2H0gNdE8wDfZ1JfiyGszyfquiVO5SvTCmkn6h6B8zHKCM_YnYONomnuRuSW_XKp8F04AvI8o8P8HN0cXKSfzk8i6ADop4Q=s4800-w1096" alt="Basecamp Coffee Company dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA57Hr4od5OQe0aIjLirLRZb0o0QZUqdVX0PLjpWhrUMhT_PP8uJbW8ntMmkBwOu7JU9QsVwCZhU4MPk0BMThA25vINOim5Gb-iXFbsEwW8V5KXpnfJtQkuRKatwhTYTJ1hpgXMQohLwyIIVuI=s4800-w1400" alt="Basecamp Coffee Company dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBSqfm2PN2-ls8usbuxeu6g95akYliolZdTPTB5d6rLsPhiScMjY9st1grgFc-CgFCKqAHpCUpLVxsnYJpk14cqVfrvrJDCYVw-nEJgKIR-fMNrIXiLNEGHX4q96fLr0-PAa05mLU2F9HtyKe46QfXbKg=s4800-w1400" alt="Basecamp Coffee Company dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -111,8 +113,8 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="margin-top:10px">{{PHONE_LINE}}</p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Basecamp%20Coffee%20Company%202850%20N%20College%20Ave%20Fayetteville">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
