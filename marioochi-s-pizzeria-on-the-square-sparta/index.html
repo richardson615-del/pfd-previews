@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDvCLo-NhUgfkbztiZ1t-6TU41rbpEW945t4W_H_LTLjQuk57h10QGAKRkllcF1dqGNnHrrVcgkcahohtukzWaSsSd6xZKBrX8JmFbXeL1eTMdX6cYyfhNtvEXppDW0AuMDBd5vM0kxNab_Rvw2COhZhQ=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjDYW2A4JElYN1t8Sm4bIrh2ISHOzAZYKh5sy-gZgyCOYWWoLPkl4kvVlJdWMs2SYvX1JzW8yM3dd_JoWGoiYZNtm6D-pRpiMDJ_7hh5lR8zh-vBjObPxyiIppEhrpWdMQS_DMOSIW64tL2LewUvHvYMwQ=s4800-w1400')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,24 +72,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Marioochi’s Pizzeria On The Square — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=marioochi-s-pizzeria-on-the-square-sparta">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Sparta · Pizza Restaurant</div>
+    <div class="eyebrow">Sparta · Pizza</div>
     <h1>Marioochi’s Pizzeria On The Square</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Pizza Restaurant in Sparta — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Pizza in Sparta — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.7★</b><span>917 Google<br>reviews</span></div>
+  <div class="seal"><b>4.7★</b><span>921 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Sparta. Ordered in two taps.</h2>
-  <p>Marioochi’s Pizzeria On The Square already has the food and the following — 917 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Marioochi’s Pizzeria On The Square already has the food and the following — 921 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Sparta</h2><div class="review-grid"><blockquote>"Absolutely amazing. My wife and I are pretty big foodies and we decided to drive to Sparta one day. We parked along the street."<footer>— Boyd, Google review</footer></blockquote><blockquote>"Beautiful inside, they let the features of the old building shine. The service was friendly, attentive and efficient."<footer>— Carrie, Google review</footer></blockquote></div></div></section>
@@ -94,7 +96,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA-5aL9s81QyyJ-C9Gxtr59EOiZ5HLqK0zGhcgNdvys9b-C0OgvMcey865GGWVA_jNB4VgCVW2qhHnzdwQMo0RDPUpf9GDIIEJA6H_GFKPykmkLg5v3cQF_L6KVnqjQP6VzgrJn0aX80JqjorhHoRPjrg=s4800-w1400" alt="Marioochi’s Pizzeria On The Square dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDroKkhp8aM5fEe7XxDJSQuy0dAVzUbc8MvArt7p_NelFyKogxmcVRapsnk522whbI7cwp0tgIEWglI3toNU1E6HduRDzE27HEMWURKFjp8pi74GA6oZT3jOVLwXNPGos2xOMDF6Mji0szIW06QPEIB=s4800-w1400" alt="Marioochi’s Pizzeria On The Square dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD8f9jMnwdxGzpxAFipJAM9t8mRkKtIoO4KYZSHjw45TONqHQnNZvUe0qCJH1vDmaybDT-ZeU4QP7McgO8x13ICA5AETTNZ0RFkTQcLoSCHwE3-dxDcijQ8ouwBB_jQQGUovd0o95HpPyerKwIe1AQb=s4800-w1400" alt="Marioochi’s Pizzeria On The Square dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCLo0UQhCGyY3OpZ2g3kfS6L_In9iscmi313muXPOyFN2B-ugO7jD9El_oKdMunY6nUuGMLSGromQ9K9RFKo_Iz1L7fpa2BbwjOuX8_kE6D7_DdefSj0xg4V-YDr-XzuG0aFnjJ0Q-C926Ef3Ek6_KxmA=s4800-w1400" alt="Marioochi’s Pizzeria On The Square dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDrHVB3tmOG7S8fVXOtTSmUczQyukStkvokxTmu4mqBYgFCM-Mb0xEYsIvHR6IVzQxd5ORoqLWWivJ-NFg-df1LhzqsAgVlWJuY5hjnXxXpVddX0JJtZSJXOYX-HHvfzoueae6WESHiO40Gf87jkkuu=s4800-w1400" alt="Marioochi’s Pizzeria On The Square dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCjQUkp1wBix2If9Y0dfMd6NgP4JKbqxg7su7NhJ4HtnLcgluakzYyVefH1x-rVxNu_zz0SuMcezR8NfQRIKNXN8_l3F-E6YvrBm739dIputJMPThtO433t3hk3yDuSLRtWt-hZKjUh9vN0_N8NBid8=s4800-w1400" alt="Marioochi’s Pizzeria On The Square dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -111,8 +113,8 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="margin-top:10px">{{PHONE_LINE}}</p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Marioochi%E2%80%99s%20Pizzeria%20On%20The%20Square%2010%20Liberty%20Square%20Sparta">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
