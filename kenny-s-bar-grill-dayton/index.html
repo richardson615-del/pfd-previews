@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBUAQiptUJ3cD8lw7OWAaYvMbV7fDViryIkVS4RqDPU81XrRBAhAfY-iP_kaxeXkebFTLq2O749JbG4SmtVXMpU80ZPswCKqtX6W92quhYCVKm-QrELFxtISGSFNsm0Cy0BADStIIq5GYXNFXI=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,15 +53,18 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -69,8 +72,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <span>Preview for Kenny's Bar & Grill — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=kenny-s-bar-grill-dayton">Claim this website — get it live free</a>
 </div>
-
-<header class="hero has-photo">
+<header class="hero ">
   <div class="hero-inner">
     <div class="eyebrow">Dayton · Sports Bar</div>
     <h1>Kenny's Bar & Grill</h1>
@@ -80,21 +82,21 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.4★</b><span>384 Google<br>reviews</span></div>
+  
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Dayton. Ordered in two taps.</h2>
-  <p>Kenny's Bar & Grill already has the food and the following — 384 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Kenny's Bar & Grill already has the food and the following. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Dayton</h2><div class="review-grid"><blockquote>"Came in to visit from Nashville. My girlfriend and myself loved this bar. Bri the bartender was amazing, they were so kind to our dogs also."<footer>— Frank, Google review</footer></blockquote><blockquote>"This is without a doubt the best bar and grill anywhere around this area. My family and I have known the family forever and we very much consider them friends/family."<footer>— Billy, Google review</footer></blockquote></div></div></section>
+
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCkA3t_KEoTh_g9BZ1NbCxh0KoTMpLQ1p7r2nWfQU72isUrWTz8_xnvw0-m8qn1AWApOrYInhS0vLNjipClxLaypjpue69QYqQzOmns7HHWNnbhmnWT7RmI3-1SsIb-Mra1HDKpJTCjrKjZfg=s4800-w540" alt="Kenny's Bar & Grill dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB8c3d9EMKS7bRszUV-uVE62zpMSMSYNiK3VKleADWdxrbde6Ydsp6D3ivLv6GSrHSV10fGpiESOPEHC97q6hH1szjJgB7If1YcrL_rSe8PNqBENarTun_QAeJwHyZBNIcSwaRrkWseU7FDotE=s4800-w1400" alt="Kenny's Bar & Grill dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD5Jw8hQTAgZf7efdi31ueFxHcCN35sc2E9eNz0brpBSViTpI6Q4vj1eoZujLOASPKR22Q0zuGbkz_5gfBtuXWWE2ASWfMdHUq-a_BxiapVGSFpKehO0kWpZ-3vRFpNy9CyIE9LDh7z8s2gSA=s4800-w1400" alt="Kenny's Bar & Grill dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><div class="pad"><h3>Your menu here</h3><p>Real dishes, photos, and prices — organized and mobile-friendly.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,11 +110,11 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Dayton</h2>
     <p>1305 Railroad St</p>
-    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:10px"><a href="tel:4237755001">(423) 775-5001</a></p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Kenny%27s%20Bar%20%26%20Grill%201305%20Railroad%20St%20Dayton">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
