@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBYmUruEZwNksuioniXwQ14rcgVFDCYgSH7mn4lLuMO4guS1NoPo1f6r9N6WM_K8LlLFUT6NpTrik_egPcZ1fkyI71oQ3EktgfSQvnkVkFKp2QfjDgqzxjizZpcVwKquqJVKV4kIwEr2KHSgPc=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,48 +53,51 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="6d78a706ce17429d85f35dfb393fb3d1">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for El Patron — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=el-patron-rockwood">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Rockwood · Mexican Restaurant</div>
+    <div class="eyebrow">Rockwood · Mexican</div>
     <h1>El Patron</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Mexican Restaurant in Rockwood — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Mexican in Rockwood — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.6★</b><span>978 Google<br>reviews</span></div>
+  <div class="seal"><b>4.6★</b><span>995 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Rockwood. Ordered in two taps.</h2>
-  <p>El Patron already has the food and the following — 978 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>El Patron already has the food and the following — 995 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Rockwood</h2><div class="review-grid"><blockquote>"Fabulous service and great tasting food."<footer>— Mike, Google review</footer></blockquote><blockquote>"Great place to eat, order in or take it. Service is always good, and everything I've ordered is awesome."<footer>— Mike, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Rockwood</h2><div class="review-grid"><blockquote>"Been coming here for years, probably one of the best Mexican-style restaurants I've ever been to!"<footer>— Journey, Google review</footer></blockquote><blockquote>"Good service and happy hour. I try to go at least 1 time a week. They run special deals depending on the day. Everyone that works there is super friendly."<footer>— Donald, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAoEOLyHshhBwp2OyMb_qkffr6cSUeMUBlpw_rPTC5zLjvDDQU2TAdh2OIIH2oNMHjrCh7AqrFAQhdF7ipdaz75IIX59kDBWKV-neexvDfVmwuaoUnVPTKbE2gn46ujRpQcgsVJevZ6xlFcGJs5ZRnzdg=s4800-w1400" alt="El Patron dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAbvV9_Jn2uLn40ACwSOjo92jx3Iv2cDUeh_-LlQQ_K1bPQIU68ZV5tumzg8LIr9qsDaSPxLBo59plTO7T9Nfmq0Gv64gHxAeiqvdRwGWh8_zCvBExzxpofOH4TQSHKXZ4yKbA7PVYpPJEH=s4800-w1400" alt="El Patron dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCbGO0QacdRH3z1S-T2AKVoU8DmwTW5_eoC1-N4cvDkiH96TMPe8rPzGlom1fLsxQ8SD67vp5i9tqje3Kx5k4fZ-dbbqaSEKTjljMNLBUgzLbLBA0sy8xJXgFF0Bzt2SZnh2EBD-XaD1hjUAzQ=s4800-w1400" alt="El Patron dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="El Patron dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="El Patron dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="El Patron dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +111,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Rockwood</h2>
     <p>104 S Gateway Ave</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/El%20Patron%20104%20S%20Gateway%20Ave%20Rockwood">Open in Google Maps →</a></p>
+    <p style="margin-top:10px"><a href="tel:8653540366">(865) 354-0366</a></p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/El%20Patron%20104%20S%20Gateway%20Ave%20Rockwood">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for El Patron by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for El Patron by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=el-patron-rockwood">Claim this website — get it live free</a>
   </div>
 </div>
