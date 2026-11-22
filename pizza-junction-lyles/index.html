@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjA235JU5M_tlDDWSRlzMs1AWMFg1A6nCazCR7E8e0r6K8wSnN-gHWkd55gprEK-38yFPvcV3YakVn6c0PlU4Cny1pIle-dA7jj4GMoQWroyBa1h46UW2-ZE3KSEhCaOu_bulpTuIwdOkNC0WA=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,48 +53,51 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="b885c578ba6b4548b2dcbcb7461753ea">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Pizza Junction — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=pizza-junction-lyles">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Lyles · Pizza Restaurant</div>
+    <div class="eyebrow">Lyles · Pizza</div>
     <h1>Pizza Junction</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Pizza Restaurant in Lyles — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Pizza in Lyles — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.2★</b><span>552 Google<br>reviews</span></div>
+  <div class="seal"><b>4.2★</b><span>561 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Lyles. Ordered in two taps.</h2>
-  <p>Pizza Junction already has the food and the following — 552 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Pizza Junction already has the food and the following — 561 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Lyles</h2><div class="review-grid"><blockquote>"Lovely place to eat! I love the pizza there, so delicious!"<footer>— Catherine, Google review</footer></blockquote><blockquote>"Laid back pizza looks pretty good. It's a nice small town pizza place. Definitely recommend it"<footer>— glenn, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Lyles</h2><div class="review-grid"><blockquote>"Lovely place to eat! I love the pizza there, so delicious!"<footer>— Catherine, Google review</footer></blockquote><blockquote>"We just moved near here and tried it out, they make to order whatever pizza you want for the buffet and everything we tried was great!"<footer>— Valerie, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDi47ohjIxX5wyJI_hiaMa0w0YpSoFy8L6zVfsRWmpryMRaoEe0DknQ9D6_IHZnqf4o6G8RB5a8zdv4ou8f-qpuiI-7ADkBDSib8Yjd9KtIWkRV7KBHkRDwHjyHog3yLKjTo18UnszICFf88L4=s4800-w1400" alt="Pizza Junction dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB4BOEcjNfHf4ETPbrgIkVmDIIArL2ox7NHzZX5mlnyJgtPW4FV6BWCtJEYSNCHi6s1w8kqa7OzTKc6DdYdqRZkNIlP2jTjqNwN5cVibYp_P5myqaz1XujB9xBYeOL8eQuO2TkUcCihSPqo=s4800-w1400" alt="Pizza Junction dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCbAvkvrcrrlIF9oIv9TtXjpr4OgN1CDW5bmZeS2FZcWbftU_7MhZXsKHDTSJOQyPs9qwes8SBjEQmHMC6aI6VfeBBsMzwmPBzCLZySYsX2TmWUR1ZRqGekiG-CVoCaTh04S5yQGc7uRmxHpg=s4800-w1400" alt="Pizza Junction dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Pizza Junction dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Pizza Junction dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Pizza Junction dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +111,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Lyles</h2>
     <p>5325 TN-100</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Pizza%20Junction%205325%20TN-100%20Lyles">Open in Google Maps →</a></p>
+    <p style="margin-top:10px"><a href="tel:9316704000">(931) 670-4000</a></p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Pizza%20Junction%205325%20TN-100%20Lyles">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Pizza Junction by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Pizza Junction by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=pizza-junction-lyles">Claim this website — get it live free</a>
   </div>
 </div>
