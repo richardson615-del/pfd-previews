@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjA_Mw2cW2DasOeAhgvfyaILeCKQ88jQ9ZkuKgw53i5fC3MSSn_9Kv0hoTj81XruPPSP71s6O_WYLR3_YEYK07VtqBN0HWLlqO8vL05qJk87Um373d_fdzc9xmzMKCmaG8OZnhGZ7odfiCJZk6kx-Ok-=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,23 +53,26 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="da6c20b8f07a43e4bb09d648fbc069e3">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Red Top Barbecue — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=red-top-barbecue-guthrie">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Guthrie · Restaurant</div>
@@ -77,24 +80,24 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <p style="max-width:520px;font-size:1.1rem;opacity:.94">Restaurant in Guthrie — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.5★</b><span>427 Google<br>reviews</span></div>
+  <div class="seal"><b>4.5★</b><span>431 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Guthrie. Ordered in two taps.</h2>
-  <p>Red Top Barbecue already has the food and the following — 427 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Red Top Barbecue already has the food and the following — 431 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Guthrie</h2><div class="review-grid"><blockquote>"As I pulled in the parking lot there wasn't very many cars , I thought to myself might as well give em a try  its 50/50 chance could be good or really bad."<footer>— lumber, Google review</footer></blockquote><blockquote>"Good food for the price. Being from Louisiana I’m not use to flat cornbread. We got (2) 2 meat plates with 2 sides. The ribs , sausage and brisket were very good."<footer>— Nikki, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Guthrie</h2><div class="review-grid"><blockquote>"As I pulled in the parking lot there wasn't very many cars , I thought to myself might as well give em a try  its 50/50 chance could be good or really bad."<footer>— lumber, Google review</footer></blockquote><blockquote>"Friendly atmosphere good prices great food. Just love this place."<footer>— Lisa, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAIDx0oFDMh7Nf6bAdN4A_eQDCKIxnX6w-wuP8Ih3PJ_n_3qz6vuCsZaf02dIML1qhjBY46LK_H8KwYpljg59Zj07BEejJM9hwUTeUwsEs9f4LWReqxFoSMv4OAtD2NOhv4l69hXJbYXqXvqw=s4800-w1400" alt="Red Top Barbecue dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjARuRkKz6HaHsDdYbDI8WdC4npcJpD7AFzDj8ICdhY9m0bJeoEpoE1GOXcL23a9-kT4EUTnp2L31IPNsiNrChal08Q_vc1p8oMSFv3qclr8bj6k2roC2zfxv_XbJIRrbDi9JQl9q2V2Y-I-5A=s4800-w1400" alt="Red Top Barbecue dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBEHBDrZY4cF5TtVgHaXNo8LbIEBA9vbv5LOGN9Q6whvosipPidC4BbChZ20aGwAV4ydABQJrISrgZSXzzzvjAisf-X1gTUcguQae_KIJ7TVqds9_f6oDE9Y5KEPudcgo_XSxdwiT2tjnbHMZZSNz1S-g=s4800-w1400" alt="Red Top Barbecue dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Red Top Barbecue dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Red Top Barbecue dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Red Top Barbecue dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +111,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Guthrie</h2>
     <p>10388 Russellville Rd</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Red%20Top%20Barbecue%2010388%20Russellville%20Rd%20Guthrie">Open in Google Maps →</a></p>
+    <p style="margin-top:10px"><a href="tel:2704831328">(270) 483-1328</a></p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Red%20Top%20Barbecue%2010388%20Russellville%20Rd%20Guthrie">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Red Top Barbecue by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Red Top Barbecue by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=red-top-barbecue-guthrie">Claim this website — get it live free</a>
   </div>
 </div>
