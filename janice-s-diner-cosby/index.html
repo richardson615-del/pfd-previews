@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBgVdjWhlZUw7gJQFQDmh7qrorqHE1Z6FNSaAwxbaKOcvmNW76VJD-Momj8VbnZWGmeQb0MNFG_jm3YrEPs4ohtAhgoisqvf-I8MIS9AApNHSX96LvobZ55hGl1mbFw7NncMgDNnbm7gQnzbO0=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,23 +53,26 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="d2ded7badcc44478a0b49ef0f926f9e1">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Janice's Diner — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=janice-s-diner-cosby">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Cosby · Diner</div>
@@ -80,21 +83,21 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.5★</b><span>2527 Google<br>reviews</span></div>
+  <div class="seal"><b>4.5★</b><span>2609 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Cosby. Ordered in two taps.</h2>
-  <p>Janice's Diner already has the food and the following — 2527 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Janice's Diner already has the food and the following — 2609 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Cosby</h2><div class="review-grid"><blockquote>"We finally found a excelent local diner. The service is great and the food is fantastic. Today's visit was for lunch / dinner and we forgot to take pictures."<footer>— Heil, Google review</footer></blockquote><blockquote>"Great little dinner, great food, and great staff! Also cake to die for! Staff is always friendly and helpful!"<footer>— Zachary, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Cosby</h2><div class="review-grid"><blockquote>"The best breakfast in Cosby 10/10 🌟 You have to try everything. Cake slices too! Family & I ate here religiously for a week straight."<footer>— Dani, Google review</footer></blockquote><blockquote>"We finally found a excelent local diner. The service is great and the food is fantastic. Today's visit was for lunch / dinner and we forgot to take pictures."<footer>— Heil, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBic6K9V-D4ch6354gIXU5Ey_Sf0U-b_O-2VR9jh0ivdZAHicHAYcgXjCpwKjLtZNsZe5gcEQUAME1kZZ1dMMIsOqgNGRnYUWOoEzuzsnV097o996NPBkYe9tippRrM9T0Xly9i4pr9AAkx69Kvca5o=s4800-w1400" alt="Janice's Diner dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCzMjlFQPkPwbCGMjB3rxGMD72NAeLNEYiPSPkIprtaZTbPLvHW__j_aCQ0_fdRmvPTSnJumnm3Zv5-ZQ5Dcl5tDOHXyYBqbQ_rO40inNyThFX_wtzXxtG6Gdc5wcmAO1ESOLSDjYhHYPBH2GBBPSlY=s4800-w1400" alt="Janice's Diner dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAyeubbnD1xXO8dV0ch15rGRQA1CDUeyyFSBUSZ4TC9bWVEyjtR1l3vGUU2Z8L-0hPQKxwuX2RhKj_k7PBwuJIPxKDf1XlI9Ic51pjn_4mjRIy0RGM7W3356pERScv1Djrdcw0XiAOSyskI5bw=s4800-w1400" alt="Janice's Diner dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Janice's Diner dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Janice's Diner dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Janice's Diner dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,11 +111,11 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Cosby</h2>
     <p>2765 Cosby Hwy</p>
-    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:10px"><a href="tel:4236135515">(423) 613-5515</a></p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Janice%27s%20Diner%202765%20Cosby%20Hwy%20Cosby">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 

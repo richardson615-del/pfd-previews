@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjD8B9lvJsrqJ_EZUS41SAAD6MbUbJ_ghj-OFVXwW73g0nuxiSHTgIBKfscvYnBHcb_5r61GFfUXZDWno38-YhiUrmH-IXdx7cqVpTG3wwhProJvnHmDUvxGhFCfCtlibXEZUg1cFexCjFKZjv9fOWA6=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,48 +53,51 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="2b61e61daab94d75884b298a4248180a">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Tequila Taco Bar — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=tequila-taco-bar-fayetteville">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Fayetteville · Mexican Restaurant</div>
+    <div class="eyebrow">Fayetteville · Mexican</div>
     <h1>Tequila Taco Bar</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Mexican Restaurant in Fayetteville — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Mexican in Fayetteville — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.7★</b><span>294 Google<br>reviews</span></div>
+  <div class="seal"><b>4.7★</b><span>359 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Fayetteville. Ordered in two taps.</h2>
-  <p>Tequila Taco Bar already has the food and the following — 294 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Tequila Taco Bar already has the food and the following — 359 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Fayetteville</h2><div class="review-grid"><blockquote>"I stopped for lunch and really good meals we were seated instantly and had our food not long after our drinks maybe 10 minutes."<footer>— 2wheelwhit, Google review</footer></blockquote><blockquote>"We stopped by here after doing the Kaymoor steps and had a wonderful experience!"<footer>— Jamie, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Fayetteville</h2><div class="review-grid"><blockquote>"Nice find in Fayetville, WV while visiting the New River Gorge. My wife and I had dinner in  mid November 2026 at Tequila Taco Bar. They have quite a menu to choose from."<footer>— Timothy, Google review</footer></blockquote><blockquote>"WARNING… drinks are strong & food is DELICIOUS! Gorged ourselves after a day hiking the gorge! Best place we ate on our trip to Fayetteville."<footer>— T, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBGW0dn-uNw3qZDKJHVxwckvagR78RAYDxMm6hu7LZdT_J2obC0Ywu_Rviryqp8nNMHQYLUGAVQpznC1VHY7IPMe46ZcyDcR-xqkR_PNRVzyM8e9je_WaaXZBm_z6caGVaDXmepVxaweEipx7CG0VvN=s4800-w1400" alt="Tequila Taco Bar dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAFxRaXn4edGPqEWEeOZD5DP6t8iCtigD2Zz66bTWNf75KkYUrtjErbYBjY94YlLjWQESwNEGE0zDcAIGwTvLq-OfeRfICufAFOO5jiwN_bzuiRT8cEXnUpfxXRpsAWSV5drja33qj_r0wOoGkcbeBRnQ=s4800-w1400" alt="Tequila Taco Bar dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB5c4TZqVDHQRR6gjUV8Dc4HdxxfS2J6fI3JeEZDQ356gbX7hz9RgFDspjD--KD_xW5GXRbUzja6daAD2uYDu26K2YP-Xa_andw7ZtP5-9UPrIL36txpEYzQyvuIEOht2ZZRkUa4eL1-WtwqcAoJqoIGA=s4800-w1400" alt="Tequila Taco Bar dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Tequila Taco Bar dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Tequila Taco Bar dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Tequila Taco Bar dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +111,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Fayetteville</h2>
     <p>312 N Court St</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Tequila%20Taco%20Bar%20312%20N%20Court%20St%20Fayetteville">Open in Google Maps →</a></p>
+    <p style="margin-top:10px"><a href="tel:3049005095">(304) 900-5095</a></p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Tequila%20Taco%20Bar%20312%20N%20Court%20St%20Fayetteville">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Tequila Taco Bar by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Tequila Taco Bar by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=tequila-taco-bar-fayetteville">Claim this website — get it live free</a>
   </div>
 </div>
