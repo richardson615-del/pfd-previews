@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjARrZ8XHJswc9VGgNG8ppxcYxeB_pZA4KYrjtYYPOLXs8eAwDNOQY04JE89tn03GNwq8fHMi9UADlAVirjRWxhdicAd0D_R0iY2il597W6RFJ26FwtwxrteiO7vyd34Q5Xj88XQyQ6m_DSFZgja9PSIgg=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,48 +53,51 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="523360b034fa4258a0a19d5151431fb6">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Vols diner 2 — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=vols-diner-2-jacksboro">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Jacksboro · American Restaurant</div>
+    <div class="eyebrow">Jacksboro · American</div>
     <h1>Vols diner 2</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">American Restaurant in Jacksboro — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">American in Jacksboro — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.5★</b><span>30 Google<br>reviews</span></div>
+  <div class="seal"><b>4.6★</b><span>39 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Jacksboro. Ordered in two taps.</h2>
-  <p>Vols diner 2 already has the food and the following — 30 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Vols diner 2 already has the food and the following — 39 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Jacksboro</h2><div class="review-grid"><blockquote>"Delicious breakfast options!! The breakfast quesadilla is so good!!! I got carry out!"<footer>— Melissa, Google review</footer></blockquote><blockquote>"This is a great little local restaurant run by nice local couple. Multiple good meals in a row. Thank you so much!"<footer>— Predator, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Jacksboro</h2><div class="review-grid"><blockquote>"This is a true hometown brunch diner. If you want a real breakfast made with love, this is the place to get it!"<footer>— Kailyn, Google review</footer></blockquote><blockquote>"If I could leave more than five stars, I would. The service was phenomenal! And the biscuits were huge and pillowy soft."<footer>— Pamela, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB_Bkwvtitnxk4d7-GEvlfTeekw3-_mqxp3A800RZDK2JvyGiIeHQmAR-2ivPDLsymubx8Nh1oDzaJu2IknMgH7Q0lggitKa_JjHEiNs8xGbY4UI9EnoVQLRq6ERDeqig8rqLC6KlsUNHhcypdhu3GaUA=s4800-w1400" alt="Vols diner 2 dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBv40adwrlt_qfV0BHx798suPtVAoElIjfiFjwld2fcHKVJtv8tk5ijT-aJhBHzACFy4Sr1wtJ0Lz8lQ5AZ6XJubY7kNP5sHlzqJcsNzRcGxGFPBu21QoFf2iBmod-CQcAxEvjaJEcLXHaWXscLyoVaew=s4800-w1400" alt="Vols diner 2 dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBRrmatwBRLD7KgxvSIWy5m-2NnGa7nF80LAi3U9kRRcTYkDdxbDGQX3shXpZ6UGGRtGcchzeEMmmicKtOyDIp1aa23RVS91-u_ujpwFoQvMHT7PTPWjIlvQyeB1HokKMCw2GhpkPFDsju8UqUPVOmxag=s4800-w1400" alt="Vols diner 2 dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Vols diner 2 dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Vols diner 2 dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Vols diner 2 dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -102,21 +105,23 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <div>
     <div class="eyebrow section-eyebrow">Hours</div>
     <h2>Come by</h2>
-    <ul><li>Monday: Closed</li><li>Tuesday: 8:00 AM – 2:00 PM</li><li>Wednesday: 8:00 AM – 8:00 PM</li><li>Thursday: Closed</li><li>Friday: 8:00 AM – 8:00 PM</li><li>Saturday: 8:00 AM – 8:00 PM</li><li>Sunday: 8:00 AM – 8:00 PM</li></ul>
+    <ul><li>Monday: 8:00 AM – 2:00 PM</li><li>Tuesday: 8:00 AM – 2:00 PM</li><li>Wednesday: 8:00 AM – 2:00 PM</li><li>Thursday: 8:00 AM – 2:00 PM</li><li>Friday: 8:00 AM – 2:00 PM</li><li>Saturday: 9:00 AM – 2:00 PM</li><li>Sunday: 9:00 AM – 2:00 PM</li></ul>
   </div>
   <div>
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Jacksboro</h2>
     <p>3175 Appalachian Hwy Ste 4</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Vols%20diner%202%203175%20Appalachian%20Hwy%20Ste%204%20Jacksboro">Open in Google Maps →</a></p>
+    <p style="margin-top:10px"><a href="tel:4232019244">(423) 201-9244</a></p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Vols%20diner%202%203175%20Appalachian%20Hwy%20Ste%204%20Jacksboro">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Vols diner 2 by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Vols diner 2 by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=vols-diner-2-jacksboro">Claim this website — get it live free</a>
   </div>
 </div>
