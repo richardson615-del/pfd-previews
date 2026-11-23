@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjBP3W3D46vY2sN6V_XmGfuq_1IN9iTbs79XF0rH3xXHlF8Yn4Tj13hEItZvG5uUn0SOGR6R44NYKPt_twuqqqWnr-kR30_idH-sSuU4uzg-00RKJOUXIhTYm1KLYyHkAvOEEiyebhua2iHh4W8=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,48 +53,51 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="4a23b5c7b20141a293d7159677f22023">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Earl’s Grille — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=earl-s-grille-crump">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Crump · American Restaurant</div>
+    <div class="eyebrow">Crump · American</div>
     <h1>Earl’s Grille</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">American Restaurant in Crump — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">American in Crump — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.6★</b><span>846 Google<br>reviews</span></div>
+  <div class="seal"><b>4.6★</b><span>889 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Crump. Ordered in two taps.</h2>
-  <p>Earl’s Grille already has the food and the following — 846 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Earl’s Grille already has the food and the following — 889 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Crump</h2><div class="review-grid"><blockquote>"Fantastic customer service. Great atmosphere. Extremely clever use of automobile and automotive parts throughout the restaurant."<footer>— Sharon, Google review</footer></blockquote><blockquote>"Delicious. Great service. Many menu options including burgers and sandwiches, steaks, seafood."<footer>— Kellie, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Crump</h2><div class="review-grid"><blockquote>"Heard about it. Listened to the hype. Had to try it out…Earls did not disappoint! The food was great and the service was even better. Loved the atmosphere."<footer>— Jay, Google review</footer></blockquote><blockquote>"Fantastic customer service. Great atmosphere. Extremely clever use of automobile and automotive parts throughout the restaurant."<footer>— Sharon, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCuFWY2nTjSYghi4-Kv0eqMOzHn4KK_14DDc6Eg__Xybdu_0AqkD8TCRIEFO4y3OQmRCyx8wtlGOc4NmB5tBZmRCyvwFRpll0BoI0v6spN7oZfXfXu9ox1fZGqfMJpPftKa0X2MZKrkHajdzQ=s4800-w720" alt="Earl’s Grille dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAT3a1Klx8u3-jwShKyhWlkjPzPYPCCb313mjVI2x9n3d2Tt2qJG7k1l-uYamFlCIQMmqg7DbXCXEQf19V955GMI6VtiNrQnUk2qJiVzTH_JmXStOO01eZSuosxIL2bJa1Q2th_zVsPkeveSdR5szbv=s4800-w1400" alt="Earl’s Grille dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAOeuV586oPOpjGGj3EgTM107AijDeBBVKIo_CWc1X5mCF042YZ8IumVPEqCzx2ME1WisOT7O01T3nwRyDqrI21naz2qVbSG8Qn_HKLXggmRKXJkfk921ICz16n7NNmBwxKnvqrBrNS3vhFuBE75frR7g=s4800-w1400" alt="Earl’s Grille dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Earl’s Grille dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Earl’s Grille dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Earl’s Grille dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +111,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Crump</h2>
     <p>3425 US-64</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Earl%E2%80%99s%20Grille%203425%20US-64%20Crump">Open in Google Maps →</a></p>
+    <p style="margin-top:10px"><a href="tel:7313151222">(731) 315-1222</a></p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Earl%E2%80%99s%20Grille%203425%20US-64%20Crump">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Earl’s Grille by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Earl’s Grille by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=earl-s-grille-crump">Claim this website — get it live free</a>
   </div>
 </div>

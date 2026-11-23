@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCrdZog6HddgMUFm0_-bMOK4okSnb7uc_sr8OeQ3BHMCDm-j7LExNsEUQvBU7RZTPcK4ZIX_rNb63F1iBOKveS__lO531uzmWAGGvJgkHdAjmsrDeVdDPsoV3B_HGHKXtmy9vLykMmf8dj3-A=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,48 +53,51 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="3b277f023320473d8892f98249c89c18">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Wilma’s Kountry Kitchen — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=wilma-s-kountry-kitchen-mayfield">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Mayfield · Family Restaurant</div>
+    <div class="eyebrow">Mayfield · Diner / Southern breakfast</div>
     <h1>Wilma’s Kountry Kitchen</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Family Restaurant in Mayfield — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Diner / Southern breakfast in Mayfield — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.6★</b><span>536 Google<br>reviews</span></div>
+  <div class="seal"><b>4.7★</b><span>553 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Mayfield. Ordered in two taps.</h2>
-  <p>Wilma’s Kountry Kitchen already has the food and the following — 536 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Wilma’s Kountry Kitchen already has the food and the following — 553 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Mayfield</h2><div class="review-grid"><blockquote>"Wilma’s is a wonderful local cafe featuring country cooking served by super friendly staff. Check out the menu."<footer>— Christine, Google review</footer></blockquote><blockquote>"Great home cooking. Staff was super nice and friendly. Can't beat the prices either. I had breakfast there and the gravy is amazing."<footer>— Charlie, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Mayfield</h2><div class="review-grid"><blockquote>"Great home cooked country breakfast! I had bacon, over easy eggs, biscuits and gravy, and home fries. My son had French toast, bacon, and scrambled eggs with cheese."<footer>— Brandi, Google review</footer></blockquote><blockquote>"Wilma’s is a wonderful local cafe featuring country cooking served by super friendly staff. Check out the menu."<footer>— Christine, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB8CMPMnbMQEGoZnj2pKQx7wom1kRKV-vEQx-dYNJmc2WTjWJksVL-YuCv-olQToSYNlP_2r8POuLR6YxeQveCqsyjdDRhGDUE3iF0qmvsZb8e2j-3d9BBW4D2SctxOy8_kkhds_jS_hvO_=s4800-w1400" alt="Wilma’s Kountry Kitchen dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBaR7ts_5LCnSeZr3NYL773a2Y76_N-R8UygQCR5zA2s5BltpkB_-FFSeZyIyJTG3_B86PlcrsK8ngpzepWUb2gP_RGJXykWlo7WmhxDrYYEik3M_Ob5lZADBvxcUNfaoplk0r-0slVgM7sJ9U=s4800-w1400" alt="Wilma’s Kountry Kitchen dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAuFk94G0UqkVQmloFwBMNXuhTPMoOoOllkxUe_jkGvJuZ74bxWSc0pV7YzJUCKe2W6J24bdeOsKYeQ7y4YS9YjnN0Uvlm959UqzG_TmAnG91hhB-iXV9FTNqcB4J1GyoUcic-34T7JPuNQli4MsERY=s4800-w1400" alt="Wilma’s Kountry Kitchen dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Wilma’s Kountry Kitchen dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Wilma’s Kountry Kitchen dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Wilma’s Kountry Kitchen dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,11 +111,11 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Mayfield</h2>
     <p>113 N 12th St</p>
-    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:10px"><a href="tel:2702479153">(270) 247-9153</a></p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Wilma%E2%80%99s%20Kountry%20Kitchen%20113%20N%2012th%20St%20Mayfield">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
