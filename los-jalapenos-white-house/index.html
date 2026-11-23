@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAuP_9OvZZK4p4McIPJlKbi1ODcW6zb46fHDfJ20zOqu1MGKByrHHTvfbk_lS0UIdm3EM9JvaQpVY9u_Ppi-k6SwY6z4S0JHVH0mLEiI5f1eNwmBry70E0zKbVy8tBxP8Zflz4mYAugz9aj=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,48 +53,51 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="d81503c005254a3a95f36e7cc233322d">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Los Jalapenos — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=los-jalapenos-white-house">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">White House · Restaurant</div>
+    <div class="eyebrow">White House · Mexican</div>
     <h1>Los Jalapenos</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Restaurant in White House — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Mexican in White House — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.5★</b><span>1274 Google<br>reviews</span></div>
+  <div class="seal"><b>4.5★</b><span>1288 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in White House. Ordered in two taps.</h2>
-  <p>Los Jalapenos already has the food and the following — 1274 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Los Jalapenos already has the food and the following — 1288 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in White House</h2><div class="review-grid"><blockquote>"Overall great experience. The food was very good. The staff were very attentive. Nice clean atmosphere. I highly recommend trying this place out."<footer>— Mikha’el, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in White House</h2><div class="review-grid"><blockquote>"Date night with my wife. Super nice place! Great food, great staff, great drinks! Thank you for a memorable dinner, will return!!"<footer>— Billy, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjBH4CZdpKAQupbhj4uLgU0TY-HRlxFp_JIPiUu5cVe5xTttEKtZpy6bLyrOfD9X8LENGxNSoADoGNkvpta06VxkKijeoPTv0LGu5lpivYbRv6R45u3G3VFf_f4CCpNxKpAXDlIZzN35bszgpS4=s4800-w1400" alt="Los Jalapenos dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjARJ4DK6HEH8qy2-rqF4_5dejYGynWfpurT-WH4w8JaumkS2SF9lHtN82XbLQnZSIO-pQqeMKyLUYQhKDeUaX3iJRZadw2B0LYCr81mj0o8Zes_1OYJJ0rR1QNqttlEIb-4vi2JVpgwlxxM2M0=s4800-w1400" alt="Los Jalapenos dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjALDTrJlF63p9-teMsf6bgoktyYUmekscETJch0d8sj5MvIZp8LNLASnOA9-74dp03l4tnQXusfJ3FvUmNVD3O0TLja-I-lJa8UejfAYman2tDmvqy7cCUU9vHzim3MIm4g3nPlspB-V5ylKw=s4800-w1400" alt="Los Jalapenos dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Los Jalapenos dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Los Jalapenos dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Los Jalapenos dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +111,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>White House</h2>
     <p>526 TN-76</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Los%20Jalapenos%20526%20TN-76%20White%20House">Open in Google Maps →</a></p>
+    <p style="margin-top:10px"><a href="tel:6156724251">(615) 672-4251</a></p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Los%20Jalapenos%20526%20TN-76%20White%20House">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Los Jalapenos by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Los Jalapenos by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=los-jalapenos-white-house">Claim this website — get it live free</a>
   </div>
 </div>
