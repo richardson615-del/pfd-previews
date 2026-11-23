@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCchSsaN2zYAN-ci9ZG7GvS8yz4-AbSnasMqOwW46j8huCpqlXcJH4uz4IH7yKIgz1XjQLmhUTE87bc2aRd6YXlOoDyfMdySo0ge9rUXjOVIxo5PnhJgqeTgWsaNGXPtzWO0blHli0LukfnJtk=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,48 +53,51 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="1ce896d01d2d44f0b7df06bcd41fcf93">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Aces Chicago Pizza — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=aces-chicago-pizza-mayfield">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Mayfield · Pizza Restaurant</div>
+    <div class="eyebrow">Mayfield · Pizza</div>
     <h1>Aces Chicago Pizza</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Pizza Restaurant in Mayfield — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">Pizza in Mayfield — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.2★</b><span>322 Google<br>reviews</span></div>
+  <div class="seal"><b>4.2★</b><span>333 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Mayfield. Ordered in two taps.</h2>
-  <p>Aces Chicago Pizza already has the food and the following — 322 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Aces Chicago Pizza already has the food and the following — 333 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Mayfield</h2><div class="review-grid"><blockquote>"Buffet on Monday 9/15 11:30-12:30 was loaded with 7-10 pizzas, loved the house special & Cajun. Great dough Very good salad bar and dessert pizzas too."<footer>— Trance, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Mayfield</h2><div class="review-grid"><blockquote>"Beautiful homestyle restaurant the pizza for exceeded my expectations the sauce, the cheese the way it’s made even down to the precise cuts is amazing."<footer>— logan, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD38FoPjo22H22LTOr-_zFrPP8BpPYXnwe2B40K7Yn5wul9ESDo7BJl6BhEGzEwFos4B6liykPXGe7xMgWhYIQFvEGWiAmzZ3KholOxVz80QaOtAmlqh3XSdxsMvl8wBS49zCx8eXwCzwW0Fg=s4800-w828" alt="Aces Chicago Pizza dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAmnjNVEkgNA9puLLkTAWaeIpRW-6WNGo2yhYOBHuoJccj__-5DoHaelZSGjcsGaklfX2qvy0t91kYJr0b_BZ5qGEgHDuf8LzOptZhsSCTKFCmv2DNLtzkurZJakFzCXjBLrmiIVI25zk0hTQ=s4800-w1400" alt="Aces Chicago Pizza dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB1yRwLZDE1BgMndqs5v3bNBLt6KY-c_en9PU3iTrus13s-V1gAQCb3Mp0lcakGMHCsIJrD0cKYw_gtEN3H6yOtopDb2iWkG8b31Nu-ieBZTP02CMHxHXf-yfS5_dkUnqKj_5yeixaDOa86EjS2gyLG=s4800-w1400" alt="Aces Chicago Pizza dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Aces Chicago Pizza dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Aces Chicago Pizza dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Aces Chicago Pizza dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +111,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Mayfield</h2>
     <p>309 Wyatt Dr</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Aces%20Chicago%20Pizza%20309%20Wyatt%20Dr%20Mayfield">Open in Google Maps →</a></p>
+    <p style="margin-top:10px"><a href="tel:2702472200">(270) 247-2200</a></p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Aces%20Chicago%20Pizza%20309%20Wyatt%20Dr%20Mayfield">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Aces Chicago Pizza by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Aces Chicago Pizza by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=aces-chicago-pizza-mayfield">Claim this website — get it live free</a>
   </div>
 </div>
