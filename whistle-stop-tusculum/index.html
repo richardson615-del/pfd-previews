@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCSUN2bOZjTqeQQTodFsPxiWEKIZhAQsmH7pFum9EhaWuyc76WZj7qOV69LHSPmF0lUGH1OOh6NqdZ0cu_7FvE_PoKv_fx8JEYUbQ_ArbO3ogZUK-s4BTdIssYsfYLTzohhhDOLIM8jccpFS5w=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,23 +53,26 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="8c4cf343ff2d42959d92f7880937f7ff">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Whistle Stop — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=whistle-stop-tusculum">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">Tusculum · Restaurant</div>
@@ -80,21 +83,21 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.6★</b><span>119 Google<br>reviews</span></div>
+  <div class="seal"><b>4.6★</b><span>121 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Tusculum. Ordered in two taps.</h2>
-  <p>Whistle Stop already has the food and the following — 119 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Whistle Stop already has the food and the following — 121 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Tusculum</h2><div class="review-grid"><blockquote>"Tour bus group of 48 ate here for one of our private meals arranged by local guide. The food was excellent."<footer>— William, Google review</footer></blockquote><blockquote>"Great food. Great service. Nice, little, restaurant. I recommend reservations. Had our table set up waiting on us when we got there."<footer>— Chad, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Tusculum</h2><div class="review-grid"><blockquote>"Great food. Great service. Nice, little, restaurant. I recommend reservations. Had our table set up waiting on us when we got there."<footer>— Chad, Google review</footer></blockquote><blockquote>"Food is amazing. Service is great. Prices are fair. Blackberry cobbler may be the best dessert I've ever had."<footer>— JP, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjClSOdBn_IzJh4NQVP-V0wDoxxOvNYqEAmn504zmiVEpN7TZ7zd-zg7pTzNJaUi25CVKrVJQNIO_pZmI6nBhjog7N96LHGODyZHpzj6FWIOSrpbstr3luzWBy6qmJ-rREpyZALJKrnELJfaeYU=s4800-w1400" alt="Whistle Stop dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDDjlawxsS-AOcRdRyeMNmDfVkbE1N9T3U3XvFOZJI07tr4pi2_TM9nDikJl9Hmuc-u1S8aQ3ADdiiWUYxoyTUpC0qnrsLxVaT1hlAvEHwsM8L7wN3c6l0McObEwG2V4pvxSL5wkdFlu11IVe8=s4800-w1400" alt="Whistle Stop dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjD9RqhZERNKvDN5pgBLwn2sMUe9sz5XQkgDnLwFiGor_ahi3rTIp7VDjInLjCH-RfuOY5jdz7ZJExl3C9HOtPIx_LAazT7v0aSJbYg2kvtVTA9vkMCFiJeK3n8xwVgQ7HRWKNFdOlZ1M51WfQ=s4800-w1400" alt="Whistle Stop dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Whistle Stop dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Whistle Stop dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Whistle Stop dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,11 +111,11 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Tusculum</h2>
     <p>905 Erwin Hwy</p>
-    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:10px"><a href="tel:4236383190">(423) 638-3190</a></p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Whistle%20Stop%20905%20Erwin%20Hwy%20Tusculum">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
