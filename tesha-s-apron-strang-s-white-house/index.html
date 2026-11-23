@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjCJIg5mZFGL8Kz2hejh-4exl-ENA0Hh7H44-6buZCTbYdyFfrbIE8s-pJNJMrO_eQUxkB_YXBxUdLcNuTIOJkdXxrq4Kw_2XQYkEyIH2UBxHJxtLM7GMqgKsCCj9KPwKWpZtydB2b_SVcnmOv8=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,48 +53,51 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="e417d119fe1742caa946b11c7b6b9a2a">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Tesha's Apron Strang's — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=tesha-s-apron-strang-s-white-house">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">White House · American Restaurant</div>
+    <div class="eyebrow">White House · American</div>
     <h1>Tesha's Apron Strang's</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">American Restaurant in White House — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">American in White House — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>5★</b><span>40 Google<br>reviews</span></div>
+  <div class="seal"><b>5★</b><span>44 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in White House. Ordered in two taps.</h2>
-  <p>Tesha's Apron Strang's already has the food and the following — 40 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Tesha's Apron Strang's already has the food and the following — 44 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in White House</h2><div class="review-grid"><blockquote>"If you’re looking for a place that truly feels like home, this restaurant is an absolute gem."<footer>— Chandra, Google review</footer></blockquote><blockquote>"First time trying because the hours just don't go with my work schedule. Wow!! It was my daughter's birthday and one of her favorite foods is chicken and dumplings."<footer>— Lori, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in White House</h2><div class="review-grid"><blockquote>"What a find! The food is all homemade and SO delicious! We had the ham, chicken & dressing, green beans, fried cornbread."<footer>— Pure_, Google review</footer></blockquote><blockquote>"I’m from New Orleans and grew up eating southern food all my life. All I can say is this brought me right back to my grandmas house!"<footer>— Jessica, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjAgxHzbZ8cggtyqP1VQWy9LWTEXoPJszZSrVPnIVXKMTzpvBiEWdlY58LlTs2uJsEYkL_rLiVXuPWKm00iAlQSYH-jKvxrgI_vb1nPnOAG-RU74WqnYkJ9P7HKz6L353GFwd7MO984pliQ58j1se3qUMw=s4800-w1400" alt="Tesha's Apron Strang's dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDhDAvSc2VzSR0HTC4H_NK0pyEBqIgCCRa1qPp3aTExnt7Ud15PgK2w_NcheyyXcPjGBoJrsXNpE98gehZA6K6p3_yzbGnNt1TTTxniOi_5D2EdfvuBymIJepE1Vy-MaP30eo5yZR3RzHk0oQ=s4800-w1400" alt="Tesha's Apron Strang's dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCxJsq53eIYP4TX58_w9ituzf1_LDgKxxQENlC1DWVvFvU8eqHaKFTghVybGKL1jJYyakf5xKEKoU4wKoybfHIHet5qtySkr28R85DV3lP6ckFI0KTm52GiNMmzWejiup_OwjuhNOIsv3G5wg=s4800-w1400" alt="Tesha's Apron Strang's dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Tesha's Apron Strang's dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Tesha's Apron Strang's dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Tesha's Apron Strang's dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,11 +111,11 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>White House</h2>
     <p>317 West Dr</p>
-    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:10px"><a href="tel:6155211075">(615) 521-1075</a></p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Tesha%27s%20Apron%20Strang%27s%20317%20West%20Dr%20White%20House">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 

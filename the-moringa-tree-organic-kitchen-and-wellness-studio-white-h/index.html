@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjAEDySTO49pspsi0SSGArnIiYr5wfrZSZe2c4wt2bKvMPjRs0wp8OzCGKVHYvjWxOHkcIgV93J5onzcxUaiZvZiH8DB2Vbw2_apRcY8bwMrfteDibXHH9m3eUw53dWo60djKhhvQFIjVRA4uA=s4800-w768')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,23 +53,26 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="af35cf44165c4954b8e0bcdbb6a8e1b7">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for The Moringa Tree Organic Kitchen and Wellness Studio — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=the-moringa-tree-organic-kitchen-and-wellness-studio-white-h">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
     <div class="eyebrow">White House · Restaurant</div>
@@ -80,21 +83,21 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.8★</b><span>156 Google<br>reviews</span></div>
+  <div class="seal"><b>4.8★</b><span>161 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in White House. Ordered in two taps.</h2>
-  <p>The Moringa Tree Organic Kitchen and Wellness Studio already has the food and the following — 156 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>The Moringa Tree Organic Kitchen and Wellness Studio already has the food and the following — 161 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in White House</h2><div class="review-grid"><blockquote>"I love this place! Was traveling across country and stopped in for a bite to eat. What a unexpected treasure!!"<footer>— Monty, Google review</footer></blockquote><blockquote>"Incredible place!! The food is delicious and actually makes me feel good after! My wife and I have been here twice and every time I wish we lived closer!"<footer>— Dr., Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in White House</h2><div class="review-grid"><blockquote>"I came here on a friend’s recommendation and it completely exceeded all expectations! We tried the greens bowl, chicken pesto pizza, and quinoa bowl."<footer>— Alyssa, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDXTIXkVRnaFbKJ8J2rrBJxNLHldaPfl6cCli3sTIL9w9VWA0hzJSf-7TaOL9-JoxMxdkzjOGcAmlojbwm5lGs1kH-YhJu3wB7i0p8ETfZje3sXZCQyplsZIrvR4jGkj0UaPbhwtcGrFEEnwVw=s4800-w1400" alt="The Moringa Tree Organic Kitchen and Wellness Studio dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDrLtZs4AGRNQek7H8Ok3zhQ7LvsGz99S_CytsW1dwd7c9kUm0EKVMs4RngMd4Y7i3uid-gEr1ntvKl4YiEZWxGY5Nc3AlY8Tc_lciJmOQJDEya_vakBurcf05oJJSQgMkKe6fzX4w-p9I5EDwzS0AC6g=s4800-w1400" alt="The Moringa Tree Organic Kitchen and Wellness Studio dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjA0RnjKSmjJmuuBohaYieUB8N0U61r9mCRgEiDbYsYQOu_m1SBtfb1Ag-7VL1WO6AxusUIDcK13DiE0WbNPfFDYtKNzs-KooheTbDV-2EMBdGGB0hxUx9U6sMDY2x2B49lsd33KPqhXTzDV38Q=s4800-w1400" alt="The Moringa Tree Organic Kitchen and Wellness Studio dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="The Moringa Tree Organic Kitchen and Wellness Studio dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="The Moringa Tree Organic Kitchen and Wellness Studio dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="The Moringa Tree Organic Kitchen and Wellness Studio dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,11 +111,11 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>White House</h2>
     <p>317 TN-76</p>
-    <p style="margin-top:10px">{{PHONE_LINE}}</p>
+    <p style="margin-top:10px"><a href="tel:6155810483">(615) 581-0483</a></p>
     <p style="margin-top:6px"><a href="https://www.google.com/maps/search/The%20Moringa%20Tree%20Organic%20Kitchen%20and%20Wellness%20Studio%20317%20TN-76%20White%20House">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
     <p class="menu-note">Catering and family packs — ordered the same way.</p>
+    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 

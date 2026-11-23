@@ -14,7 +14,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('https://lh3.googleusercontent.com/place-photos/AG9NLjC2kjks6q7IoO4TzNXDVf7cYJtiu0CMBYmpMXxzKBr1k8a3eGb3BBeqBfkiQTlnXYpXupIfC6Wz9DNSmg6grCrUIHFtyiWnfsO8N14BC6omPxswZZy6FUedKThDoPNUlcRP8Gt_ORZov63pig=s4800-w1400')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -53,48 +53,51 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .zuppler-badge{display:block;height:26px;width:auto;margin-top:22px;opacity:.9}
 /* Footer */
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
+.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
 .claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
-.preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
+/* Top frame bar -- deliberately plain/slim and NOT part of the hero
+   below it (own background, own block, not fixed/overlaid) so it reads
+   as our wrapper around the preview, not the restaurant's own site. */
+.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
+.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
 @media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
-.claim-topbar{background:var(--ink);color:#EFE7DA;padding:10px 18px;font-size:.82rem;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center}
-.claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 </style>
+<meta name="prs-build" content="c5c960871ed34848b25f8a184a7f06b1">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Johnson's Crossroads — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=johnson-s-crossroads-cottontown">Claim this website — get it live free</a>
 </div>
-
 <header class="hero has-photo">
   <div class="hero-inner">
-    <div class="eyebrow">Cottontown · American Restaurant</div>
+    <div class="eyebrow">Cottontown · American</div>
     <h1>Johnson's Crossroads</h1>
-    <p style="max-width:520px;font-size:1.1rem;opacity:.94">American Restaurant in Cottontown — now taking orders straight from your own website.</p>
+    <p style="max-width:520px;font-size:1.1rem;opacity:.94">American in Cottontown — now taking orders straight from your own website.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="#order">Order online</a>
-      <a class="btn btn-ghost" href="#menu">See the menu</a>
+      <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.7★</b><span>612 Google<br>reviews</span></div>
+  <div class="seal"><b>4.7★</b><span>636 Google<br>reviews</span></div>
 </header>
 
 <section class="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Cottontown. Ordered in two taps.</h2>
-  <p>Johnson's Crossroads already has the food and the following — 612 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you, with no marketplace fees in the middle.</p>
+  <p>Johnson's Crossroads already has the food and the following — 636 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Cottontown</h2><div class="review-grid"><blockquote>"The ambiance was great for a country Cafe. The service was fabulous. The waitresses were nice and helpful."<footer>— NaNa, Google review</footer></blockquote><blockquote>"Fantastic local diner, great friendly team, welcoming neighbors and a true hometown spot feel. The food is great the atmosphere is fantastic."<footer>— Erik, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Cottontown</h2><div class="review-grid"><blockquote>"Fantastic local diner, great friendly team, welcoming neighbors and a true hometown spot feel. The food is great the atmosphere is fantastic."<footer>— Erik, Google review</footer></blockquote><blockquote>"Food was fantastic, as was service. Unbelievable value. This was our first visit. Had breakfast. Coming back this week for lunch. The hamburger looks thick and juicy."<footer>— L, Google review</footer></blockquote></div></div></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB53RKGy14a8AgD8ylBAsERzGP2kJOrQKjc9SUiWE65NjlXar6FQDvhfQHl2e2srDw13nbDHQ8TUHOuJOAaYh18itA1rDWJN7zo0EUTN16-EVBGQJkKwfvYQLJRzNxC1W1qFVUs_D40b-bRaw=s4800-w1400" alt="Johnson's Crossroads dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB9wfMct-TADaA4lfOpdI2bLignfGbtRMKjiadxR7ivb7wXVPujW9wjEmzMU1rQprE1TELF2clBHCCIVtr686gQnfwgAl77ryAGutyyn5g9qd5pzPxbt094LK4ktCQWsdpQ0lnBt3RrSgyQSbc=s4800-w1400" alt="Johnson's Crossroads dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="https://lh3.googleusercontent.com/place-photos/AG9NLjCwTRgdPpvzNjpgQ2u9Gu_n1pBbi9c5HF1EXal7ufRYi5_CDLvsC66sXrQVanLZuUv_Kaf5tSSGsM1F21zOUAmDPGikbwsu-hAvr76OQ930ayuKCsGU00YQOsN7E4JrBQjj8PcCmMuSQA3PShOgqIgIiA=s4800-w1400" alt="Johnson's Crossroads dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Johnson's Crossroads dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Johnson's Crossroads dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Johnson's Crossroads dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -108,15 +111,17 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <div class="eyebrow section-eyebrow">Find us</div>
     <h2>Cottontown</h2>
     <p>3200 TN-25</p>
-    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/Johnson%27s%20Crossroads%203200%20TN-25%20Cottontown">Open in Google Maps →</a></p>
+    <p style="margin-top:10px"><a href="tel:6153231566">(615) 323-1566</a></p>
+    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Johnson%27s%20Crossroads%203200%20TN-25%20Cottontown">Open in Google Maps →</a></p>
     <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
+    <p class="menu-note">Catering and family packs — ordered the same way.</p>
     <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
   </div>
 </section>
 
 <div class="preview-bar">
   <div class="preview-bar-inner">
-    <span>Website preview prepared for Johnson's Crossroads by <a href="https://pfdworks.com">Premium Food Delivery</a> · Not live yet — this is what your site could look like this week.</span>
+    <span>Website preview prepared for Johnson's Crossroads by <a href="https://pfdworks.com">Premium Restaurant Solutions</a> · Not live yet — this is what your site could look like this week.</span>
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=johnson-s-crossroads-cottontown">Claim this website — get it live free</a>
   </div>
 </div>
