@@ -64,9 +64,45 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
-@media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
+/* Phone layout (2026-11-23, Matt: "need to be mobile first friendly").
+   Most owners open the preview from a text, on a phone. There the photo
+   gets its own band at the top instead of a dark slice behind the text,
+   the buttons fill the width, menu cards swipe sideways, and an order
+   bar stays on screen. */
+.hero-photo,.action-bar{display:none}
+@media (max-width:640px){
+  .claim-topbar{padding:8px 12px;gap:10px;font-size:.76rem}
+  .claim-topbar .claim-btn{padding:6px 14px;font-size:.76rem}
+  .hero{min-height:0;display:block;background:#241A12}
+  .hero.has-photo{background-image:none}
+  .hero.has-photo .hero-photo{display:block;height:64vw;max-height:420px;background:url('photo-1.jpg') center/cover no-repeat}
+  .hero-inner{padding:26px 20px 34px}
+  h1{font-size:clamp(2.1rem,9.5vw,2.8rem);margin:8px 0 12px}
+  .hero-inner p{font-size:1rem!important}
+  .ctas{flex-direction:column;gap:10px;margin-top:22px}
+  .ctas .btn{text-align:center;padding:15px 20px}
+  .seal{width:88px;height:88px;right:14px;top:calc(min(64vw,420px) - 44px);bottom:auto}
+  .seal b{font-size:1.4rem}
+  .seal span{font-size:9px}
+  .hero:not(.has-photo) .seal{top:auto;bottom:-40px}
+  section{padding:44px 20px}
+  h2{margin:6px 0 18px}
+  .about p{font-size:1.02rem}
+  .menu-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -20px;padding:0 20px 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .menu-grid::-webkit-scrollbar{display:none}
+  .dish{flex:0 0 78%;scroll-snap-align:start}
+  .dish:only-child{flex-basis:100%}
+  .dish img{height:200px}
+  .visit{gap:10px}
+  .visit ul{font-size:.94rem}
+  .preview-bar{padding-bottom:96px}
+  .action-bar{display:flex;gap:10px;transform:translateY(110%);transition:transform .25s ease;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(250,246,239,.96);border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(30,20,10,.12)}
+  .action-bar .btn{flex:1;text-align:center;padding:14px 10px}
+  .action-bar.show{transform:none}
+  .btn-call{border:1.5px solid var(--ink);color:var(--ink)}
+}
 </style>
-<meta name="prs-build" content="2060df1189bd4eee82722eaaff74b3ed">
+<meta name="prs-build" content="2dcb58493bba483684924a0be89912f8">
 </head>
 <body>
 <div class="claim-topbar">
@@ -74,6 +110,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=j-i-baldwin-and-son-barbecue-springfield">Claim this website — get it live free</a>
 </div>
 <header class="hero has-photo">
+  <div class="hero-photo" role="img" aria-label="Food at J. I. Baldwin and Son Barbecue"></div>
   <div class="hero-inner">
     <div class="eyebrow">Springfield · BBQ</div>
     <h1>J. I. Baldwin and Son Barbecue</h1>
@@ -105,7 +142,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <div>
     <div class="eyebrow section-eyebrow">Hours</div>
     <h2>Come by</h2>
-    <ul><li>Monday: 10:00 AM – 7:00 PM</li><li>Tuesday: 10:00 AM – 7:00 PM</li><li>Wednesday: 10:00 AM – 7:00 PM</li><li>Thursday: 10:00 AM – 7:00 PM</li><li>Friday: 10:00 AM – 7:00 PM</li><li>Saturday: 10:00 AM – 7:00 PM</li><li>Sunday: Closed</li></ul>
+    <ul><li>Monday – Saturday: 10:00 AM – 7:00 PM</li><li>Sunday: Closed</li></ul>
   </div>
   <div>
     <div class="eyebrow section-eyebrow">Find us</div>
@@ -125,5 +162,16 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=j-i-baldwin-and-son-barbecue-springfield">Claim this website — get it live free</a>
   </div>
 </div>
+<nav class="action-bar" aria-label="Order">
+  <a class="btn btn-primary" href="#order">Order online</a>
+  <a class="btn btn-call" href="tel:6153843426">Call</a>
+</nav>
+<script>
+// The order bar slides up once the hero's own buttons scroll away, so the
+// two never sit on top of each other.
+(function(){var bar=document.querySelector('.action-bar'),ctas=document.querySelector('.ctas');
+if(!bar||!ctas||!('IntersectionObserver' in window)){if(bar)bar.classList.add('show');return;}
+new IntersectionObserver(function(e){bar.classList.toggle('show',!e[0].isIntersecting);}).observe(ctas);})();
+</script>
 </body>
 </html>
