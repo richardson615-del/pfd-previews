@@ -20,7 +20,7 @@ body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:va
 h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
 .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
 .btn{display:inline-block;padding:15px 30px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem}
-.btn-primary{background:var(--amber);color:#241A0D}
+.btn-primary{background:var(--amber);color:var(--on-accent,#241A0D)}
 .btn-primary:hover{background:var(--amber-dk);color:#fff}
 .btn-ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}
 /* Rating seal */
@@ -45,6 +45,33 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .dish h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem}
 .dish p{font-size:.9rem;opacity:.7}
 .menu-note{margin-top:22px;font-size:.95rem;color:var(--sage)}
+/* What reviewers name */
+.raves{display:flex;flex-wrap:wrap;gap:12px}
+.rave{background:#fff;border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:12px;padding:14px 18px;min-width:200px;flex:1}
+.rave b{font-family:'Fraunces',serif;font-size:1.15rem;display:block}
+.rave span{font-size:.85rem;color:var(--sage);font-weight:600}
+/* Their real menu, with a demo order */
+.menu-grid.with-list{margin-bottom:34px}
+.menu-sec{margin-top:26px}
+.menu-sec h3{font-family:'Fraunces',serif;font-size:1.25rem;border-bottom:2px solid var(--amber);padding-bottom:6px;margin-bottom:4px}
+.item{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px dashed var(--line)}
+.item .what{flex:1;min-width:0}
+.item .what b{font-weight:600}
+.item .what small{display:block;font-size:.86rem;opacity:.7}
+.item .price{font-weight:600;white-space:nowrap}
+.add{border:0;background:var(--amber);color:var(--on-accent,#241A0D);font:600 .88rem 'Work Sans',sans-serif;border-radius:999px;padding:9px 16px;cursor:pointer;white-space:nowrap}
+.add.added{background:var(--ink);color:#fff}
+.cart-pill{display:none;position:fixed;right:18px;bottom:18px;z-index:30;border:0;background:var(--ink);color:#fff;font:600 1rem 'Work Sans',sans-serif;border-radius:999px;padding:15px 24px;box-shadow:0 10px 28px rgba(30,20,10,.35);cursor:pointer}
+.cart-pill.show{display:block}
+.sheet-wrap{display:none;position:fixed;inset:0;z-index:40;background:rgba(20,14,10,.55);align-items:flex-end;justify-content:center}
+.sheet-wrap.open{display:flex}
+.sheet{background:var(--paper);width:100%;max-width:520px;max-height:88vh;overflow:auto;border-radius:22px 22px 0 0;padding:24px 22px calc(24px + env(safe-area-inset-bottom))}
+.sheet h3{font-family:'Fraunces',serif;font-size:1.4rem;margin-bottom:10px}
+.sheet .row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.sheet .total{font-weight:600;border-bottom:0;font-size:1.08rem}
+.sheet .btn{display:block;text-align:center;margin-top:16px;border:0;width:100%;cursor:pointer;font-family:inherit}
+.sheet .demo-note{font-size:.84rem;color:var(--sage);margin-top:12px;text-align:center}
+.sheet .close{float:right;border:0;background:none;font-size:1.6rem;line-height:1;cursor:pointer;color:var(--ink)}
 /* Visit */
 .visit{display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
 .visit ul{list-style:none;font-size:.98rem}
@@ -55,7 +82,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
 .preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
-.claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
+.claim-btn{background:var(--amber);color:var(--on-accent,#241A0D);padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
 /* Top frame bar -- deliberately plain/slim and NOT part of the hero
    below it (own background, own block, not fixed/overlaid) so it reads
@@ -96,13 +123,16 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   .visit{gap:10px}
   .visit ul{font-size:.94rem}
   .preview-bar{padding-bottom:96px}
+  .cart-pill{left:12px;right:12px;bottom:calc(78px + env(safe-area-inset-bottom));text-align:center}
+  .rave{min-width:100%}
   .action-bar{display:flex;gap:10px;transform:translateY(110%);transition:transform .25s ease;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(250,246,239,.96);border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(30,20,10,.12)}
   .action-bar .btn{flex:1;text-align:center;padding:14px 10px}
   .action-bar.show{transform:none}
   .btn-call{border:1.5px solid var(--ink);color:var(--ink)}
 }
 </style>
-<meta name="prs-build" content="2dcb58493bba483684924a0be89912f8">
+<style>:root{--amber:#AE3929;--amber-dk:#842C1F;--clay:#842C1F;--on-accent:#FFFFFF;--soft:#EFCDC8}</style>
+<meta name="prs-build" content="805d40437672437c82167a78bb22f55e">
 </head>
 <body>
 <div class="claim-topbar">
@@ -131,10 +161,13 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Springfield</h2><div class="review-grid"><blockquote>"The service was awesome."<footer>— Evan, Google review</footer></blockquote><blockquote>"6 stars if I could. Best damn pulled pork sandwich I’ve had and I’m all over Tennessee. Make the effort to drive here, for real."<footer>— Steve, Google review</footer></blockquote></div></div></section>
 
+
+
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><div class="pad"><h3>Your menu here</h3><p>Real dishes, photos, and prices — organized and mobile-friendly.</p></div></div></div>
+  <div class="menu-grid "><div class="dish"><img src="photo-2.jpg" alt="J. I. Baldwin and Son Barbecue dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
@@ -172,6 +205,33 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 (function(){var bar=document.querySelector('.action-bar'),ctas=document.querySelector('.ctas');
 if(!bar||!ctas||!('IntersectionObserver' in window)){if(bar)bar.classList.add('show');return;}
 new IntersectionObserver(function(e){bar.classList.toggle('show',!e[0].isIntersecting);}).observe(ctas);})();
+</script>
+<button class="cart-pill" type="button" aria-live="polite"></button>
+<div class="sheet-wrap" role="dialog" aria-modal="true" aria-label="Your order">
+  <div class="sheet"></div>
+</div>
+<script>
+// Demo order: tap Add on a menu item, open the order, "place" it. Nothing
+// is sent anywhere and nothing is charged; the last screen says so and
+// points at Claim. Only runs on pages built with a real menu.
+(function(){
+var adds=document.querySelectorAll('.add'); if(!adds.length) return;
+var cart={}, pill=document.querySelector('.cart-pill'), wrap=document.querySelector('.sheet-wrap'), sheet=wrap.querySelector('.sheet');
+var claim=document.querySelector('.claim-btn').getAttribute('href');
+function money(c){return '$'+(c/100).toFixed(2);}
+function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML;}
+function totals(){var n=0,c=0;for(var k in cart){n+=cart[k].q;c+=cart[k].q*cart[k].c;}return{n:n,c:c};}
+function paint(){var t=totals();pill.classList.toggle('show',t.n>0);pill.textContent='View order · '+t.n+' item'+(t.n===1?'':'s')+' · '+money(t.c);}
+function review(){var t=totals(),h='<button class="close" type="button" aria-label="Close">×</button><h3>Your order</h3>';
+for(var k in cart){h+='<div class="row"><span>'+cart[k].q+' × '+esc(k)+'</span><span>'+money(cart[k].q*cart[k].c)+'</span></div>';}
+h+='<div class="row total"><span>Pickup total</span><span>'+money(t.c)+'</span></div><button class="btn btn-primary place" type="button">Place pickup order</button><p class="demo-note">Demo: nothing is ordered or charged.</p>';
+sheet.innerHTML=h;wrap.classList.add('open');}
+function done(){sheet.innerHTML='<button class="close" type="button" aria-label="Close">×</button><h3>That is the whole order.</h3><p>Your customers do exactly this, from your own website. The ticket prints in your kitchen and pickup orders cost you nothing.</p><a class="btn btn-primary" href="'+claim+'">Claim this website — get it live free</a><p class="demo-note">This was a demo. Nothing was ordered or charged.</p>';}
+adds.forEach(function(b){b.addEventListener('click',function(){var n=b.getAttribute('data-name'),c=parseInt(b.getAttribute('data-cents'),10);
+cart[n]=cart[n]||{q:0,c:c};cart[n].q++;b.classList.add('added');b.textContent='Added · '+cart[n].q;paint();});});
+pill.addEventListener('click',review);
+wrap.addEventListener('click',function(e){if(e.target===wrap||e.target.classList.contains('close'))wrap.classList.remove('open');else if(e.target.classList.contains('place'))done();});
+})();
 </script>
 </body>
 </html>
