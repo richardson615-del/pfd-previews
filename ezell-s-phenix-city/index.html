@@ -6,30 +6,77 @@
 <meta name="robots" content="noindex">
 <title>Ezell's — Phenix City</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#221D19;--paper:#FAF6EF;--amber:#C98A2D;--amber-dk:#A96F1C;--clay:#A63D2F;--sage:#7A8B6F;--line:#E7DFD2}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
 .hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
-h1{font-family:'Fraunces',serif;font-weight:650;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
+h1{font-family:'Oswald',Impact,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
 .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
-.btn{display:inline-block;padding:15px 30px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem}
-.btn-primary{background:var(--amber);color:#241A0D}
+.btn{display:inline-block;padding:15px 28px;border-radius:6px;font-weight:700;text-decoration:none;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase}
+.btn-primary{background:var(--clay);color:#fff;color:var(--on-accent,#241A0D)}
 .btn-primary:hover{background:var(--amber-dk);color:#fff}
 .btn-ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+/* Sticky nav (Nick's rs- sites, 2026-11-24: "similar to spothopper") */
+.topnav{position:sticky;top:0;z-index:25;background:var(--paper);border-bottom:1px solid var(--line)}
+.topnav-inner{max-width:1040px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:22px}
+.topnav .brand{font-family:'Oswald',Impact,sans-serif;font-weight:700;text-transform:uppercase;font-size:1.15rem;color:var(--ink);text-decoration:none;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topnav nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.92rem;margin-left:18px}
+.topnav .btn{padding:10px 18px;font-size:.8rem;white-space:nowrap}
+.card a:not(.btn){color:var(--clay);font-weight:600}
+/* Info strip under the hero */
+.infostrip{background:var(--clay);color:#fff}
+.infostrip-inner{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr)}
+.infostrip div{padding:18px 24px;border-left:1px solid rgba(255,255,255,.18);font-size:.88rem;line-height:1.45}
+.infostrip div:first-child{border-left:0}
+.infostrip b{display:block;font-weight:700}
+/* Dark order banner */
+section.banner{max-width:none;padding:0;background:linear-gradient(120deg,#1E1712,#3A241A);color:#fff;text-align:center}
+.banner-inner{max-width:760px;margin:0 auto;padding:70px 24px}
+.banner h2{color:#fff}
+.banner p{opacity:.85;margin-bottom:26px}
+/* Hours & location card + map */
+.visit-card{display:grid;grid-template-columns:1fr 1.15fr;gap:20px;align-items:stretch}
+.visit-card .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px}
+.visit-card iframe{width:100%;height:100%;min-height:340px;border:0;border-radius:12px}
+.hours-table{width:100%;border-collapse:collapse;font-size:.95rem}
+.hours-table li{list-style:none;display:flex;justify-content:space-between;padding:9px 6px;border-bottom:1px solid var(--line)}
+/* FAQ */
+.faq details{border-bottom:1px solid var(--line);padding:16px 0}
+.faq summary{cursor:pointer;font-weight:600;font-size:1.02rem;list-style:none}
+.faq summary::after{content:'+';float:right;color:var(--clay);font-weight:700}
+.faq details[open] summary::after{content:'–'}
+.faq details p{margin-top:10px;opacity:.85}
+/* Scratch-off (2026-11-24, Matt: "could we add a scratch off? make it
+   themed to each restaurants style") */
+.scratch{text-align:center}
+.scratch-card{position:relative;width:min(100%,420px);aspect-ratio:7/4;margin:0 auto;border-radius:16px;overflow:hidden;box-shadow:0 14px 34px rgba(30,20,10,.22);background:#fff;border:3px solid var(--clay)}
+.scratch-prize{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px}
+.scratch-prize small{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);font-weight:700}
+.scratch-prize b{font-family:'Oswald',Impact,sans-serif;font-size:clamp(1.5rem,6vw,2.1rem);text-transform:uppercase;line-height:1.1;margin:6px 0}
+.scratch canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:grab}
+.scratch .demo-note{font-size:.84rem;color:var(--sage);margin-top:14px}
+@media (max-width:760px){
+  .topnav nav{display:none}
+  .infostrip-inner{grid-template-columns:1fr}
+  .infostrip div{border-left:0;border-top:1px solid rgba(255,255,255,.18);padding:12px 20px}
+  .infostrip div:first-child{border-top:0}
+  .visit-card{grid-template-columns:1fr}
+  .visit-card iframe{min-height:260px}
+}
 /* Rating seal */
 .seal{position:absolute;right:6%;bottom:-54px;width:132px;height:132px;border-radius:50%;background:var(--paper);border:2.5px dashed var(--amber-dk);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-7deg);box-shadow:0 10px 28px rgba(30,20,10,.28);text-align:center}
-.seal b{font-family:'Fraunces',serif;font-size:1.9rem;line-height:1;color:var(--clay)}
+.seal b{font-family:'Oswald',Impact,sans-serif;font-size:1.9rem;line-height:1;color:var(--clay)}
 .seal span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);opacity:.75;margin-top:4px;line-height:1.3}
 /* Sections */
 section{max-width:980px;margin:0 auto;padding:72px 24px}
-h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.6rem,4vw,2.2rem);margin:8px 0 26px}
+h2{font-family:'Oswald',Impact,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(1.6rem,4vw,2.2rem);margin:8px 0 26px}
 .section-eyebrow{color:var(--clay)}
 .about p{font-size:1.12rem;max-width:640px}
 /* Reviews */
@@ -42,9 +89,36 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .dish{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
 .dish img{width:100%;height:180px;object-fit:cover;display:block}
 .dish .pad{padding:16px 18px}
-.dish h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem}
+.dish h3{font-family:'Oswald',Impact,sans-serif;font-weight:600;font-size:1.05rem}
 .dish p{font-size:.9rem;opacity:.7}
 .menu-note{margin-top:22px;font-size:.95rem;color:var(--sage)}
+/* What reviewers name */
+.raves{display:flex;flex-wrap:wrap;gap:12px}
+.rave{background:#fff;border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:12px;padding:14px 18px;min-width:200px;flex:1}
+.rave b{font-family:'Oswald',Impact,sans-serif;font-size:1.15rem;display:block}
+.rave span{font-size:.85rem;color:var(--sage);font-weight:600}
+/* Their real menu, with a demo order */
+.menu-grid.with-list{margin-bottom:34px}
+.menu-sec{margin-top:26px}
+.menu-sec h3{font-family:'Oswald',Impact,sans-serif;font-size:1.25rem;border-bottom:2px solid var(--amber);padding-bottom:6px;margin-bottom:4px}
+.item{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px dashed var(--line)}
+.item .what{flex:1;min-width:0}
+.item .what b{font-weight:600}
+.item .what small{display:block;font-size:.86rem;opacity:.7}
+.item .price{font-weight:600;white-space:nowrap}
+.add{border:0;background:var(--amber);color:var(--on-accent,#241A0D);font:600 .88rem 'Inter',sans-serif;border-radius:999px;padding:9px 16px;cursor:pointer;white-space:nowrap}
+.add.added{background:var(--ink);color:#fff}
+.cart-pill{display:none;position:fixed;right:18px;bottom:18px;z-index:30;border:0;background:var(--ink);color:#fff;font:600 1rem 'Inter',sans-serif;border-radius:999px;padding:15px 24px;box-shadow:0 10px 28px rgba(30,20,10,.35);cursor:pointer}
+.cart-pill.show{display:block}
+.sheet-wrap{display:none;position:fixed;inset:0;z-index:40;background:rgba(20,14,10,.55);align-items:flex-end;justify-content:center}
+.sheet-wrap.open{display:flex}
+.sheet{background:var(--paper);width:100%;max-width:520px;max-height:88vh;overflow:auto;border-radius:22px 22px 0 0;padding:24px 22px calc(24px + env(safe-area-inset-bottom))}
+.sheet h3{font-family:'Oswald',Impact,sans-serif;font-size:1.4rem;margin-bottom:10px}
+.sheet .row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.sheet .total{font-weight:600;border-bottom:0;font-size:1.08rem}
+.sheet .btn{display:block;text-align:center;margin-top:16px;border:0;width:100%;cursor:pointer;font-family:inherit}
+.sheet .demo-note{font-size:.84rem;color:var(--sage);margin-top:12px;text-align:center}
+.sheet .close{float:right;border:0;background:none;font-size:1.6rem;line-height:1;cursor:pointer;color:var(--ink)}
 /* Visit */
 .visit{display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
 .visit ul{list-style:none;font-size:.98rem}
@@ -55,7 +129,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .preview-bar{background:var(--ink);color:#EFE7DA;padding:22px 18px;font-size:.9rem}
 .preview-bar a{color:#E9C98A;font-weight:600;text-decoration:none}
 .preview-bar-inner{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center}
-.claim-btn{background:var(--amber);color:#241A0D;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
+.claim-btn{background:var(--amber);color:var(--on-accent,#241A0D);padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .claim-btn:hover{background:var(--amber-dk);color:#fff}
 /* Top frame bar -- deliberately plain/slim and NOT part of the hero
    below it (own background, own block, not fixed/overlaid) so it reads
@@ -64,16 +138,61 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 .claim-topbar .claim-btn{padding:7px 16px;font-size:.8rem}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-inner{animation:none}}
-@media (max-width:640px){.seal{width:110px;height:110px;right:5%;bottom:-46px}}
+/* Phone layout (2026-11-23, Matt: "need to be mobile first friendly").
+   Most owners open the preview from a text, on a phone. There the photo
+   gets its own band at the top instead of a dark slice behind the text,
+   the buttons fill the width, menu cards swipe sideways, and an order
+   bar stays on screen. */
+.hero-photo,.action-bar{display:none}
+@media (max-width:640px){
+  .claim-topbar{padding:8px 12px;gap:10px;font-size:.76rem}
+  .claim-topbar .claim-btn{padding:6px 14px;font-size:.76rem}
+  .hero{min-height:0;display:block;background:#241A12}
+  .hero.has-photo{background-image:none}
+  .hero.has-photo .hero-photo{display:block;height:64vw;max-height:420px;background:url('photo-1.jpg') center/cover no-repeat}
+  .hero-inner{padding:26px 20px 34px}
+  h1{font-size:clamp(2.1rem,9.5vw,2.8rem);margin:8px 0 12px}
+  .hero-inner p{font-size:1rem!important}
+  .ctas{flex-direction:column;gap:10px;margin-top:22px}
+  .ctas .btn{text-align:center;padding:15px 20px}
+  .seal{width:88px;height:88px;right:14px;top:calc(min(64vw,420px) - 44px);bottom:auto}
+  .seal b{font-size:1.4rem}
+  .seal span{font-size:9px}
+  .hero:not(.has-photo) .seal{top:auto;bottom:-40px}
+  section{padding:44px 20px}
+  h2{margin:6px 0 18px}
+  .about p{font-size:1.02rem}
+  .menu-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -20px;padding:0 20px 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .menu-grid::-webkit-scrollbar{display:none}
+  .dish{flex:0 0 78%;scroll-snap-align:start}
+  .dish:only-child{flex-basis:100%}
+  .dish img{height:200px}
+  .visit{gap:10px}
+  .visit ul{font-size:.94rem}
+  .preview-bar{padding-bottom:96px}
+  .cart-pill{left:12px;right:12px;bottom:calc(78px + env(safe-area-inset-bottom));text-align:center}
+  .rave{min-width:100%}
+  .action-bar{display:flex;gap:10px;transform:translateY(110%);transition:transform .25s ease;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(250,246,239,.96);border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(30,20,10,.12)}
+  .action-bar .btn{flex:1;text-align:center;padding:14px 10px}
+  .action-bar.show{transform:none}
+  .btn-call{border:1.5px solid var(--ink);color:var(--ink)}
+}
 </style>
-<meta name="prs-build" content="bff5386f4cc3485cbad3f68ef573611b">
+<style>:root{--amber:#297CAE;--amber-dk:#1F5E84;--clay:#1F5E84;--on-accent:#FFFFFF;--soft:#C8E0EF}</style>
+<meta name="prs-build" content="f70370a7b57d431dad414897cc7bea8f">
 </head>
 <body>
 <div class="claim-topbar">
   <span>Preview for Ezell's — not their live website yet</span>
   <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=ezell-s-phenix-city">Claim this website — get it live free</a>
 </div>
+<div class="topnav"><div class="topnav-inner">
+  <a class="brand" href="#">Ezell's</a>
+  <nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#order">Hours &amp; Location</a><a href="#faq">FAQ</a></nav>
+  <a class="btn btn-primary" href="#order">Order now</a>
+</div></div>
 <header class="hero has-photo">
+  <div class="hero-photo" role="img" aria-label="Food at Ezell's"></div>
   <div class="hero-inner">
     <div class="eyebrow">Phenix City · Seafood</div>
     <h1>Ezell's</h1>
@@ -83,40 +202,63 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.3★</b><span>1232 Google<br>reviews</span></div>
+  <div class="seal"><b>4.3★</b><span>1233 Google<br>reviews</span></div>
 </header>
+<div class="infostrip"><div class="infostrip-inner">
+  <div><b>3546 US-280</b>Phenix City</div>
+  <div><b>Monday: Closed</b>Hours below</div>
+  <div><b>Order ahead for pickup</b>Straight from this website</div>
+</div></div>
 
-<section class="about">
+<section class="about" id="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Phenix City. Ordered in two taps.</h2>
-  <p>Ezell's already has the food and the following — 1232 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
+  <p>Ezell's already has the food people come back for — 1233 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
 <section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Phenix City</h2><div class="review-grid"><blockquote>"Food was fresh and hot. Not greasy or overcooked. Service was spot on and attentive."<footer>— Dan, Google review</footer></blockquote></div></div></section>
 
+<section><div class="eyebrow section-eyebrow">What people rave about</div><h2>The dishes your customers name</h2><div class="raves"><div class="rave"><b>Fried green tomatoes</b><span>named in 1 recent Google review</span></div><div class="rave"><b>Hush puppies</b><span>named in 1 recent Google review</span></div><div class="rave"><b>Snapper</b><span>named in 1 recent Google review</span></div><div class="rave"><b>Fried okra</b><span>named in 1 recent Google review</span></div></div></section>
+
+<section class="scratch"><div class="eyebrow section-eyebrow">Scratch &amp; win</div><h2>Give your customers a reason to come back</h2><div class="scratch-card" data-theme="seafood"><div class="scratch-prize"><small>You won</small><b>Free fried green tomatoes</b><span>on your next order</span></div><canvas aria-label="Scratch to reveal"></canvas></div><p class="demo-note">Sample prize for this preview. On your live site you choose the prize, or switch the card off.</p></section>
+
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid"><div class="dish"><img src="photo-2.jpg" alt="Ezell's dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Ezell's dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Ezell's dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  <div class="menu-grid "><div class="dish"><img src="photo-2.jpg" alt="Ezell's dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Ezell's dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Ezell's dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
+  
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
 
-<section id="order" class="visit">
-  <div>
-    <div class="eyebrow section-eyebrow">Hours</div>
-    <h2>Come by</h2>
-    <ul><li>Monday: Closed</li><li>Tuesday: 4:30 – 9:00 PM</li><li>Wednesday: 4:30 – 9:00 PM</li><li>Thursday: 4:30 – 9:00 PM</li><li>Friday: 11:30 AM – 10:00 PM</li><li>Saturday: 11:30 AM – 10:00 PM</li><li>Sunday: 11:30 AM – 9:00 PM</li></ul>
+<section class="banner"><div class="banner-inner">
+  <div class="eyebrow" style="color:#E9C98A">Order online</div>
+  <h2>Pickup, ordered ahead</h2>
+  <p>Order from Ezell's on this website and pick it up at 3546 US-280.</p>
+  <a class="btn btn-primary" href="#order">Order now</a>
+</div></section>
+
+<section id="order">
+  <div class="eyebrow section-eyebrow">Visit us</div>
+  <h2>Hours &amp; location</h2>
+  <div class="visit-card">
+    <div class="card">
+      <ul class="hours-table"><li><span>Monday</span><span>Closed</span></li><li><span>Tuesday – Thursday</span><span>4:30 – 9:00 PM</span></li><li><span>Friday – Saturday</span><span>11:30 AM – 10:00 PM</span></li><li><span>Sunday</span><span>11:30 AM – 9:00 PM</span></li></ul>
+      <p style="margin-top:20px"><span class="eyebrow section-eyebrow">Address</span><br>3546 US-280</p>
+      <p style="margin-top:12px"><a href="tel:3344802004">(334) 480-2004</a></p>
+      <p style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-primary" href="#order">Order now</a><a class="btn" style="border:1.5px solid var(--clay);color:var(--clay)" href="https://www.google.com/maps/search/Ezell%27s%203546%20US-280%20Phenix%20City">Get directions</a></p>
+      <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
+    </div>
+    <iframe loading="lazy" title="Map of Ezell's" src="https://maps.google.com/maps?q=Ezell%27s+3546+US-280+Phenix+City&amp;output=embed"></iframe>
   </div>
-  <div>
-    <div class="eyebrow section-eyebrow">Find us</div>
-    <h2>Phenix City</h2>
-    <p>3546 US-280</p>
-    <p style="margin-top:10px"><a href="tel:3344802004">(334) 480-2004</a></p>
-    <p style="margin-top:6px"><a href="https://www.google.com/maps/search/Ezell%27s%203546%20US-280%20Phenix%20City">Open in Google Maps →</a></p>
-    <p style="margin-top:26px"><a class="btn btn-primary" href="#">Order online</a></p>
-    <p class="menu-note">Catering and family packs — ordered the same way.</p>
-    <img src="/zuppler-logo.png" alt="Powered by Zuppler" class="zuppler-badge">
-  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="eyebrow section-eyebrow">Good to know</div>
+  <h2>Frequently asked questions</h2>
+  <details><summary>Where is Ezell's?</summary><p>Ezell's is at 3546 US-280.</p></details>
+  <details><summary>What are the hours?</summary><p>The hours are listed above, under Hours &amp; location.</p></details>
+  <details><summary>Can I order online?</summary><p>Yes. Tap Order now on this page, choose your food and pick it up.</p></details>
+  <details><summary>Can I pick up my order?</summary><p>Yes. Order ahead here and pick it up at 3546 US-280.</p></details>
 </section>
 
 <div class="preview-bar">
@@ -125,5 +267,80 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
     <a class="claim-btn" href="https://premiumrestaurantsolutions.com/claim?site=ezell-s-phenix-city">Claim this website — get it live free</a>
   </div>
 </div>
+<nav class="action-bar" aria-label="Order">
+  <a class="btn btn-primary" href="#order">Order online</a>
+  <a class="btn btn-call" href="tel:3344802004">Call</a>
+</nav>
+<script>
+// The order bar slides up once the hero's own buttons scroll away, so the
+// two never sit on top of each other.
+(function(){var bar=document.querySelector('.action-bar'),ctas=document.querySelector('.ctas');
+if(!bar||!ctas||!('IntersectionObserver' in window)){if(bar)bar.classList.add('show');return;}
+new IntersectionObserver(function(e){bar.classList.toggle('show',!e[0].isIntersecting);}).observe(ctas);})();
+</script>
+<button class="cart-pill" type="button" aria-live="polite"></button>
+<div class="sheet-wrap" role="dialog" aria-modal="true" aria-label="Your order">
+  <div class="sheet"></div>
+</div>
+<script>
+// Demo order: tap Add on a menu item, open the order, "place" it. Nothing
+// is sent anywhere and nothing is charged; the last screen says so and
+// points at Claim. Only runs on pages built with a real menu.
+(function(){
+var adds=document.querySelectorAll('.add'); if(!adds.length) return;
+var cart={}, pill=document.querySelector('.cart-pill'), wrap=document.querySelector('.sheet-wrap'), sheet=wrap.querySelector('.sheet');
+var claim=document.querySelector('.claim-btn').getAttribute('href');
+function money(c){return '$'+(c/100).toFixed(2);}
+function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML;}
+function totals(){var n=0,c=0;for(var k in cart){n+=cart[k].q;c+=cart[k].q*cart[k].c;}return{n:n,c:c};}
+function paint(){var t=totals();pill.classList.toggle('show',t.n>0);pill.textContent='View order · '+t.n+' item'+(t.n===1?'':'s')+' · '+money(t.c);}
+function review(){var t=totals(),h='<button class="close" type="button" aria-label="Close">×</button><h3>Your order</h3>';
+for(var k in cart){h+='<div class="row"><span>'+cart[k].q+' × '+esc(k)+'</span><span>'+money(cart[k].q*cart[k].c)+'</span></div>';}
+h+='<div class="row total"><span>Pickup total</span><span>'+money(t.c)+'</span></div><button class="btn btn-primary place" type="button">Place pickup order</button><p class="demo-note">Demo: nothing is ordered or charged.</p>';
+sheet.innerHTML=h;wrap.classList.add('open');}
+function done(){sheet.innerHTML='<button class="close" type="button" aria-label="Close">×</button><h3>That is the whole order.</h3><p>Your customers do exactly this, from your own website. The ticket prints in your kitchen and pickup orders cost you nothing.</p><a class="btn btn-primary" href="'+claim+'">Claim this website — get it live free</a><p class="demo-note">This was a demo. Nothing was ordered or charged.</p>';}
+adds.forEach(function(b){b.addEventListener('click',function(){var n=b.getAttribute('data-name'),c=parseInt(b.getAttribute('data-cents'),10);
+cart[n]=cart[n]||{q:0,c:c};cart[n].q++;b.classList.add('added');b.textContent='Added · '+cart[n].q;paint();});});
+pill.addEventListener('click',review);
+wrap.addEventListener('click',function(e){if(e.target===wrap||e.target.classList.contains('close'))wrap.classList.remove('open');else if(e.target.classList.contains('place'))done();});
+})();
+</script>
+<script>
+// Scratch-off: the cover is drawn in the restaurant's own colour with a
+// pattern for its kind of food (data-theme). Scratch with a finger or
+// mouse; past ~45% scratched the rest clears.
+(function(){
+var card=document.querySelector('.scratch-card'); if(!card) return;
+var cv=card.querySelector('canvas'), ctx=cv.getContext('2d'), theme=card.getAttribute('data-theme')||'stars';
+var css=getComputedStyle(document.documentElement), base=(css.getPropertyValue('--clay')||'#A63D2F').trim(), hi=(css.getPropertyValue('--amber')||'#C98A2D').trim();
+function size(){var r=card.getBoundingClientRect(),d=window.devicePixelRatio||1;cv.width=r.width*d;cv.height=r.height*d;ctx.setTransform(d,0,0,d,0,0);paint(r.width,r.height);}
+function paint(w,h){
+  ctx.globalCompositeOperation='source-over';
+  var g=ctx.createLinearGradient(0,0,w,h);g.addColorStop(0,base);g.addColorStop(1,hi);ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
+  ctx.globalAlpha=.22;ctx.fillStyle='#fff';ctx.strokeStyle='#fff';ctx.lineWidth=2;
+  for(var y=10;y<h;y+=34){for(var x=(y/34%2)*17+10;x<w;x+=34){ctx.save();ctx.translate(x,y);shape();ctx.restore();}}
+  ctx.globalAlpha=1;ctx.fillStyle='#fff';ctx.textAlign='center';ctx.font='700 '+Math.round(w/11)+'px Oswald, Impact, sans-serif';
+  ctx.fillText('SCRATCH HERE',w/2,h/2+Math.round(w/30));
+}
+function shape(){
+  if(theme==='bbq'){ctx.beginPath();ctx.moveTo(0,8);ctx.quadraticCurveTo(-7,0,0,-10);ctx.quadraticCurveTo(7,0,0,8);ctx.fill();}
+  else if(theme==='pizza'){ctx.beginPath();ctx.arc(0,0,6,0,7);ctx.fill();}
+  else if(theme==='mexican'){ctx.beginPath();ctx.moveTo(-8,-6);ctx.lineTo(8,-6);ctx.lineTo(0,8);ctx.closePath();ctx.fill();}
+  else if(theme==='coffee'){ctx.beginPath();ctx.ellipse(0,0,5,8,.5,0,7);ctx.fill();}
+  else if(theme==='burger'){ctx.fillRect(-8,-3,16,6);}
+  else if(theme==='asian'){ctx.beginPath();ctx.arc(0,0,7,0,7);ctx.stroke();}
+  else if(theme==='seafood'){ctx.beginPath();ctx.moveTo(-8,0);ctx.quadraticCurveTo(0,-7,6,0);ctx.quadraticCurveTo(0,7,-8,0);ctx.fill();}
+  else {ctx.beginPath();for(var i=0;i<5;i++){var a=i*1.2566-1.5708;ctx.lineTo(Math.cos(a)*7,Math.sin(a)*7);a+=.6283;ctx.lineTo(Math.cos(a)*3,Math.sin(a)*3);}ctx.closePath();ctx.fill();}
+}
+var down=false,done=false;
+function at(e){var r=cv.getBoundingClientRect(),t=e.touches?e.touches[0]:e;return[t.clientX-r.left,t.clientY-r.top];}
+function scratch(e){if(!down||done)return;e.preventDefault();var p=at(e);ctx.globalCompositeOperation='destination-out';ctx.beginPath();ctx.arc(p[0],p[1],22,0,7);ctx.fill();check();}
+var n=0;function check(){if(++n%12)return;var d=ctx.getImageData(0,0,cv.width,cv.height).data,c=0;for(var i=3;i<d.length;i+=64)if(d[i]===0)c++;if(c/(d.length/64)>.45){done=true;cv.style.transition='opacity .5s';cv.style.opacity=0;setTimeout(function(){cv.remove();},600);}}
+cv.addEventListener('pointerdown',function(e){down=true;scratch(e);});
+cv.addEventListener('pointermove',scratch);
+window.addEventListener('pointerup',function(){down=false;});
+size();window.addEventListener('resize',function(){if(!done)size();});
+})();
+</script>
 </body>
 </html>

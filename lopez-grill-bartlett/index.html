@@ -14,7 +14,7 @@ body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 /* Hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#2A211B,#4A3423);background-size:cover;background-position:center}
-.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('')}
+.hero.has-photo{background-image:linear-gradient(180deg,rgba(20,14,10,.25) 30%,rgba(20,14,10,.78) 85%),url('photo-1.jpg')}
 .hero-inner{width:100%;max-width:980px;margin:0 auto;padding:48px 24px 64px;animation:rise .8s ease both}
 .hero .eyebrow{color:#E9C98A}
 h1{font-family:'Oswald',Impact,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:10px 0 18px}
@@ -149,7 +149,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   .claim-topbar .claim-btn{padding:6px 14px;font-size:.76rem}
   .hero{min-height:0;display:block;background:#241A12}
   .hero.has-photo{background-image:none}
-  .hero.has-photo .hero-photo{display:block;height:64vw;max-height:420px;background:url('') center/cover no-repeat}
+  .hero.has-photo .hero-photo{display:block;height:64vw;max-height:420px;background:url('photo-1.jpg') center/cover no-repeat}
   .hero-inner{padding:26px 20px 34px}
   h1{font-size:clamp(2.1rem,9.5vw,2.8rem);margin:8px 0 12px}
   .hero-inner p{font-size:1rem!important}
@@ -178,8 +178,8 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   .btn-call{border:1.5px solid var(--ink);color:var(--ink)}
 }
 </style>
-
-<meta name="prs-build" content="e6e9f991301d4367b79cf3d5392adffe">
+<style>:root{--amber:#295AAE;--amber-dk:#1F4584;--clay:#1F4584;--on-accent:#FFFFFF;--soft:#C8D6EF}</style>
+<meta name="prs-build" content="57d5b2074eac4edf9f62b94c99a4fa22">
 </head>
 <body>
 <div class="claim-topbar">
@@ -191,7 +191,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
   <nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#order">Hours &amp; Location</a><a href="#faq">FAQ</a></nav>
   <a class="btn btn-primary" href="#order">Order now</a>
 </div></div>
-<header class="hero ">
+<header class="hero has-photo">
   <div class="hero-photo" role="img" aria-label="Food at Lopez Grill"></div>
   <div class="hero-inner">
     <div class="eyebrow">Bartlett · Mexican</div>
@@ -202,7 +202,7 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
       <a class="btn btn-ghost" href="#order">Order catering</a>
     </div>
   </div>
-  <div class="seal"><b>4.5★</b><span>581 Google<br>reviews</span></div>
+  <div class="seal"><b>4.5★</b><span>582 Google<br>reviews</span></div>
 </header>
 <div class="infostrip"><div class="infostrip-inner">
   <div><b>5653 Stage Rd</b>Bartlett</div>
@@ -213,19 +213,19 @@ blockquote footer{margin-top:10px;font-size:.88rem;color:var(--sage);font-weight
 <section class="about" id="about">
   <div class="eyebrow section-eyebrow">About</div>
   <h2>Made in Bartlett. Ordered in two taps.</h2>
-  <p>Lopez Grill already has the food people come back for — 581 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
+  <p>Lopez Grill already has the food people come back for — 582 Google reviews say so. This site puts a direct Order Online button in front of every customer who searches for you. Pickup orders cost you nothing.</p>
 </section>
 
-<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Bartlett</h2><div class="review-grid"><blockquote>"Okay, that was awesome. I definitely won’t be driving to the heavy traffic area surrounding Wolfchase in search of a good Mexican restaurant."<footer>— Javier, Google review</footer></blockquote></div></div></section>
+<section class="reviews"><div style="max-width:980px;margin:0 auto"><div class="eyebrow section-eyebrow">What locals say</div><h2>Already loved in Bartlett</h2><div class="review-grid"><blockquote>"Okay, that was awesome. I definitely won’t be driving to the heavy traffic area surrounding Wolfchase in search of a good Mexican restaurant."<footer>— Javier, Google review</footer></blockquote><blockquote>"I am happily stuffed! I had the steak and chicken fajitas. The food was perfectly seasoned. The steak was tender. This place has the best refried beans."<footer>— Mayemona, Google review</footer></blockquote></div></div></section>
 
+<section><div class="eyebrow section-eyebrow">What people rave about</div><h2>The dishes your customers name</h2><div class="raves"><div class="rave"><b>Chicken soup</b><span>named in 1 recent Google review</span></div><div class="rave"><b>Refried beans</b><span>named in 1 recent Google review</span></div><div class="rave"><b>Quesadilla fajita</b><span>named in 1 recent Google review</span></div><div class="rave"><b>Homemade guacamole</b><span>named in 1 recent Google review</span></div></div></section>
 
-
-<section class="scratch"><div class="eyebrow section-eyebrow">Scratch &amp; win</div><h2>Give your customers a reason to come back</h2><div class="scratch-card" data-theme="mexican"><div class="scratch-prize"><small>You won</small><b>A free side</b><span>on your next order</span></div><canvas aria-label="Scratch to reveal"></canvas></div><p class="demo-note">Sample prize for this preview. On your live site you choose the prize, or switch the card off.</p></section>
+<section class="scratch"><div class="eyebrow section-eyebrow">Scratch &amp; win</div><h2>Give your customers a reason to come back</h2><div class="scratch-card" data-theme="mexican"><div class="scratch-prize"><small>You won</small><b>Free chicken soup</b><span>on your next order</span></div><canvas aria-label="Scratch to reveal"></canvas></div><p class="demo-note">Sample prize for this preview. On your live site you choose the prize, or switch the card off.</p></section>
 
 <section id="menu">
   <div class="eyebrow section-eyebrow">The menu</div>
   <h2>Your food, front and center</h2>
-  <div class="menu-grid "><div class="dish"><div class="pad"><h3>Your menu here</h3><p>Real dishes, photos, and prices — organized and mobile-friendly.</p></div></div></div>
+  <div class="menu-grid "><div class="dish"><img src="photo-2.jpg" alt="Lopez Grill dish photo"><div class="pad"><h3>House favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-3.jpg" alt="Lopez Grill dish photo"><div class="pad"><h3>Local pick</h3><p>Straight from your kitchen — with your names and prices.</p></div></div><div class="dish"><img src="photo-4.jpg" alt="Lopez Grill dish photo"><div class="pad"><h3>Customer favorite</h3><p>Straight from your kitchen — with your names and prices.</p></div></div></div>
   
   <p class="menu-note">This preview uses your public photos — your real menu, prices, and photos drop straight in.</p>
 </section>
